@@ -1,10 +1,12 @@
-baseURL = "https://example.com"
-languageCode = "en"
+baseURL = "/"
+languageCode = "en-us"
 DefaultContentLanguage = "en"
-title = "Website of Jane Doe"
+title = "Website of noodler"
 theme = "anatole"
 summarylength = 10
 enableEmoji = true
+
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 # Enable Disqus
 #disqusShortname = ""
@@ -13,17 +15,17 @@ enableEmoji = true
 #googleAnalytics = "UA-123-45"
 
 [params]
-title = "I'm Jane Doe"
-author = "Jane Doe"
-description = "Call me Jane"
-profilePicture = "images/profile.jpg"
+title = "I'm noodler"
+author = "面条丶"
+description = "Call me noodler"
+profilePicture = "images/profile.png"
 keywords = ""
 favicon = "favicons/"
 customCss = []
 
 ## Math settings
 [params.math]
-enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+enable = true  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
 use = "katex"  # options: "katex", "mathjax". default is "katex".
 
 ## Social links
@@ -45,7 +47,7 @@ url = "https://www.instagram.com/"
 [[params.socialIcons]]
 icon = "fa-envelope"
 title = "e-mail"
-url = "mailto:mail@alexbilz.com"
+url = "mailto:amistsss@163.com"
 
 ## Menu items
 
