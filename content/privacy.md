@@ -1,13 +1,20 @@
 ---
 commentable: false
-date: "2018-06-28T00:00:00+01:00"
+date: 2020-05-17
 draft: true
 editable: false
 header:
   caption: ""
   image: ""
 share: false
-title: Privacy Policy
+title: Donations 打赏
 ---
 
-...
+# 如果喜欢我的文章，欢迎打赏哈
+
+---
+
+
+![](/img/ap.png)
+
+![](/img/wp.png)

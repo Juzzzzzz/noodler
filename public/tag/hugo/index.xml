@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HUGO | Ju丶Blog</title>
+    <link>/tag/hugo/</link>
+      <atom:link href="/tag/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <description>HUGO</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/share_logo.png</url>
+      <title>HUGO</title>
+      <link>/tag/hugo/</link>
+    </image>
+    
+    <item>
+      <title>使用 blogdown 搭建博客的第一天</title>
+      <link>/post/2020-05-17-go-hugo/</link>
+      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-05-17-go-hugo/</guid>
+      <description>&lt;p&gt;终于，还是拥抱了
+&lt;a href=&#34;https://github.com/rstudio/blogdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;blogdown&lt;/code&gt;&lt;/a&gt;，
+&lt;a href=&#34;https://gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;HUGO&lt;/code&gt;&lt;/a&gt;的速度是真的快，
+&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;Academic&lt;/code&gt;主题&lt;/a&gt;也非常好看，像它的名字一样非常适合学术。&lt;/p&gt;
+&lt;p&gt;用&lt;code&gt;Rstudio&lt;/code&gt;配置也不是很难，只有一个浏览器标签的那个小图标找了好久才找到对应的位置，原来是在&lt;code&gt;/themes/hugo-academic/assets/images/icon.png&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;折腾差不多了可以开始写内容了，最近把之前写的博客整理一下放进来，虽然也没几个。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Doing is better than saying.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
