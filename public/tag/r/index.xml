@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R | Ju丶Blog</title>
+    <link>/tag/r/</link>
+      <atom:link href="/tag/r/index.xml" rel="self" type="application/rss+xml" />
+    <description>R</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Tue, 12 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/share_logo.png</url>
+      <title>R</title>
+      <link>/tag/r/</link>
+    </image>
+    
+    <item>
+      <title>新电脑配置 R, Jupyter, Julia</title>
+      <link>/post/2020-05-12-r-jupyter-julia-initial/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-05-12-r-jupyter-julia-initial/</guid>
+      <description>&lt;h1 id=&#34;r&#34;&gt;&lt;code&gt;R&lt;/code&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;renviron-文件&#34;&gt;&lt;code&gt;.Renviron&lt;/code&gt; 文件&lt;/h2&gt;
+&lt;p&gt;这个文件保存R自身设置的一些环境变量，建立一个存放R包的文件夹环境变量 &lt;code&gt;R_LIBS_USER&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# 新建一个存放R包的文件夹
+dir.create(&amp;quot;~/.R_PKG&amp;quot;)
+# 将环境变量写入文件
+cat(&#39;R_LIBS_USER=\&amp;quot;~/.R_PKG\&amp;quot;&#39;, file = &amp;quot;~/.Renviron&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;rprofile-文件&#34;&gt;&lt;code&gt;.Rprofile&lt;/code&gt; 文件&lt;/h2&gt;
+&lt;p&gt;R的启动选项，暂时把镜像设置上：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;options(
+    repos = c(CRAN = &amp;quot;https://mirrors.tongji.edu.cn/CRAN&amp;quot;)
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;python&#34;&gt;&lt;code&gt;Python&lt;/code&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;anaconda-环境变量&#34;&gt;&lt;code&gt;Anaconda&lt;/code&gt; 环境变量&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;## Anaconda3
+export PATH=&amp;quot;/Users/noodler/APP/anaconda3/bin:$PATH&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;jupyter_notebook_configpy-文件&#34;&gt;&lt;code&gt;jupyter_notebook_config.py&lt;/code&gt; 文件&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 生成配置文件
+jupyter notebook --generate-config
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# 生成密码
+from IPython.lib import passwd
+passwd()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;获得密码散列值：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&#39;sha1:0834563448:3900ac34634563464a377&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;修改 &lt;code&gt;jupyter_notebook_config.py&lt;/code&gt; 文件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;c.NotebookApp.notebook_dir = &#39;Projects&#39;
+c.NotebookApp.ip = &#39;*&#39;
+c.NotebookApp.password = &#39;sha1:0834563448:3900ac34634563464a377&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;julia&#34;&gt;&lt;code&gt;Julia&lt;/code&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;julia-创建软链接&#34;&gt;&lt;code&gt;Julia&lt;/code&gt; 创建软链接&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo ln -s /Applications/Julia.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;startupjl-文件&#34;&gt;&lt;code&gt;startup.jl&lt;/code&gt; 文件&lt;/h2&gt;
+&lt;p&gt;创建文件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir ~/.julia/config
+touch ~/.julia/config/startup.jl
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

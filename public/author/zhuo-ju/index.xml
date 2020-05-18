@@ -29,5 +29,117 @@
 </description>
     </item>
     
+    <item>
+      <title>Mac 的初始配置问题</title>
+      <link>/post/2020-05-13-mac-initial/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-05-13-mac-initial/</guid>
+      <description>&lt;h2 id=&#34;有些破解软件安装后无法使用&#34;&gt;有些破解软件安装后无法使用&lt;/h2&gt;
+&lt;p&gt;安装后输入命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo xattr -rd com.apple.quarantine /Applications/Final\ Cut\ Pro.app
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;隐藏文件夹&#34;&gt;隐藏文件夹&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;chflags hidden ./Applications
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;安装-homebrew&#34;&gt;安装 &lt;code&gt;Homebrew&lt;/code&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;
+# 替换国内源
+
+# 替换成阿里巴巴的 brew.git 仓库地址:
+cd &amp;quot;$(brew --repo)&amp;quot;
+git remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git
+
+# # 还原为官方提供的 brew.git 仓库地址
+# cd &amp;quot;$(brew --repo)&amp;quot;
+# git remote set-url origin https://github.com/Homebrew/brew.git
+ 
+# 替换成阿里巴巴的 homebrew-core.git 仓库地址:
+cd &amp;quot;$(brew --repo)/Library/Taps/homebrew/homebrew-core&amp;quot;
+git remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git
+
+# # 还原为官方提供的 homebrew-core.git 仓库地址
+# cd &amp;quot;$(brew --repo)/Library/Taps/homebrew/homebrew-core&amp;quot;
+# git remote set-url origin https://github.com/Homebrew/homebrew-core.git
+
+# 替换 homebrew-bottles 访问地址
+echo &#39;\n## Homebrew Bottles\nexport HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles&#39; &amp;gt;&amp;gt; ~/.zshrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;配置-oh-my-zsh&#34;&gt;配置 &lt;code&gt;oh-my-zsh&lt;/code&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 安装
+sh -c &amp;quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;quot;
+# 自动补全插件
+mkdir .oh-my-zsh/plugins/incr
+cd ~/.oh-my-zsh/plugins/incr 
+wget https://mimosa-pudica.net/src/incr-0.2.zsh
+cd ..
+sudo chmod -R 775 incr 
+echo &amp;quot;\n## incr-0.2.zsh plugin\nsource ~/.oh-my-zsh/plugins/incr/incr-0.2.zsh&amp;quot; &amp;gt;&amp;gt; ~/.zshrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果出现权限问题&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;chmod 755 /usr/local/share/zsh
+chmod 755 /usr/local/share/zsh/site-functions
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;删除启动台无效的图标&#34;&gt;删除启动台无效的图标&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd /private/var/folders/
+sudo find ./ -name com.apple.dock.launchpad
+# 进入刚刚找到的目录
+cd .//dn/lp83fzsn3l79yzfr4syqcbdm0000gn/0/com.apple.dock.launchpad
+cd db/
+sqlite3 db &amp;quot;delete from apps where title=&#39;Hacknet&#39;;&amp;quot;&amp;amp;&amp;amp;killall Dock
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>新电脑配置 R, Jupyter, Julia</title>
+      <link>/post/2020-05-12-r-jupyter-julia-initial/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-05-12-r-jupyter-julia-initial/</guid>
+      <description>&lt;h1 id=&#34;r&#34;&gt;&lt;code&gt;R&lt;/code&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;renviron-文件&#34;&gt;&lt;code&gt;.Renviron&lt;/code&gt; 文件&lt;/h2&gt;
+&lt;p&gt;这个文件保存R自身设置的一些环境变量，建立一个存放R包的文件夹环境变量 &lt;code&gt;R_LIBS_USER&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# 新建一个存放R包的文件夹
+dir.create(&amp;quot;~/.R_PKG&amp;quot;)
+# 将环境变量写入文件
+cat(&#39;R_LIBS_USER=\&amp;quot;~/.R_PKG\&amp;quot;&#39;, file = &amp;quot;~/.Renviron&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;rprofile-文件&#34;&gt;&lt;code&gt;.Rprofile&lt;/code&gt; 文件&lt;/h2&gt;
+&lt;p&gt;R的启动选项，暂时把镜像设置上：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;options(
+    repos = c(CRAN = &amp;quot;https://mirrors.tongji.edu.cn/CRAN&amp;quot;)
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;python&#34;&gt;&lt;code&gt;Python&lt;/code&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;anaconda-环境变量&#34;&gt;&lt;code&gt;Anaconda&lt;/code&gt; 环境变量&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;## Anaconda3
+export PATH=&amp;quot;/Users/noodler/APP/anaconda3/bin:$PATH&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;jupyter_notebook_configpy-文件&#34;&gt;&lt;code&gt;jupyter_notebook_config.py&lt;/code&gt; 文件&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 生成配置文件
+jupyter notebook --generate-config
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# 生成密码
+from IPython.lib import passwd
+passwd()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;获得密码散列值：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&#39;sha1:0834563448:3900ac34634563464a377&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;修改 &lt;code&gt;jupyter_notebook_config.py&lt;/code&gt; 文件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;c.NotebookApp.notebook_dir = &#39;Projects&#39;
+c.NotebookApp.ip = &#39;*&#39;
+c.NotebookApp.password = &#39;sha1:0834563448:3900ac34634563464a377&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;julia&#34;&gt;&lt;code&gt;Julia&lt;/code&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;julia-创建软链接&#34;&gt;&lt;code&gt;Julia&lt;/code&gt; 创建软链接&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo ln -s /Applications/Julia.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;startupjl-文件&#34;&gt;&lt;code&gt;startup.jl&lt;/code&gt; 文件&lt;/h2&gt;
+&lt;p&gt;创建文件：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir ~/.julia/config
+touch ~/.julia/config/startup.jl
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
