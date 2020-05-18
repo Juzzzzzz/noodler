@@ -34,9 +34,9 @@
       <link>/post/2020-05-13-mac-initial/</link>
       <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
       <guid>/post/2020-05-13-mac-initial/</guid>
-      <description>&lt;h2 id=&#34;有些破解软件安装后无法使用&#34;&gt;有些破解软件安装后无法使用&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;有些网络上下载的软件安装后无法使用&#34;&gt;有些网络上下载的软件安装后无法使用&lt;/h2&gt;
 &lt;p&gt;安装后输入命令：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo xattr -rd com.apple.quarantine /Applications/Final\ Cut\ Pro.app
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo xattr -rd com.apple.quarantine /Applications/XXX.app
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;隐藏文件夹&#34;&gt;隐藏文件夹&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;chflags hidden ./Applications

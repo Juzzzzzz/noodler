@@ -10,12 +10,12 @@ categories:
 tags:
     - Mac
 ---
-## 有些破解软件安装后无法使用
+## 有些网络上下载的软件安装后无法使用
 
 安装后输入命令：
 
 ``` bash
-sudo xattr -rd com.apple.quarantine /Applications/Final\ Cut\ Pro.app
+sudo xattr -rd com.apple.quarantine /Applications/XXX.app
 ```
 
 
