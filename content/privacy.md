@@ -15,6 +15,6 @@ title: Donations 打赏
 ---
 
 
-![](/img/ap.png)
+![](https://i.loli.net/2020/05/19/Ur8MWLhcS3pKQGZ.png)
 
-![](/img/wp.png)
+![](https://i.loli.net/2020/05/19/BmGHegzPqR9nVLN.png)

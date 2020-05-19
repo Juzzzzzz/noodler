@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PicGo | Ju丶Blog</title>
+    <link>/tag/picgo/</link>
+      <atom:link href="/tag/picgo/index.xml" rel="self" type="application/rss+xml" />
+    <description>PicGo</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Tue, 19 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/share_logo.png</url>
+      <title>PicGo</title>
+      <link>/tag/picgo/</link>
+    </image>
+    
+    <item>
+      <title>使用 SM.MS 图床</title>
+      <link>/post/2020-05-19-smms_picgo_tinypng/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-05-19-smms_picgo_tinypng/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;我做了一张思维导图在上一篇文章，原图下来14M，试了一下截图保存也有将近6M，直接放到 Netlify 上基本打不开，所以当下最迫切的需求就是找一个图片压缩工具和图床。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;tinypng&#34;&gt;TinyPNG&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;.png&lt;/code&gt; 格式的图片能保留截图周围的阴影效果，实在太爱了，所以很自然就找到了
+&lt;a href=&#34;https://tinypng.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;TinyPNG&lt;/code&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/kyleduo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;kyleduo&lt;/a&gt; 大神做了一个调取 
+&lt;a href=&#34;https://tinypng.com/dashboard/api&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;TinyPNG API&lt;/code&gt;&lt;/a&gt; 的应用。&lt;/p&gt;
+&lt;h3 id=&#34;安装&#34;&gt;安装&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;brew cask install tinypng4mac
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;使用&#34;&gt;使用&lt;/h3&gt;
+&lt;p&gt;只需要设置好 
+&lt;a href=&#34;https://tinypng.com/dashboard/api&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;Token&lt;/code&gt;&lt;/a&gt; 和下载路径直接拖拽就可以了，贼简单！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/05/19/pkmWOTBq1o3uhsV.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;smms&#34;&gt;SM.MS&lt;/h2&gt;
+&lt;p&gt;图床之前一直用的 &lt;code&gt;七牛云&lt;/code&gt;，后来它开始要备案域名，因为户口等等原因网警一直没给我通过。后来用了腾讯 &lt;code&gt;COS&lt;/code&gt;，然后就开始收费了。&lt;/p&gt;
+&lt;p&gt;于是找了一下介绍，决定用 
+&lt;a href=&#34;https://sm.ms/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;SM.MS&lt;/code&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;picgo&#34;&gt;PicGo&lt;/h2&gt;
+&lt;p&gt;图床工具使用 
+&lt;a href=&#34;https://github.com/Molunerfinn/PicGo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;PicGo&lt;/code&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;安装-1&#34;&gt;安装&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-zsh&#34;&gt;brew cask install picgo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;搜索 
+&lt;a href=&#34;https://github.com/xlzy520/picgo-plugin-smms-user&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;smms-user&lt;/code&gt;&lt;/a&gt; 插件并安装。&lt;/p&gt;
+&lt;h3 id=&#34;使用-1&#34;&gt;使用&lt;/h3&gt;
+&lt;p&gt;拿到 &lt;code&gt;SM.MS&lt;/code&gt; 的 
+&lt;a href=&#34;https://sm.ms/home/apitoken&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;Token&lt;/code&gt;&lt;/a&gt;，简单配置一下就可以轻松使用了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/05/19/YrViZpIkjbXwnM1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

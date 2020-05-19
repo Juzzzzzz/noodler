@@ -13,7 +13,7 @@ tags:
     - 论文
 ---
 
-![](/img/post/RefereeReport_m.png)
+![](https://i.loli.net/2020/05/19/rl473ipohxf6T9Z.png)
 
 # A Typical Referee Report  
   
