@@ -6,7 +6,6 @@ authors:
 categories:
     - 软件
     - 日志
-    - Blog
 tags:
     - R
     - Jupyter

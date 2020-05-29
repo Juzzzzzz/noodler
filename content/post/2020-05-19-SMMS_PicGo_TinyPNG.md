@@ -4,8 +4,8 @@ date: 2020-05-19
 authors:
     - noodler
 categories:
-    - Blog
     - 日志
+    - 软件
 tags:
     - 图床
     - SM.MS

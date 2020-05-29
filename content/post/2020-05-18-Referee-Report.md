@@ -4,13 +4,12 @@ date: 2020-05-18
 authors:
     - noodler
 categories:
-    - Note
     - 笔记
+    - 论文
 tags:
     - Note
-    - 笔记
     - Paper
-    - 论文
+    - 论文笔记
 ---
 
 ![](https://i.loli.net/2020/05/19/rl473ipohxf6T9Z.png)

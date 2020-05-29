@@ -19,26 +19,56 @@
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/category/blog/</loc>
-    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/picgo/</loc>
-    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+    <loc>/tag/mmt/</loc>
+    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2020-05-29-note_mmt_001/</loc>
+    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/zhuo-ju/</loc>
+    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/%E8%AF%BB%E4%B9%A6/</loc>
+    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/picgo/</loc>
     <lastmod>2020-05-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -48,17 +78,7 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tag/tinypng/</loc>
-    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/zhuo-ju/</loc>
     <lastmod>2020-05-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -78,12 +98,12 @@
   </url>
   
   <url>
-    <loc>/tag/note/</loc>
-    <lastmod>2020-05-18T00:00:00+00:00</lastmod>
+    <loc>/category/%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/category/note/</loc>
+    <loc>/tag/note/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -98,17 +118,12 @@
   </url>
   
   <url>
-    <loc>/tag/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>/category/%E8%AE%BA%E6%96%87/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/category/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2020-05-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/%E8%AE%BA%E6%96%87/</loc>
+    <loc>/tag/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -149,11 +164,6 @@
   
   <url>
     <loc>/post/2020-05-13-mac-initial/</loc>
-    <lastmod>2020-05-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/category/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2020-05-13T00:00:00+00:00</lastmod>
   </url>
   

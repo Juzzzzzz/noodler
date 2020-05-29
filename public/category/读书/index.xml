@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>读书 | Ju丶Blog</title>
+    <link>/category/%E8%AF%BB%E4%B9%A6/</link>
+      <atom:link href="/category/%E8%AF%BB%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
+    <description>读书</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Fri, 29 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/share_logo.png</url>
+      <title>读书</title>
+      <link>/category/%E8%AF%BB%E4%B9%A6/</link>
+    </image>
+    
+    <item>
+      <title>Note: MMT, (1) 宏观经济会计基础</title>
+      <link>/post/2020-05-29-note_mmt_001/</link>
+      <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-05-29-note_mmt_001/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本来准备了一段话，忘了，后面补。。。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;1-金融资产--金融负债&#34;&gt;1. 金融资产 = 金融负债&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;一方的金融资产是另一方的金融负债&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;存款是家庭的资产，是银行的负债&lt;/li&gt;
+&lt;li&gt;债券是购买方的资产，是发行方的负债&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总体来看，金融财富的净额必须是 &lt;code&gt;0&lt;/code&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;2-两部门公共部门和私营部门&#34;&gt;2. 两部门：公共部门和私营部门&lt;/h1&gt;
+&lt;p&gt;$$\text{私营部门金融财富净额} = \text{公共债务}$$&lt;/p&gt;
+&lt;p&gt;如果一年内政府支出流量大于政府税收收入流量，那么政府赤字累积的政府债务存量等于私营部门在同一时期内金融财富的累积。也就是说，两部门模型中，公共部门和私营部门不可能同时出现盈余。&lt;/p&gt;
+&lt;h1 id=&#34;3-三部门本国公共部门本国私营部门和外国部门&#34;&gt;3. 三部门：本国公共部门、本国私营部门和外国部门&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;外国部门（ Rest of the World, ROW ）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本国公共部门、本国私营部门和外国部门的金融财富净额等于 &lt;code&gt;0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;对于每一笔盈余，都对必然对应一笔赤字。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;4-实物资产&#34;&gt;4. 实物资产&lt;/h1&gt;
+&lt;p&gt;如果A动用储蓄花100块钱从B那里购买了一本书，那么A的金融财富减少了100元，而B的金融财富增加了100元。在这个交易中，A将金融资产转化为实物资产，而B则相反，选择了持有金融资产。&lt;/p&gt;
+&lt;p&gt;实物资产在部门内部交易没什么影响，跨部门交易还没想明白。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
