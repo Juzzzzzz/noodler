@@ -33,12 +33,27 @@
   </url>
   
   <url>
+    <loc>/post/2020-07-13-note_abc_001/</loc>
+    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/2020-05-29-note_mmt_001/</loc>
     <lastmod>2020-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/r/</loc>
+    <lastmod>2020-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/rbc/</loc>
     <lastmod>2020-05-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -174,11 +189,6 @@
   
   <url>
     <loc>/tag/jupyter/</loc>
-    <lastmod>2020-05-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/r/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
   </url>
   
