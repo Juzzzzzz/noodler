@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="一说经济增长就不得不提索罗模型了 1. 基本模型 经济体中只有一种商">
+  <meta name="description" content="求解稳态往往相对比较简单 1. 固定劳动投入的RC经济 Robinson Cruso">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/2020-07-13-note_abc_001/">
+  <link rel="alternate" hreflang="en-us" href="/post/2020-07-19-note_abc_002/">
 
   
 
@@ -218,7 +218,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hudf4c7593654af011dd437e840b733c01_56824_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hudf4c7593654af011dd437e840b733c01_56824_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/post/2020-07-13-note_abc_001/">
+  <link rel="canonical" href="/post/2020-07-19-note_abc_002/">
 
   
   
@@ -233,15 +233,15 @@
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Ju丶Blog">
-  <meta property="og:url" content="/post/2020-07-13-note_abc_001/">
-  <meta property="og:title" content="Note: ABC, (1) Solow模型 | Ju丶Blog">
-  <meta property="og:description" content="一说经济增长就不得不提索罗模型了 1. 基本模型 经济体中只有一种商"><meta property="og:image" content="/img/share_logo.png">
+  <meta property="og:url" content="/post/2020-07-19-note_abc_002/">
+  <meta property="og:title" content="Note: ABC, (2) 无限期生存的行为人 | Ju丶Blog">
+  <meta property="og:description" content="求解稳态往往相对比较简单 1. 固定劳动投入的RC经济 Robinson Cruso"><meta property="og:image" content="/img/share_logo.png">
   <meta property="twitter:image" content="/img/share_logo.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-07-13T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-07-19T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-07-13T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-07-19T00:00:00&#43;00:00">
   
 
   
@@ -265,12 +265,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/post/2020-07-13-note_abc_001/"
+    "@id": "/post/2020-07-19-note_abc_002/"
   },
-  "headline": "Note: ABC, (1) Solow模型",
+  "headline": "Note: ABC, (2) 无限期生存的行为人",
   
-  "datePublished": "2020-07-13T00:00:00Z",
-  "dateModified": "2020-07-13T00:00:00Z",
+  "datePublished": "2020-07-19T00:00:00Z",
+  "dateModified": "2020-07-19T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -285,7 +285,7 @@
       "url": "/images/icon_hudf4c7593654af011dd437e840b733c01_56824_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "一说经济增长就不得不提索罗模型了 1. 基本模型 经济体中只有一种商"
+  "description": "求解稳态往往相对比较简单 1. 固定劳动投入的RC经济 Robinson Cruso"
 }
 </script>
 
@@ -303,7 +303,7 @@
 
 
 
-  <title>Note: ABC, (1) Solow模型 | Ju丶Blog</title>
+  <title>Note: ABC, (2) 无限期生存的行为人 | Ju丶Blog</title>
 
 </head>
 
@@ -585,7 +585,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Note: ABC, (1) Solow模型</h1>
+  <h1>Note: ABC, (2) 无限期生存的行为人</h1>
 
   
 
@@ -614,7 +614,7 @@
     
       
     
-    Jul 13, 2020
+    Jul 19, 2020
   </span>
   
 
@@ -623,7 +623,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    4 min read
   </span>
   
 
@@ -664,90 +664,197 @@
 
     <div class="article-style">
       <blockquote>
-<p>一说经济增长就不得不提索罗模型了</p>
+<p>求解稳态往往相对比较简单</p>
 </blockquote>
-<h2 id="1-基本模型">1. 基本模型</h2>
+<h2 id="1-固定劳动投入的rc经济">1. 固定劳动投入的RC经济</h2>
 <ul>
-<li>经济体中只有一种商品</li>
-<li>CRS生产函数：$Y_t = A_t f(K_t, H_t)$</li>
-<li>技术水平满足：$A_t = (1+\alpha)^t A_0$</li>
-<li>人均生产函数：$y_t = Y_t/H_t = A_tf(K_t/H_t, H_t/H_t) = A_t f(k_t, 1) = A_t f(k_t)$</li>
-<li>劳动力增长：$H_{t+1} =  (1+n) H_t$</li>
-<li>资本增长：$K_{t+1} = (1-\delta) K_t + I_t$</li>
-<li>人均资本增长：$k_{t+1} = \frac{(1-\delta)k_t + i_t}{1+n}$</li>
-<li>储蓄：$s_t = \sigma y_t = i_t$</li>
-<li>人均资本差分方程：$(1+n)k_{t+1} = (1-\delta)k_t + \sigma (1+\alpha)^t A_0 f(k_t)$</li>
-<li>另$\alpha = 0$：$(1+n)k_{t+1} = (1-\delta)k_t + \sigma A_0 f(k_t)$</li>
-<li>稳态：$(\delta + n) \bar{k} = \sigma A_0 f(\bar{k})$</li>
-<li>稳态附近动态：$k_{t+1} = g(k_t) = \frac{(1-\delta)k_t + \sigma A_0 f(k_t)}{1+n}$</li>
+<li>Robinson Crusoe（RC）类型的经济体：还有一个行为人（社会计划者）来做储蓄决策的经济</li>
+<li>最大化毕生效用函数：$\sum_{i=o}^{\infty} \beta^i u(c_{t+i})$</li>
+<li>单期预算约束：
+<ul>
+<li>$k_{t+1} = (1-\delta) k_t + i_t$</li>
+<li>$y_t = f(k_t) \ge c_t + i_t$</li>
 </ul>
-<p><img src="https://i.loli.net/2020/07/15/TNHQmft41qkhb75.png" alt=""></p>
-<ul>
-<li>资本增长率：$\gamma_t = \frac{k_{t+1}}{k_t} = \frac{(1-\delta)k_t + \sigma A_0 f(k_t)}{(1+n)k_t}$</li>
-<li>求导：$\frac{d \gamma_t}{d k_t} = \frac{\sigma A_0}{(1+n)k_t^2} [f&rsquo;(k_t) k_t - f(k_t)] &lt; 0, k_t &gt; 0$</li>
-<li>随着人均资本存量的增长，其进一步增长的速度越来越慢，人均产出也是以越来越慢的速度增长</li>
+</li>
+<li>投资$i_t$是没被消费掉的产出的唯一用途</li>
 </ul>
-<h2 id="2-黄金律">2. 黄金律</h2>
+<p><strong>变分法</strong></p>
 <ul>
-<li>黄金律的储蓄率$\sigma_{GR}$：能够最大化稳态消费量的储蓄率</li>
-<li>$c_t = (1-\sigma)y_t = (1-\sigma) A_0 f(\bar{k})$</li>
-<li>$(\delta+n)\bar{k} = \sigma A_0 f(\bar{k})$</li>
-<li>$\bar{c} = A_0 f(\bar{k}) - (\delta+n)\bar{k}$</li>
-<li>FOC：$A_0 f&rsquo;(\bar{k}^*) = (\delta + n)$</li>
-<li>将$\bar{k}^<em>$带入稳态方程：$(\delta+n)\bar{k}^</em> = \sigma A_0 f(\bar{k}^*)$</li>
-<li>$\sigma_{GR} = \frac{(\delta+n)\bar{k}^*}{A_0 f(\bar{k}^*)}$</li>
+<li>变分法：常用来求解动态问题的稳态
+<ul>
+<li>先假定内生变量在$s-1$和$s+1$期的值都给定</li>
+<li>最大化$s$期的目标方程来求解该期内生变量的值</li>
+<li>稳态时一阶条件一定成立</li>
+<li>并且内生变量在$s-1$、$s$、$s+1$期的值是相同的</li>
 </ul>
-<h2 id="3-随机solow模型">3. 随机Solow模型</h2>
-<ul>
-<li>随机冲击变量：技术水平、贴现因子、储蓄率、人口增长率等</li>
-<li>考虑随机技术冲击的增长模型</li>
-<li>$A_t = \psi \bar{A} + (1-\psi)A_{t-1} + \varepsilon_t$</li>
-<li>$\varepsilon_t$分布要有一个下界$-\psi \bar{A}$</li>
-<li>避免下界问题：$A_t = \bar{A}e^{\varepsilon_t}, \varepsilon_t \sim N(0, \sigma_{\varepsilon}^2)$</li>
-<li>$A_t$服从对数正态：$\ln A_t = \ln \bar{A} + \varepsilon_t$</li>
-<li>动态：$k_{t+1} = \frac{(1-\delta)k_t + \sigma \bar{A}e^{\varepsilon_t} f(k_t)}{1+n}$</li>
-<li>$\gamma_t = \frac{k_{t+1}}{k_t} = \frac{(1-\delta)k_t + \sigma \bar{A}e^{\varepsilon_t} f(k_t)}{(1+n)k_t}$</li>
-<li>对数：$\ln (\gamma_t - \frac{1-\delta}{1+n}) = \ln \frac{\sigma \bar{A}e^{\varepsilon_t}}{1+n} + \ln \frac{f(k_t)}{k_t} + \varepsilon_t$</li>
-<li>Cobb-Douglas生产函数：$f(k_t) = k_t^{\theta}$</li>
-<li>$\ln (\gamma_t - \frac{1-\delta}{1+n}) = \varphi - (1-\theta) \ln k_t + \varepsilon_t, \varphi = \ln \frac{\sigma \bar{A}}{1+n}$</li>
-<li>模拟参数：$\bar{A} = 1, n=0.02, \delta = 0.1, \theta = 0.36, \sigma = 0.2, \sigma_{\varepsilon} = 0.2$</li>
+</li>
+<li>$c_t = f(k_t) - k_{t+1} + (1-\delta)k_t$</li>
+<li>毕生效用函数：$\sum_{i=o}^{\infty} \beta^i u(f(k_{t+i}) - k_{t+i+1} + (1-\delta)k_{t+i})$</li>
+<li>假设$k_{s-1}$和$k_{s+1}$给定，$t=0$</li>
+<li>$\max_{k_s} \beta^{s-1} u(c_{s-1}) + \beta^s u(c_s)$</li>
+<li>FOC：$\beta^{s-1} u&rsquo;(c_{s-1}) = \beta^s u&rsquo;(c_s) (f&rsquo;(k_s) + (1-\delta))$</li>
+<li>Euler方程：$f&rsquo;(k_s) + (1-\delta) = \frac{u&rsquo;(c_{s-1}) }{\beta u&rsquo;(c_s)}$</li>
+<li>稳态：$f&rsquo;(\bar{k}) = \frac{1}{\beta}-1+\delta$</li>
 </ul>
-<p><img src="https://i.loli.net/2020/07/15/xLXrvSsQo2VmeWb.png" alt=""></p>
-<h2 id="4-对数线性形式">4. 对数线性形式</h2>
+<p><strong>横截条件</strong></p>
+<p>$$\lim_{s \to \infty} \beta^s F_1(x_s, x_{s+1}) x_s = 0$$</p>
 <ul>
-<li>在稳态附近对模型进行对数线性化可以研究模型的某些二次特征</li>
-<li>现实经济中的产出去除其长期趋势后波动的方差是知道的（Hodrick-Prescott滤波）</li>
-<li>$X$在第$t$期取值$X_t$，稳态值$\bar{X}$</li>
-<li>对数差分：$\tilde{X}_t = \ln X_t - \ln \bar{X}$</li>
-<li>等价地：$X_t = \bar{X} e^{\tilde{X}_t}$</li>
-<li>模型对数线性化要将模型中的变量逐个换成其对应的对数差分形式</li>
-<li>当$\tilde{X}_t$和$\tilde{Y}_t$都接近于0时</li>
-<li>$e^{\tilde{X}_t} \approx 1+\tilde{X}_t$</li>
-<li>$e^{\tilde{X}_t + a \tilde{Y}_t} \approx 1+\tilde{X}_t + a \tilde{Y}_t$</li>
-<li>$\tilde{X}_t \tilde{Y}_t \approx 0$</li>
-<li>$E_t [ae^{\tilde{X}_t}] \approx E_t [a\tilde{X}_t] + C$</li>
+<li>在最优路径上，被最大化的目标函数中，位于足够遥远未来的$s$期所对应的项$x_s$，其权重为零</li>
+<li>在遥远未来的消费权重应该是零，否则，无前期推迟消费将是最优解</li>
 </ul>
-<p><strong>资本</strong></p>
+<h2 id="2-可变劳动投入的rc经济">2. 可变劳动投入的RC经济</h2>
 <ul>
-<li>$(1+n)k_{t+1} = (1-\delta)k_t + \sigma \bar{A}e^{\varepsilon_t} k_t^{\theta}$</li>
-<li>将$k_j$替换成$\bar{k} e^{\tilde{k}_j} \approx \bar{k}(1+\tilde{k}_j)$</li>
-<li>一阶近似：$(1+n) \bar{k}(1+\tilde{k}_{t+1}) = (1-\delta)\bar{k} (1+\tilde{k}_{t}) + \sigma \bar{A} (1+\varepsilon_t) \bar{k}^{\theta} (1+\theta \tilde{k}_{t})$</li>
-<li>稳态：$(1+n)\bar{k} = (1-\delta)\bar{k} + \sigma \bar{A} \bar{k}^{\theta}$</li>
-<li>移除稳态：$\tilde{k}_{t+1} = B \tilde{k}_{t} + C \varepsilon_t$</li>
-<li>$B = \frac{1+\theta n - \delta (1-\theta)}{1+n} &lt; 1$</li>
-<li>$C = \frac{\delta+n}{1+n}$</li>
-<li>$\tilde{k}_{t+1} = C \sum_{i=0}^{\infty} B^i \varepsilon_{t-i}$</li>
-<li>$var(\tilde{k}_{t+1}) = E_t[\tilde{k}_{t+1} \tilde{k}_{t+1}] = E_t[(C \sum_{i=0}^{\infty} B^i \varepsilon_{t-i})(C \sum_{i=0}^{\infty} B^i \varepsilon_{t-i})]$</li>
-<li>如果技术冲击独立：$E[\varepsilon_s \varepsilon_t] = 0, s \neq t$</li>
-<li>$var(\tilde{k}) = C^2 \sum_{i=0}^{\infty} B^{2i} var(\varepsilon) = \frac{C^2}{1-B^2} var(\varepsilon)$</li>
+<li>允许行为人决定如何在闲暇和工作之间分配时间</li>
+<li>$\sum_{i=o}^{\infty} \beta^i u(c_{t+i}, h_{t+i}) = \sum_{i=o}^{\infty} \beta^i \bar{u}(c_{t+i}, l_{t+i})$</li>
+<li>劳动：$h_{t+i} = 1- l_{t+i}$</li>
+<li>效用函数满足：$u_c(t+i) &gt; 0, u_h(t+i) &lt; 0$</li>
+<li>预算约束：$k_{t+1} = (1-\delta) k_t + i_t$</li>
+<li>生产可行性约束：$y_t = f(k_t, h_t) \ge c_t + i_t$</li>
+<li>拉格朗日函数：</li>
 </ul>
-<p><img src="https://i.loli.net/2020/07/15/k75tHOCNbY2BnJ3.png" alt="Solow_03.png"></p>
-<p><strong>产出</strong></p>
+<p>$$
+\mathcal{L} = \sum_{i=o}^{\infty} \beta^i [ u(c_{t+i}, h_{t+i}) - \lambda_{t+i}^1 (k_{t+i+1} - (1-\delta)k_{t+i} - i_t) - \lambda_{t+i}^2 (f(k_{t+i}, h_{t+i}) - c_{t+i} - i_{t+i}) ]
+$$</p>
 <ul>
-<li>$y_t = \bar{A} e^{\varepsilon_t} k_t^{\theta}$</li>
-<li>一阶近似：$\bar{y} (1+\tilde{y}_t) = \bar{A} (1+\varepsilon_t) \bar{k}^{\theta}(1+\theta \tilde{k}_{t})$</li>
-<li>移除稳态：$\tilde{y}_t = \varepsilon_t + \theta \tilde{k}_t$</li>
-<li>$var(\tilde{y}_t) = E[\tilde{y}_t \tilde{y}_t] = E[(\varepsilon_t + \theta \tilde{k}_t)(\varepsilon_t + \theta \tilde{k}_t)] = var(\varepsilon_t) + \theta^2 var(\tilde{k}_t)$</li>
+<li>四个一阶条件：</li>
+</ul>
+<p>$$
+\frac{\partial \mathcal{L}}{\partial c_s} = u_c(c_s, h_s) + \lambda_s^2 = 0 \tag{1}
+$$</p>
+<p>$$
+\frac{\partial \mathcal{L}}{\partial h_s} = u_h(c_s, h_s) + \lambda_s^2 f_h(k_s, h_s) = 0 \tag{2}
+$$</p>
+<p>$$
+\frac{\partial \mathcal{L}}{\partial k_{s+1}} = -\lambda_s^1 +\beta \lambda_{s+1}^1 (1-\delta) -\beta \lambda_{s+1}^2 f_k(k_{s+1}, h_{s+1}) = 0 \tag{3}
+$$</p>
+<p>$$
+\frac{\partial \mathcal{L}}{\partial i_s} = \lambda_s^1 + \lambda_s^2 = 0 \tag{4}
+$$</p>
+<ul>
+<li>两个预算约束：</li>
+</ul>
+<p>$$
+k_{s+1} = (1-\delta)k_s + i_s \tag{5}
+$$</p>
+<p>$$
+f(k_s, h_s) = c_s + i_s \tag{6}
+$$</p>
+<ul>
+<li>根据(1)和(4)：</li>
+</ul>
+<p>$$
+\lambda_s^1 = u_c(c_s, h_s), \lambda_s^2 = -u_c(c_s, h_s) \tag{7}
+$$</p>
+<ul>
+<li>带入(2)和(3)：</li>
+</ul>
+<p>$$
+f_h(k_s, h_s) = - \frac{u_h(c_s, h_s)}{u_c(c_s, h_s)} \tag{8}
+$$</p>
+<p>$$
+\beta [(1-\delta) + f_k(k_{s+1}, h_{s+1})] = \frac{u_c(c_s, h_s)}{u_c(c_{s+1}, h_{s+1})} \tag{9}
+$$</p>
+<ul>
+<li>稳态：</li>
+</ul>
+<p>$$
+f_k(k, h) = \frac{1}{\beta} - (1-\delta)
+$$</p>
+<p>$$
+f(k, h) = c + \delta k
+$$</p>
+<p>$$
+f_h(k, h) = - \frac{u_h(c, h)}{u_c(c, h)}
+$$</p>
+<p><strong>实例</strong></p>
+<ul>
+<li>Cobb-Douglas生产函数：$y_t = f(k_t, h_t) = k_t^{\theta} h_t^{1-\theta}$</li>
+<li>常用的两种子效用函数：
+<ul>
+<li>对数形式：$u(c_t, h_t) = \ln (c_t) + v(h_t)$</li>
+<li>常替代弹性形式：$u(c_t, h_t) =\frac{c_t^{1-\phi}}{1-\phi} v(h_t)$</li>
+<li>$v(h_t)$是凹函数，$\lim_{h_t \to 1} v(h_t) = -\infty$</li>
+<li>常使用的劳动效用函数：$v(h_t) = B \ln (1-h_t)$</li>
+</ul>
+</li>
+<li>假设：$u(c_t, h_t) = \ln (c_t) + B \ln (1-h_t)$</li>
+<li>稳态条件：
+<ul>
+<li>$\theta k^{\theta-1}h^{1-\theta} = \frac{1}{\beta} - (1-\delta)$</li>
+<li>$k^{\theta} h^{1-\theta} = c + \delta k$</li>
+<li>$(1-\theta) k^{\theta} h^{-\theta} = \frac{B c}{1-h}$</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-竞争经济">3. 竞争经济</h2>
+<ul>
+<li>行为人总体向市场供给总量为一个单位的劳动</li>
+<li>相同个体的效用函数：$u(c_t^i, h_t^i)$</li>
+<li>最大化：$\sum_{t=0}^{\infty} \beta^t u(c_t^i, h_t^i)$</li>
+<li>约束条件：
+<ul>
+<li>$c_t^i = w_t h_t^i + r_t k_t^i -I_t^i$</li>
+<li>$w_t = f_h(K_t, H_t)$</li>
+<li>$r_t = f_k(K_t, H_t)$</li>
+<li>$k_{t+1}^i = (1-\delta)k_t^i + I_t^i$</li>
+</ul>
+</li>
+<li>拉格朗日方程：</li>
+</ul>
+<p>$$
+\mathcal{L}^i = \sum_{t=o}^{\infty} \beta^i [ u(c_{t}^i, h_{t}^i) - \lambda_{t}^1 (k_{t+1}^i - (1-\delta)k_{t}^i - I_t^i) - \lambda_{t}^2 (f_h(K_t, H_t) h_{t}^i + f_k(K_t, H_t) k_{t}^i - c_{t}^i - I_{t}^i) ]
+$$</p>
+<ul>
+<li>
+<p>加总规则：</p>
+<ul>
+<li>$H_t = \int_0^1 h_t^i di$</li>
+<li>$K_t = \int_0^1 k_t^i di$</li>
+</ul>
+</li>
+<li>
+<p>一阶条件：</p>
+</li>
+</ul>
+<p>$$
+\frac{\partial \mathcal{L}^i}{\partial c_s^i} = u_c(c_s^i, h_s^i) + \lambda_s^2 = 0 \tag{1}
+$$</p>
+<p>$$
+\frac{\partial \mathcal{L}^i}{\partial h_s^i} = u_h(c_s^i, h_s^i) + \lambda_s^2 f_h(K_s, H_s) = 0 \tag{2}
+$$</p>
+<p>$$
+\frac{\partial \mathcal{L}^i}{\partial k_{s+1}^i} = -\lambda_s^1 +\beta \lambda_{s+1}^1 (1-\delta) -\beta \lambda_{s+1}^2 f_k(K_{s+1}, H_{s+1}) = 0 \tag{3}
+$$</p>
+<p>$$
+\frac{\partial \mathcal{L}^i}{\partial I_s^i} = \lambda_s^1 + \lambda_s^2 = 0 \tag{4}
+$$</p>
+<ul>
+<li>简化：</li>
+</ul>
+<p>$$
+\lambda_s^1 = u_c(c_s^i, h_s^i), \lambda_s^2 = -u_c(c_s^i, h_s^i)
+$$</p>
+<p>$$
+f_h(K_s, H_s) = - \frac{u_h(c_s^i, h_s^i)}{u_c(c_s^i, h_s^i)}
+$$</p>
+<p>$$
+\beta [(1-\delta) + f_k(K_{s+1}, H_{s+1})] = \frac{u_c(c_s^i, h_s^i)}{u_c(c_{s+1}^i, h_{s+1}^i)}
+$$</p>
+<ul>
+<li>
+<p>生产函数是一次齐次的：$f_h(K_t, H_t) H_t + f_k(K_t, H_t) K_t = f(K_t, H_t)$</p>
+</li>
+<li>
+<p>竞争经济的稳态均衡和RC经济的稳态均衡是相同的</p>
+</li>
+</ul>
+<h2 id="4-第二福利定理">4. 第二福利定理</h2>
+<p><strong>福利经济学的第二基本定理</strong></p>
+<p>如果消费者的偏好和厂商的生产集是凸的，则市场是完全的，且市场价格是众所周知的，每个行为人都是价格的接受者，那么，只要允许安排适当的一次性财富转移支付，则任何帕累托最优结果都可以通过竞争均衡来实现</p>
+<ul>
+<li>第一基本福利定理告诉我们，任何竞争均衡都必然是帕累托最优的，所以要素和商品市场的分散经济的均衡就也是帕累托最优的</li>
+<li>第二基本福利定理告诉我们，既然两种经济中的生产技术和消费者偏好都是一样的，那么只要初始财富条件选择得当，竞争经济就可以得到和社会计划者经济中一样的均衡</li>
+<li>如果经济不是完全竞争的，如果经济中的某部分存在垄断力量或者有外部和内部限制妨碍了行为人的完全竞争行为，那么分散性经济的均衡就无法通过求解一个代表性行为人经济的均衡获得</li>
 </ul>
 
     </div>
@@ -779,7 +886,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/2020-07-13-note_abc_001/&amp;text=Note:%20ABC,%20%281%29%20Solow%e6%a8%a1%e5%9e%8b" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/2020-07-19-note_abc_002/&amp;text=Note:%20ABC,%20%282%29%20%e6%97%a0%e9%99%90%e6%9c%9f%e7%94%9f%e5%ad%98%e7%9a%84%e8%a1%8c%e4%b8%ba%e4%ba%ba" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -792,7 +899,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/2020-07-13-note_abc_001/&amp;t=Note:%20ABC,%20%281%29%20Solow%e6%a8%a1%e5%9e%8b" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/2020-07-19-note_abc_002/&amp;t=Note:%20ABC,%20%282%29%20%e6%97%a0%e9%99%90%e6%9c%9f%e7%94%9f%e5%ad%98%e7%9a%84%e8%a1%8c%e4%b8%ba%e4%ba%ba" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -805,7 +912,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Note:%20ABC,%20%281%29%20Solow%e6%a8%a1%e5%9e%8b&amp;body=/post/2020-07-13-note_abc_001/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Note:%20ABC,%20%282%29%20%e6%97%a0%e9%99%90%e6%9c%9f%e7%94%9f%e5%ad%98%e7%9a%84%e8%a1%8c%e4%b8%ba%e4%ba%ba&amp;body=/post/2020-07-19-note_abc_002/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -818,7 +925,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/2020-07-13-note_abc_001/&amp;title=Note:%20ABC,%20%281%29%20Solow%e6%a8%a1%e5%9e%8b" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/2020-07-19-note_abc_002/&amp;title=Note:%20ABC,%20%282%29%20%e6%97%a0%e9%99%90%e6%9c%9f%e7%94%9f%e5%ad%98%e7%9a%84%e8%a1%8c%e4%b8%ba%e4%ba%ba" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -831,7 +938,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=Note:%20ABC,%20%281%29%20Solow%e6%a8%a1%e5%9e%8b%20/post/2020-07-13-note_abc_001/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=Note:%20ABC,%20%282%29%20%e6%97%a0%e9%99%90%e6%9c%9f%e7%94%9f%e5%ad%98%e7%9a%84%e8%a1%8c%e4%b8%ba%e4%ba%ba%20/post/2020-07-19-note_abc_002/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -844,7 +951,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/2020-07-13-note_abc_001/&amp;title=Note:%20ABC,%20%281%29%20Solow%e6%a8%a1%e5%9e%8b" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/post/2020-07-19-note_abc_002/&amp;title=Note:%20ABC,%20%282%29%20%e6%97%a0%e9%99%90%e6%9c%9f%e7%94%9f%e5%ad%98%e7%9a%84%e8%a1%8c%e4%b8%ba%e4%ba%ba" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -991,6 +1098,8 @@
   <div class="article-widget content-widget-hr">
     <h3>Related</h3>
     <ul>
+      
+      <li><a href="/post/2020-07-13-note_abc_001/">Note: ABC, (1) Solow模型</a></li>
       
       <li><a href="/post/2020-05-29-note_mmt_001/">Note: MMT, (1) 宏观经济会计基础</a></li>
       

@@ -5,7 +5,7 @@
     <link>/author/zhuo-ju/</link>
       <atom:link href="/author/zhuo-ju/index.xml" rel="self" type="application/rss+xml" />
     <description>Zhuo Ju</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Fri, 29 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Sun, 19 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/author/zhuo-ju/avatar-ju_huf69a69481739f07becc959d5043f1e1c_18303_270x270_fill_q90_lanczos_center.jpg</url>
       <title>Zhuo Ju</title>
@@ -13,9 +13,210 @@
     </image>
     
     <item>
+      <title>Note: ABC, (2) 无限期生存的行为人</title>
+      <link>/post/2020-07-19-note_abc_002/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-07-19-note_abc_002/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;求解稳态往往相对比较简单&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;1-固定劳动投入的rc经济&#34;&gt;1. 固定劳动投入的RC经济&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Robinson Crusoe（RC）类型的经济体：还有一个行为人（社会计划者）来做储蓄决策的经济&lt;/li&gt;
+&lt;li&gt;最大化毕生效用函数：$\sum_{i=o}^{\infty} \beta^i u(c_{t+i})$&lt;/li&gt;
+&lt;li&gt;单期预算约束：
+&lt;ul&gt;
+&lt;li&gt;$k_{t+1} = (1-\delta) k_t + i_t$&lt;/li&gt;
+&lt;li&gt;$y_t = f(k_t) \ge c_t + i_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;投资$i_t$是没被消费掉的产出的唯一用途&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;变分法&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;变分法：常用来求解动态问题的稳态
+&lt;ul&gt;
+&lt;li&gt;先假定内生变量在$s-1$和$s+1$期的值都给定&lt;/li&gt;
+&lt;li&gt;最大化$s$期的目标方程来求解该期内生变量的值&lt;/li&gt;
+&lt;li&gt;稳态时一阶条件一定成立&lt;/li&gt;
+&lt;li&gt;并且内生变量在$s-1$、$s$、$s+1$期的值是相同的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;$c_t = f(k_t) - k_{t+1} + (1-\delta)k_t$&lt;/li&gt;
+&lt;li&gt;毕生效用函数：$\sum_{i=o}^{\infty} \beta^i u(f(k_{t+i}) - k_{t+i+1} + (1-\delta)k_{t+i})$&lt;/li&gt;
+&lt;li&gt;假设$k_{s-1}$和$k_{s+1}$给定，$t=0$&lt;/li&gt;
+&lt;li&gt;$\max_{k_s} \beta^{s-1} u(c_{s-1}) + \beta^s u(c_s)$&lt;/li&gt;
+&lt;li&gt;FOC：$\beta^{s-1} u&amp;rsquo;(c_{s-1}) = \beta^s u&amp;rsquo;(c_s) (f&amp;rsquo;(k_s) + (1-\delta))$&lt;/li&gt;
+&lt;li&gt;Euler方程：$f&amp;rsquo;(k_s) + (1-\delta) = \frac{u&amp;rsquo;(c_{s-1}) }{\beta u&amp;rsquo;(c_s)}$&lt;/li&gt;
+&lt;li&gt;稳态：$f&amp;rsquo;(\bar{k}) = \frac{1}{\beta}-1+\delta$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;横截条件&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$\lim_{s \to \infty} \beta^s F_1(x_s, x_{s+1}) x_s = 0$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在最优路径上，被最大化的目标函数中，位于足够遥远未来的$s$期所对应的项$x_s$，其权重为零&lt;/li&gt;
+&lt;li&gt;在遥远未来的消费权重应该是零，否则，无前期推迟消费将是最优解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-可变劳动投入的rc经济&#34;&gt;2. 可变劳动投入的RC经济&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;允许行为人决定如何在闲暇和工作之间分配时间&lt;/li&gt;
+&lt;li&gt;$\sum_{i=o}^{\infty} \beta^i u(c_{t+i}, h_{t+i}) = \sum_{i=o}^{\infty} \beta^i \bar{u}(c_{t+i}, l_{t+i})$&lt;/li&gt;
+&lt;li&gt;劳动：$h_{t+i} = 1- l_{t+i}$&lt;/li&gt;
+&lt;li&gt;效用函数满足：$u_c(t+i) &amp;gt; 0, u_h(t+i) &amp;lt; 0$&lt;/li&gt;
+&lt;li&gt;预算约束：$k_{t+1} = (1-\delta) k_t + i_t$&lt;/li&gt;
+&lt;li&gt;生产可行性约束：$y_t = f(k_t, h_t) \ge c_t + i_t$&lt;/li&gt;
+&lt;li&gt;拉格朗日函数：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+\mathcal{L} = \sum_{i=o}^{\infty} \beta^i [ u(c_{t+i}, h_{t+i}) - \lambda_{t+i}^1 (k_{t+i+1} - (1-\delta)k_{t+i} - i_t) - \lambda_{t+i}^2 (f(k_{t+i}, h_{t+i}) - c_{t+i} - i_{t+i}) ]
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;四个一阶条件：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+\frac{\partial \mathcal{L}}{\partial c_s} = u_c(c_s, h_s) + \lambda_s^2 = 0 \tag{1}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\frac{\partial \mathcal{L}}{\partial h_s} = u_h(c_s, h_s) + \lambda_s^2 f_h(k_s, h_s) = 0 \tag{2}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\frac{\partial \mathcal{L}}{\partial k_{s+1}} = -\lambda_s^1 +\beta \lambda_{s+1}^1 (1-\delta) -\beta \lambda_{s+1}^2 f_k(k_{s+1}, h_{s+1}) = 0 \tag{3}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\frac{\partial \mathcal{L}}{\partial i_s} = \lambda_s^1 + \lambda_s^2 = 0 \tag{4}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;两个预算约束：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+k_{s+1} = (1-\delta)k_s + i_s \tag{5}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+f(k_s, h_s) = c_s + i_s \tag{6}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;根据(1)和(4)：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+\lambda_s^1 = u_c(c_s, h_s), \lambda_s^2 = -u_c(c_s, h_s) \tag{7}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;带入(2)和(3)：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+f_h(k_s, h_s) = - \frac{u_h(c_s, h_s)}{u_c(c_s, h_s)} \tag{8}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\beta [(1-\delta) + f_k(k_{s+1}, h_{s+1})] = \frac{u_c(c_s, h_s)}{u_c(c_{s+1}, h_{s+1})} \tag{9}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;稳态：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+f_k(k, h) = \frac{1}{\beta} - (1-\delta)
+$$&lt;/p&gt;
+&lt;p&gt;$$
+f(k, h) = c + \delta k
+$$&lt;/p&gt;
+&lt;p&gt;$$
+f_h(k, h) = - \frac{u_h(c, h)}{u_c(c, h)}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;实例&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cobb-Douglas生产函数：$y_t = f(k_t, h_t) = k_t^{\theta} h_t^{1-\theta}$&lt;/li&gt;
+&lt;li&gt;常用的两种子效用函数：
+&lt;ul&gt;
+&lt;li&gt;对数形式：$u(c_t, h_t) = \ln (c_t) + v(h_t)$&lt;/li&gt;
+&lt;li&gt;常替代弹性形式：$u(c_t, h_t) =\frac{c_t^{1-\phi}}{1-\phi} v(h_t)$&lt;/li&gt;
+&lt;li&gt;$v(h_t)$是凹函数，$\lim_{h_t \to 1} v(h_t) = -\infty$&lt;/li&gt;
+&lt;li&gt;常使用的劳动效用函数：$v(h_t) = B \ln (1-h_t)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;假设：$u(c_t, h_t) = \ln (c_t) + B \ln (1-h_t)$&lt;/li&gt;
+&lt;li&gt;稳态条件：
+&lt;ul&gt;
+&lt;li&gt;$\theta k^{\theta-1}h^{1-\theta} = \frac{1}{\beta} - (1-\delta)$&lt;/li&gt;
+&lt;li&gt;$k^{\theta} h^{1-\theta} = c + \delta k$&lt;/li&gt;
+&lt;li&gt;$(1-\theta) k^{\theta} h^{-\theta} = \frac{B c}{1-h}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-竞争经济&#34;&gt;3. 竞争经济&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;行为人总体向市场供给总量为一个单位的劳动&lt;/li&gt;
+&lt;li&gt;相同个体的效用函数：$u(c_t^i, h_t^i)$&lt;/li&gt;
+&lt;li&gt;最大化：$\sum_{t=0}^{\infty} \beta^t u(c_t^i, h_t^i)$&lt;/li&gt;
+&lt;li&gt;约束条件：
+&lt;ul&gt;
+&lt;li&gt;$c_t^i = w_t h_t^i + r_t k_t^i -I_t^i$&lt;/li&gt;
+&lt;li&gt;$w_t = f_h(K_t, H_t)$&lt;/li&gt;
+&lt;li&gt;$r_t = f_k(K_t, H_t)$&lt;/li&gt;
+&lt;li&gt;$k_{t+1}^i = (1-\delta)k_t^i + I_t^i$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;拉格朗日方程：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+\mathcal{L}^i = \sum_{t=o}^{\infty} \beta^i [ u(c_{t}^i, h_{t}^i) - \lambda_{t}^1 (k_{t+1}^i - (1-\delta)k_{t}^i - I_t^i) - \lambda_{t}^2 (f_h(K_t, H_t) h_{t}^i + f_k(K_t, H_t) k_{t}^i - c_{t}^i - I_{t}^i) ]
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;加总规则：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$H_t = \int_0^1 h_t^i di$&lt;/li&gt;
+&lt;li&gt;$K_t = \int_0^1 k_t^i di$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一阶条件：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+\frac{\partial \mathcal{L}^i}{\partial c_s^i} = u_c(c_s^i, h_s^i) + \lambda_s^2 = 0 \tag{1}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\frac{\partial \mathcal{L}^i}{\partial h_s^i} = u_h(c_s^i, h_s^i) + \lambda_s^2 f_h(K_s, H_s) = 0 \tag{2}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\frac{\partial \mathcal{L}^i}{\partial k_{s+1}^i} = -\lambda_s^1 +\beta \lambda_{s+1}^1 (1-\delta) -\beta \lambda_{s+1}^2 f_k(K_{s+1}, H_{s+1}) = 0 \tag{3}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\frac{\partial \mathcal{L}^i}{\partial I_s^i} = \lambda_s^1 + \lambda_s^2 = 0 \tag{4}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;简化：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+\lambda_s^1 = u_c(c_s^i, h_s^i), \lambda_s^2 = -u_c(c_s^i, h_s^i)
+$$&lt;/p&gt;
+&lt;p&gt;$$
+f_h(K_s, H_s) = - \frac{u_h(c_s^i, h_s^i)}{u_c(c_s^i, h_s^i)}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\beta [(1-\delta) + f_k(K_{s+1}, H_{s+1})] = \frac{u_c(c_s^i, h_s^i)}{u_c(c_{s+1}^i, h_{s+1}^i)}
+$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;生产函数是一次齐次的：$f_h(K_t, H_t) H_t + f_k(K_t, H_t) K_t = f(K_t, H_t)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;竞争经济的稳态均衡和RC经济的稳态均衡是相同的&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-第二福利定理&#34;&gt;4. 第二福利定理&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;福利经济学的第二基本定理&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果消费者的偏好和厂商的生产集是凸的，则市场是完全的，且市场价格是众所周知的，每个行为人都是价格的接受者，那么，只要允许安排适当的一次性财富转移支付，则任何帕累托最优结果都可以通过竞争均衡来实现&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一基本福利定理告诉我们，任何竞争均衡都必然是帕累托最优的，所以要素和商品市场的分散经济的均衡就也是帕累托最优的&lt;/li&gt;
+&lt;li&gt;第二基本福利定理告诉我们，既然两种经济中的生产技术和消费者偏好都是一样的，那么只要初始财富条件选择得当，竞争经济就可以得到和社会计划者经济中一样的均衡&lt;/li&gt;
+&lt;li&gt;如果经济不是完全竞争的，如果经济中的某部分存在垄断力量或者有外部和内部限制妨碍了行为人的完全竞争行为，那么分散性经济的均衡就无法通过求解一个代表性行为人经济的均衡获得&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Note: ABC, (1) Solow模型</title>
       <link>/post/2020-07-13-note_abc_001/</link>
-      <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
       <guid>/post/2020-07-13-note_abc_001/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;一说经济增长就不得不提索罗模型了&lt;/p&gt;
