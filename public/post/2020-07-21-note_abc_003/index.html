@@ -763,7 +763,7 @@
 <li>预算约束：$k_{t+1} = (1-\delta) k_t + i_t$</li>
 <li>生产可行性约束：$y_t = f(k_t, h_t) \ge c_t + i_t$</li>
 <li>消费：$c_t = k_t^{\theta} h_t^{1-\theta} + (1-\delta) k_t - k_{t+1}$</li>
-<li>Bellman方程：$V(k) = \max_{\tilde{k}, h} {u(f(k, h) + (1-\delta)k - \tilde{k}) + \beta V(\tilde{k})}$</li>
+<li>Bellman方程：$V(k) = \max_{\tilde{k}, h} {u(f(k, h) + (1-\delta)k - \tilde{k}, h) + \beta V(\tilde{k})}$</li>
 <li>稳态条件：
 <ul>
 <li>$\theta k^{\theta-1}h^{1-\theta} = \frac{1}{\beta} - (1-\delta)$</li>
@@ -821,7 +821,7 @@
 </li>
 <li>Else
 <ul>
-<li>$w_i[j, p] = \ln(k_{1i}^{\theta}h_p^{1-\theta} - k_{2j} + (1-\delta) k_{1ik}) + \beta * V_2[j]$</li>
+<li>$w_i[j, p] = \ln(k_{1i}^{\theta}h_p^{1-\theta} - k_{2j} + (1-\delta) k_{1ik}) + B \ln (1-h_p) + \beta * V_2[j]$</li>
 </ul>
 </li>
 </ul>
