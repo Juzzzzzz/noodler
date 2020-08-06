@@ -5,12 +5,109 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Tue, 21 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/share_logo.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Note: ABC, (4) 随机性递归模型</title>
+      <link>/post/2020-07-27-note_abc_004/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-07-27-note_abc_004/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;让一些因素具有随机的特征可能会更接近现实经济的运行&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;1-概率&#34;&gt;1. 概率&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;一个概率空间$(\Omega, \mathcal{F}, P)$由三个要素构成
+&lt;ul&gt;
+&lt;li&gt;$\Omega$: 所有可能发生的自然状态的集合&lt;/li&gt;
+&lt;li&gt;$\mathcal{F}$: $\Omega$子集的集合，每个子集为一个事件&lt;/li&gt;
+&lt;li&gt;$P$: $\mathcal{F}$的概率测度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-一个简单的随机增长模型&#34;&gt;2. 一个简单的随机增长模型&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;第$t$期生产函数：$y_t = A^t f(k_t)$&lt;/li&gt;
+&lt;li&gt;劳动供给为一个单位不变&lt;/li&gt;
+&lt;li&gt;$A^t$可以取两个值
+&lt;ul&gt;
+&lt;li&gt;$A_1$，发生概率为$p_1$&lt;/li&gt;
+&lt;li&gt;$A_2$，发生概率为$p_2$&lt;/li&gt;
+&lt;li&gt;$p_1 + p_2 = 1$&lt;/li&gt;
+&lt;li&gt;过去取值和未来取值相互独立&lt;/li&gt;
+&lt;li&gt;$A_1 &amp;gt; A_2$，就农业经济而言，$A_1$意味着风调雨顺，$A_2$意味着灾害连绵&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;资本存量增长：$k_{t+1} = A^t f(k_t) + (1-\delta) k_t - c_t$&lt;/li&gt;
+&lt;li&gt;RC最大化：$\sum_{t=o}^{\infty} \beta^t u(c_t)$&lt;/li&gt;
+&lt;li&gt;State Variable: $k_t, A^t$&lt;/li&gt;
+&lt;li&gt;Control Variable: $k_{t+1}$&lt;/li&gt;
+&lt;li&gt;Bellman Equation: $V(k_t, A^t) = \max_{k_{t+1}} { u(A^t f(k_t) + (1-\delta) k_t - k_{t+1}) + \beta E_t V(k_{t+1}, A^{t+1}) }$&lt;/li&gt;
+&lt;li&gt;要想解这样一个随机递归问题，需要找到一个Policy Function：$k_{t+1} = H(k_t, A^t)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-随机递归问题的一般形式&#34;&gt;3. 随机递归问题的一般形式&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Value Function: $V(x_t, z_t) = \max_{y_s} E_t \sum_{s=t}^{\infty} \beta^{s-t} F(x_s, y_s, z_s)$&lt;/li&gt;
+&lt;li&gt;预算约束：$x_{s+1} = G(x_s, y_s, z_s)$&lt;/li&gt;
+&lt;li&gt;$x_t$是一组常规状态变量&lt;/li&gt;
+&lt;li&gt;$z_t$是一组由自然决定的状态变量，即随机状态变量&lt;/li&gt;
+&lt;li&gt;$y_t$是控制变量&lt;/li&gt;
+&lt;li&gt;Bellman Equation: $V(x_t, z_t) = \max_{y_t} { F(x_t, y_t, z_t) + \beta E_t V(x_{t+1}, z_{t+1}) }$&lt;/li&gt;
+&lt;li&gt;预算约束：$x_{t+1} = G(x_t, y_t, z_t)$&lt;/li&gt;
+&lt;li&gt;问题的解：$y_t = H(x_t, z_t)$&lt;/li&gt;
+&lt;li&gt;FOC: $F_y (x_t, y_t, z_t) + \beta E_t [ V_x (G(x_t, y_t, z_t), z_{t+1}) G_y (x_t, y_t, z_t) ] = 0$&lt;/li&gt;
+&lt;li&gt;Envelope Condition: $V_x(x_t, z_t) = F_x (x_t, y_t, z_t) + \beta E_t [ V_x (G(x_t, y_t, z_t), z_{t+1}) G_x (x_t, y_t, z_t) ]$&lt;/li&gt;
+&lt;li&gt;控制变量使得：$G_x (x_t, y_t, z_t) = 0$&lt;/li&gt;
+&lt;li&gt;即：$V_x(x_t, z_t) = F_x (x_t, y_t, z_t)$&lt;/li&gt;
+&lt;li&gt;Euler Equation: $F_y (x_t, y_t, z_t) + \beta E_t [ F_x (G(x_t, y_t, z_t), y_{t+1}, z_{t+1}) G_y (x_t, y_t, z_t) ] = 0$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-简单经济的值函数&#34;&gt;4. 简单经济的值函数&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bellman Equation:
+&lt;ul&gt;
+&lt;li&gt;$V (k_t, A_1) = \max_{k_{t+1}} { u(A_1 f(k_t) + (1-\delta) k_t - k_{t+1}) + \beta [p_1 V (k_{t+1}, A_1) + p_2 V (k_{t+1}, A_2)] }$&lt;/li&gt;
+&lt;li&gt;$V (k_t, A_2) = \max_{k_{t+1}} { u(A_2 f(k_t) + (1-\delta) k_t - k_{t+1}) + \beta [p_1 V (k_{t+1}, A_1) + p_2 V (k_{t+1}, A_2)] }$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;参数设定
+&lt;ul&gt;
+&lt;li&gt;$\delta = 0.1, \beta = 0.98, \theta = 0.36$&lt;/li&gt;
+&lt;li&gt;生产函数：$f(k_t) = k_t^{\theta}$&lt;/li&gt;
+&lt;li&gt;随机状态变量：$A_1 = 1.75, p_1 = 0.8, A_2 = 0.75, p_2 = 0.2$&lt;/li&gt;
+&lt;li&gt;子效用函数：$u(c_t) = \ln (c_t)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/08/06/yherNkxtKDoQ9nj.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/08/06/dT24BM1IlCb3gPa.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;5-markov-链&#34;&gt;5. Markov 链&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Markov 链随机过程有三个要素：
+&lt;ul&gt;
+&lt;li&gt;自然状态可能实现值的集合：${A^t} = {A_1, A_2, \cdots, A_n}$&lt;/li&gt;
+&lt;li&gt;转移概率矩阵：$P = {p_{ij}}_{n \times n}$&lt;/li&gt;
+&lt;li&gt;时期$t-1$出初始自然状态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;矩阵$P$给出的概率其实是条件概率&lt;/li&gt;
+&lt;li&gt;Value Function: $V(x_t, z_t) = \max_{y_t} { F(x_t, y_t, z_t) + \beta E_t V(x_{t+1}, z_{t+1}) |z_t}$&lt;/li&gt;
+&lt;li&gt;Bellman Equation:
+&lt;ul&gt;
+&lt;li&gt;$V (k_t, A_1) = \max_{k_{t+1}} { u(A_1 f(k_t) + (1-\delta) k_t - k_{t+1}) + \beta [p_{11} V (k_{t+1}, A_1) + p_{12} V (k_{t+1}, A_2)] }$&lt;/li&gt;
+&lt;li&gt;$V (k_t, A_2) = \max_{k_{t+1}} { u(A_2 f(k_t) + (1-\delta) k_t - k_{t+1}) + \beta [p_{21} V (k_{t+1}, A_1) + p_{22} V (k_{t+1}, A_2)] }$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Markov 链的主要缺点是不能从经济学的角度解释持续性是怎样产生的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/08/06/MeVGQYOz4sCSjDa.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/08/06/u2tRITLSnHZKYmv.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Note: ABC, (3) 确定性递归模型</title>
