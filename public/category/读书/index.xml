@@ -5,12 +5,185 @@
     <link>/category/%E8%AF%BB%E4%B9%A6/</link>
       <atom:link href="/category/%E8%AF%BB%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
     <description>读书</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Fri, 07 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/share_logo.png</url>
       <title>读书</title>
       <link>/category/%E8%AF%BB%E4%B9%A6/</link>
     </image>
+    
+    <item>
+      <title>Note: ABC, (5) Hansen的RBC模型1</title>
+      <link>/post/2020-08-07-note_abc_005/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-08-07-note_abc_005/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;RBC模型成功与否的度量标准就是：与作为研究对象的特定经济体的宏观经济变量时间序列产生的方差、协方差结构相比较，看模型的结果与之相差多大。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;1-hansen的基本模型&#34;&gt;1. Hansen的基本模型&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;RC最大化贴现效用：$\max \sum_{t=0}^{\infty} \beta^t u(c_t, 1-h_t)$&lt;/li&gt;
+&lt;li&gt;效用函数：$u(c_t, 1-h_t) = \ln (c_t) + A \ln (1-h_t), A &amp;gt; 0$&lt;/li&gt;
+&lt;li&gt;包含随机技术的Cobb-Douglas生产函数：$f(\lambda_t, k_t, h_t) = \lambda_t k_t^{\theta} h_t^{1-\theta}$
+&lt;ul&gt;
+&lt;li&gt;随机技术变量服从随机过程：$\lambda_{t+1} = \gamma \lambda_t + \varepsilon_{t+1}$&lt;/li&gt;
+&lt;li&gt;其中$1&amp;lt;\gamma&amp;lt;1$，冲击$\varepsilon_t$服从独立同分布、正值、上有界，且其均值为$1-\gamma$&lt;/li&gt;
+&lt;li&gt;这些假设保证$\lambda_t$的均值为1且产出不可能为负值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;资本积累过程：$k_{t+1} = (1-\delta)k_t + i_t$&lt;/li&gt;
+&lt;li&gt;可行性约束条件：$(\lambda_t, k_t, h_t) \ge c_t + i_t$&lt;/li&gt;
+&lt;li&gt;Bellman Equation: $V(k_t, \lambda_t) = \max_{c_t, h_t} { \ln(c_t) + A\ln(1-h_t) + \beta E_t [V(k_{t+1}, \lambda_{t+1}) | \lambda_t] }$&lt;/li&gt;
+&lt;li&gt;约束条件：
+&lt;ul&gt;
+&lt;li&gt;$\lambda_t k_t^{\theta} h_t^{1-\theta} \ge c_t + i_t$&lt;/li&gt;
+&lt;li&gt;$\lambda_{t+1} = \gamma \lambda_t + \varepsilon_{t+1}$&lt;/li&gt;
+&lt;li&gt;$k_{t+1} = (1-\delta)k_t + i_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;整理Bellman Equation: $V(k_t, \lambda_t) = \max_{k_{t+1}, h_t} { \ln(\lambda_t k_t^{\theta} h_t^{1-\theta} + (1-\delta)k_t - k_{t+1}) + A\ln(1-h_t) + \beta E_t [V(k_{t+1}, \lambda_{t+1}) | \lambda_t] }$&lt;/li&gt;
+&lt;li&gt;FOCs:
+&lt;ul&gt;
+&lt;li&gt;$\frac{1}{\lambda_t k_t^{\theta} h_t^{1-\theta} + (1-\delta)k_t - k_{t+1}} + \beta E_t [V_k(k_{t+1}, \lambda_{t+1}) | \lambda_t]$&lt;/li&gt;
+&lt;li&gt;$(1-\theta) \frac{1}{\lambda_t k_t^{\theta} h_t^{1-\theta} + (1-\delta)k_t - k_{t+1}} \lambda_t k_t^{\theta} h_t^{-\theta} = A \frac{1}{1-h_t}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Envelope Condition: $V_k (k_t, \lambda_t) = \frac{1}{\lambda_t k_t^{\theta} h_t^{1-\theta} + (1-\delta)k_t - k_{t+1}} [\theta \lambda_t k_t^{\theta-1} h_t^{1-\theta} + (1-\delta)]$&lt;/li&gt;
+&lt;li&gt;整理：
+&lt;ul&gt;
+&lt;li&gt;$\frac{1}{\lambda_t k_t^{\theta} h_t^{1-\theta} + (1-\delta)k_t - k_{t+1}} = \beta E_t [ \frac{\theta \lambda_{t+1} k_{t+1}^{\theta-1} h_{t+1}^{1-\theta} + (1-\delta)}{\lambda_{t+1} k_{t+1}^{\theta} h_{t+1}^{1-\theta} + (1-\delta)k_{t+1} - k_{t+2}} | \lambda_t]$&lt;/li&gt;
+&lt;li&gt;$(1-\theta) (1-h_t) (\lambda_t k_t^{\theta} h_t^{-\theta}) = A [\lambda_t k_t^{\theta} h_t^{1-\theta} + (1-\delta)k_t - k_{t+1}]$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;要素市场是竞争的，所以要素报酬等于其要素边际产品：
+&lt;ul&gt;
+&lt;li&gt;$r_t = \theta \lambda_t k_t^{\theta-1} h_t^{1-\theta}$&lt;/li&gt;
+&lt;li&gt;$w_t = (1-\theta) \lambda_t k_t^{\theta} h_t^{-\theta}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;简化：
+&lt;ul&gt;
+&lt;li&gt;$\frac{1}{c_t} = \beta E_t \left[ \frac{r_{t+1} + (1-\delta)}{c_{t+1}} | \lambda_t \right]$&lt;/li&gt;
+&lt;li&gt;$(1-h_t) w_t = A c_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;稳态：
+&lt;ul&gt;
+&lt;li&gt;$\bar{h} = \frac{1}{1+ \frac{A}{1-\theta} \left[ 1- \frac{\beta \delta \theta}{1-\beta (1-\delta)} \right]}$&lt;/li&gt;
+&lt;li&gt;$\bar{k} = \bar{h} \left[ \frac{\theta \bar{\lambda}}{\frac{1}{\beta} - (1-\delta)} \right]^{\frac{1}{1-\theta}}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;当状态变量的维数增加并且模型更加复杂时，直接近似很困难&lt;/li&gt;
+&lt;li&gt;线性近似：
+&lt;ul&gt;
+&lt;li&gt;（1）对一阶条件和预算约束进行对数线性近似&lt;/li&gt;
+&lt;li&gt;（2）对目标函数进行二次近似，同时对预算约束进行线性化，从而得以运用线性二次动态规划&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;简化模型，将问题看作是社会计划者问题，并写成总量形式：
+&lt;ul&gt;
+&lt;li&gt;$1 = \beta E_t \left[ \frac{C_t}{C_{t+1}} (r_{t+1} + (1-\delta)) \right]$&lt;/li&gt;
+&lt;li&gt;$(1-H_t) (1-\theta) \frac{Y_t}{H_t} = AC_t$&lt;/li&gt;
+&lt;li&gt;$C_t = Y_t + (1-\delta) K_t - K_{t-1}$&lt;/li&gt;
+&lt;li&gt;$Y_t = \lambda_t K_t^{\theta} H_t^{1-\theta}$&lt;/li&gt;
+&lt;li&gt;$r_t = \theta \frac{Y_t}{K_t}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-对数线性化方法&#34;&gt;2. 对数线性化方法&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;线性逼近的标准方法是对某一模型在其稳态附近做对数线性化&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;(1) Talor 方法&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;模型：$F(x_t) = \frac{G(x_t)}{H(x_t)}$&lt;/li&gt;
+&lt;li&gt;对数：$\ln (F(x_t)) = \ln (G(x_t)) - \ln (H(x_t))$&lt;/li&gt;
+&lt;li&gt;稳态：$\ln (F(\bar{x})) = \ln (G(\bar{x})) - \ln (H(\bar{x}))$&lt;/li&gt;
+&lt;li&gt;稳态处一阶Talor展开：$\ln (F(\bar{x})) + \frac{F^{\prime} (\bar{x})}{F (\bar{x})} (x_t - \bar{x}) \approx \ln (G(\bar{x})) + \frac{G^{\prime} (\bar{x})}{G (\bar{x})} (x_t - \bar{x}) - \ln (H(\bar{x})) - \frac{H^{\prime} (\bar{x})}{H (\bar{x})} (x_t - \bar{x})$&lt;/li&gt;
+&lt;li&gt;去稳态：$\frac{F^{\prime} (\bar{x})}{F (\bar{x})} (x_t - \bar{x}) \approx \frac{G^{\prime} (\bar{x})}{G (\bar{x})} (x_t - \bar{x}) - \frac{H^{\prime} (\bar{x})}{H (\bar{x})} (x_t - \bar{x})$&lt;/li&gt;
+&lt;li&gt;这样做的假设是模型中与$x_t$对应的点非常接近其稳态点$\bar{x}$，以至于这个接近程度使得二阶或更高阶的Taylor展开式小到可以忽略的程度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Cobb-Douglas 生产函数&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$Y_t = \lambda_t K_t^{\theta} H_t^{1-\theta}$&lt;/li&gt;
+&lt;li&gt;对数：$\ln Y_t = \ln \lambda_t + \theta \ln K_t + (1-\theta) \ln H_t$&lt;/li&gt;
+&lt;li&gt;稳态：$\ln \bar{Y} = \ln \bar{\lambda} + \theta \ln \bar{K} + (1-\theta) \ln \bar{H}$&lt;/li&gt;
+&lt;li&gt;稳态处一阶Talor展开：$\ln \bar{Y} + \frac{1}{\bar{Y}} (Y_t - \bar{Y}) \approx \ln \bar{\lambda} + \frac{1}{\bar{\lambda}} (\lambda_t - \bar{\lambda}) + \theta \ln \bar{K} + \frac{\theta}{\bar{K}} (K_t - \bar{K}) + (1-\theta) \ln \bar{H} + \frac{1-\theta}{\bar{H}} (H_t - \bar{H})$&lt;/li&gt;
+&lt;li&gt;去稳态：$\frac{1}{\bar{Y}} (Y_t - \bar{Y}) \approx \frac{1}{\bar{\lambda}} (\lambda_t - \bar{\lambda}) + \frac{\theta}{\bar{K}} (K_t - \bar{K}) + \frac{1-\theta}{\bar{H}} (H_t - \bar{H})$&lt;/li&gt;
+&lt;li&gt;整理：$\frac{Y_t}{\bar{Y}} + 1 \approx \frac{\lambda_t}{\bar{\lambda}} + \frac{\theta K_t}{\bar{K}} + \frac{(1-\theta) H_t}{\bar{H}}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;(2) Uhlig 方法&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;定义：
+&lt;ul&gt;
+&lt;li&gt;$\tilde{X}_t = \ln X_t - \ln \bar{X}$&lt;/li&gt;
+&lt;li&gt;$X_t= \bar{X} e^{\tilde{X}_t}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;法则：
+&lt;ul&gt;
+&lt;li&gt;$e^{\tilde{X}_t + a \tilde{Y}_t} \approx 1 + \tilde{X}_t + a \tilde{Y}_t$&lt;/li&gt;
+&lt;li&gt;$\tilde{X}_t \tilde{Y}_t \approx 0$&lt;/li&gt;
+&lt;li&gt;$E_t [ a e^{\tilde{X}_{t+1}} ] \approx a + aE_t[\tilde{X}_{t+1}]$&lt;/li&gt;
+&lt;li&gt;$E_t[X_{t+1}] = \bar{X} (1+E_t [\tilde{X}_{t+1}])$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Cobb-Douglas 生产函数&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$Y_t = \lambda_t K_t^{\theta} H_t^{1-\theta}$&lt;/li&gt;
+&lt;li&gt;变量替换：$\bar{Y} e^{\tilde{Y}_t} = \bar{\lambda} e^{\tilde{\lambda}_t} [\bar{K} e^{\tilde{K}_t}]^{\theta} [\bar{H} e^{\tilde{H}_t}]^{1-\theta}$&lt;/li&gt;
+&lt;li&gt;整理：$\bar{Y} e^{\tilde{Y}_t} = \bar{\lambda} \bar{K}^{\theta} \bar{H}^{1-\theta} e^{\tilde{\lambda}_t + \theta\tilde{K}_t + (1-\theta)\tilde{H}_t}$&lt;/li&gt;
+&lt;li&gt;Uhlig法则：$\bar{Y} (1+\tilde{Y}_t) = \bar{\lambda} \bar{K}^{\theta} \bar{H} (1 + \tilde{\lambda}_t + \theta\tilde{K}_t + (1-\theta)\tilde{H}_t)$&lt;/li&gt;
+&lt;li&gt;去稳态：$\tilde{Y}_t = \tilde{\lambda}_t + \theta\tilde{K}_t + (1-\theta)\tilde{H}_t$&lt;/li&gt;
+&lt;li&gt;Uhlig方法对数线性化所得到的结果刻画的是相对稳态的对数偏离&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-hansen-模型的对数线性形式&#34;&gt;3. Hansen 模型的对数线性形式&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Hansen 模型的五个方程：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$1 = \beta E_t \left[ \frac{C_t}{C_{t+1}} (r_{t+1} + (1-\delta)) \right]$&lt;/li&gt;
+&lt;li&gt;$(1-H_t) (1-\theta) \frac{Y_t}{H_t} = AC_t$&lt;/li&gt;
+&lt;li&gt;$C_t = Y_t + (1-\delta) K_t - K_{t-1}$&lt;/li&gt;
+&lt;li&gt;$Y_t = \lambda_t K_t^{\theta} H_t^{1-\theta}$&lt;/li&gt;
+&lt;li&gt;$r_t = \theta \frac{Y_t}{K_t}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Equation (1):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;稳态下：$\frac{1}{\beta} = \bar{r} + (1-\delta)$&lt;/li&gt;
+&lt;li&gt;$1 = \beta E_t \left[ \frac{\bar{C} e^{\tilde{C}_t}}{\bar{C} e^{\tilde{C}_{t+1}}} \bar{r} e^{\tilde{r}_{t+1}} + (1-\delta) \frac{\bar{C} e^{\tilde{C}_t}}{\bar{C} e^{\tilde{C}_{t+1}}} \right]$&lt;/li&gt;
+&lt;li&gt;$1 = \beta E_t [ \bar{r} e^{\tilde{C}_t - \tilde{C}_{t+1} + \tilde{r}_{t+1}} + (1-\delta) e^{\tilde{C}_t - \tilde{C}_{t+1}} ]$&lt;/li&gt;
+&lt;li&gt;$1 \approx \beta (\bar{r} E_t[1+\tilde{C}_t - \tilde{C}_{t+1} + \tilde{r}_{t+1}] + (1-\delta) E_t[1+ \tilde{C}_t - \tilde{C}_{t+1}] )$&lt;/li&gt;
+&lt;li&gt;$\frac{1}{\beta} \approx E_t[\bar{r}(1+\tilde{C}_t - \tilde{C}_{t+1}) + \bar{r}\tilde{r}_{t+1} + (1-\delta)(1+\tilde{C}_t - \tilde{C}_{t+1})]$&lt;/li&gt;
+&lt;li&gt;$1 \approx E_t[1+\tilde{C}_t - \tilde{C}_{t+1} + \beta\bar{r}\tilde{r}_{t+1}]$&lt;/li&gt;
+&lt;li&gt;$0 \approx \tilde{C}_t - E_t \tilde{C}_{t+1} + \beta\bar{r} E_t \tilde{r}_{t+1}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Equation (2)-(5)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$0 \approx \tilde{Y}_t - \frac{\tilde{H}_t}{1-\bar{H}} - \tilde{C}_t$&lt;/li&gt;
+&lt;li&gt;$0 \approx \bar{Y} \tilde{Y}_t - \bar{C} \tilde{C}_t + \bar{K} [(1-\delta)\tilde{K}_t - \tilde{K}_{t+1}]$&lt;/li&gt;
+&lt;li&gt;$0 \approx \tilde{\lambda}_t + \theta \tilde{k}_t + (1-\theta)\tilde{H}_t - \tilde{Y}_t$&lt;/li&gt;
+&lt;li&gt;$0 \approx \tilde{Y}_t - \tilde{K}_t - \tilde{r}_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;随机过程：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\lambda_{t+1} = \gamma \lambda_t + \varepsilon_{t+1}$&lt;/li&gt;
+&lt;li&gt;$\bar{\lambda} e^{\tilde{\lambda}_{t+1}} = \gamma \bar{\lambda} e^{\tilde{\lambda}_{t}} + \varepsilon_{t+1}$&lt;/li&gt;
+&lt;li&gt;$\bar{\lambda} (1+\tilde{\lambda}_{t+1}) = \gamma \bar{\lambda} (1+\tilde{\lambda}_{t}) + \varepsilon_{t+1}$&lt;/li&gt;
+&lt;li&gt;$\tilde{\lambda}_{t+1} = \gamma \tilde{\lambda}_{t} + \mu_{t+1}$&lt;/li&gt;
+&lt;li&gt;$\bar{\lambda}=1, \mu_{t+1} = \varepsilon_{t+1} - (1-\gamma), E_t(\mu_{t+1})=0$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Note: ABC, (4) 随机性递归模型</title>
