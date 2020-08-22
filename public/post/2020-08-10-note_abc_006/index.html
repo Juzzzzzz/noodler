@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="RBC模型成功与否的度量标准就是：与作为研究对象的特定经济体">
+  <meta name="description" content="4. 对数线性化的Hansen模型求解 将内生变量定义成一个向量形">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/2020-08-07-note_abc_005/">
+  <link rel="alternate" hreflang="en-us" href="/post/2020-08-10-note_abc_006/">
 
   
 
@@ -218,7 +218,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hudf4c7593654af011dd437e840b733c01_56824_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hudf4c7593654af011dd437e840b733c01_56824_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/post/2020-08-07-note_abc_005/">
+  <link rel="canonical" href="/post/2020-08-10-note_abc_006/">
 
   
   
@@ -233,15 +233,15 @@
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Ju丶Blog">
-  <meta property="og:url" content="/post/2020-08-07-note_abc_005/">
-  <meta property="og:title" content="Note: ABC, (5) Hansen的RBC模型-1 | Ju丶Blog">
-  <meta property="og:description" content="RBC模型成功与否的度量标准就是：与作为研究对象的特定经济体"><meta property="og:image" content="/img/share_logo.png">
+  <meta property="og:url" content="/post/2020-08-10-note_abc_006/">
+  <meta property="og:title" content="Note: ABC, (6) Hansen的RBC模型-2 | Ju丶Blog">
+  <meta property="og:description" content="4. 对数线性化的Hansen模型求解 将内生变量定义成一个向量形"><meta property="og:image" content="/img/share_logo.png">
   <meta property="twitter:image" content="/img/share_logo.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-08-07T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-08-10T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-08-07T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-08-10T00:00:00&#43;00:00">
   
 
   
@@ -265,12 +265,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/post/2020-08-07-note_abc_005/"
+    "@id": "/post/2020-08-10-note_abc_006/"
   },
-  "headline": "Note: ABC, (5) Hansen的RBC模型-1",
+  "headline": "Note: ABC, (6) Hansen的RBC模型-2",
   
-  "datePublished": "2020-08-07T00:00:00Z",
-  "dateModified": "2020-08-07T00:00:00Z",
+  "datePublished": "2020-08-10T00:00:00Z",
+  "dateModified": "2020-08-10T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -285,7 +285,7 @@
       "url": "/images/icon_hudf4c7593654af011dd437e840b733c01_56824_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "RBC模型成功与否的度量标准就是：与作为研究对象的特定经济体"
+  "description": "4. 对数线性化的Hansen模型求解 将内生变量定义成一个向量形"
 }
 </script>
 
@@ -303,7 +303,7 @@
 
 
 
-  <title>Note: ABC, (5) Hansen的RBC模型-1 | Ju丶Blog</title>
+  <title>Note: ABC, (6) Hansen的RBC模型-2 | Ju丶Blog</title>
 
 </head>
 
@@ -585,7 +585,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Note: ABC, (5) Hansen的RBC模型-1</h1>
+  <h1>Note: ABC, (6) Hansen的RBC模型-2</h1>
 
   
 
@@ -614,7 +614,7 @@
     
       
     
-    Aug 7, 2020
+    Aug 10, 2020
   </span>
   
 
@@ -623,7 +623,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    4 min read
+    3 min read
   </span>
   
 
@@ -663,171 +663,160 @@
   <div class="article-container">
 
     <div class="article-style">
-      <blockquote>
-<p>RBC模型成功与否的度量标准就是：与作为研究对象的特定经济体的宏观经济变量时间序列产生的方差、协方差结构相比较，看模型的结果与之相差多大。</p>
-</blockquote>
-<h2 id="1-hansen的基本模型">1. Hansen的基本模型</h2>
+      <h2 id="4-对数线性化的hansen模型求解">4. 对数线性化的Hansen模型求解</h2>
 <ul>
-<li>RC最大化贴现效用：$\max \sum_{t=0}^{\infty} \beta^t u(c_t, 1-h_t)$</li>
-<li>效用函数：$u(c_t, 1-h_t) = \ln (c_t) + A \ln (1-h_t), A &gt; 0$</li>
-<li>包含随机技术的Cobb-Douglas生产函数：$f(\lambda_t, k_t, h_t) = \lambda_t k_t^{\theta} h_t^{1-\theta}$
-<ul>
-<li>随机技术变量服从随机过程：$\lambda_{t+1} = \gamma \lambda_t + \varepsilon_{t+1}$</li>
-<li>其中$1&lt;\gamma&lt;1$，冲击$\varepsilon_t$服从独立同分布、正值、上有界，且其均值为$1-\gamma$</li>
-<li>这些假设保证$\lambda_t$的均值为1且产出不可能为负值</li>
+<li>将内生变量定义成一个向量形式：$[\tilde{K}_{t+1}, \tilde{Y}_t, \tilde{C}_t, \tilde{H}_t, \tilde{r}_t]^\prime$</li>
+<li>外生随机变量：$z_t = \tilde{\lambda}_t$</li>
+<li>模型的矩阵形式：$0 = E_t [F x_{t+1} + G x_t + H x_{t-1} + L z_{t+1} + M z_t]$</li>
 </ul>
-</li>
-<li>资本积累过程：$k_{t+1} = (1-\delta)k_t + i_t$</li>
-<li>可行性约束条件：$(\lambda_t, k_t, h_t) \ge c_t + i_t$</li>
-<li>Bellman Equation: $V(k_t, \lambda_t) = \max_{c_t, h_t} { \ln(c_t) + A\ln(1-h_t) + \beta E_t [V(k_{t+1}, \lambda_{t+1}) | \lambda_t] }$</li>
-<li>约束条件：
+<p>$$
+F = \left[ \begin{matrix} 0 &amp; 0 &amp; -1 &amp; 0 &amp; \beta\bar{r} \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{matrix} \right]
+$$</p>
+<p>$$
+G = \left[ \begin{matrix} 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; -1 &amp; -\frac{1}{1-H} &amp; 0 \\ -\bar{K} &amp; \bar{Y} &amp; -\bar{C} &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 1-\theta &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 &amp; -1 \end{matrix} \right]
+$$</p>
+<p>$$
+H = \left[ \begin{matrix} 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ \bar{K}(1-\delta) &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ \theta &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\ -1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \end{matrix} \right]
+$$</p>
+<p>$$L = [0 \quad 0 \quad 0 \quad 0 \quad 0]^\prime$$</p>
+<p>$$M = [0 \quad 0 \quad 0 \quad 1 \quad 0]^\prime$$</p>
 <ul>
-<li>$\lambda_t k_t^{\theta} h_t^{1-\theta} \ge c_t + i_t$</li>
-<li>$\lambda_{t+1} = \gamma \lambda_t + \varepsilon_{t+1}$</li>
-<li>$k_{t+1} = (1-\delta)k_t + i_t$</li>
-</ul>
-</li>
-<li>整理Bellman Equation: $V(k_t, \lambda_t) = \max_{k_{t+1}, h_t} { \ln(\lambda_t k_t^{\theta} h_t^{1-\theta} + (1-\delta)k_t - k_{t+1}) + A\ln(1-h_t) + \beta E_t [V(k_{t+1}, \lambda_{t+1}) | \lambda_t] }$</li>
-<li>FOCs:
+<li>随机过程：$z_{t+1} = N z_t + \mu_{t+1}, N = [\gamma]$</li>
+<li>期望形式：$E_t z_{t+1} = N z_t$</li>
+<li>模型的解是找到矩阵$P$和$Q$以得到：$x_t = P x_{t-1} + Q z_t$</li>
+<li>带入模型：$0 = [FP^2+GP+H]x_{t-1} + [FPQ+FQN+GQ+LN+M]z_t$</li>
+<li>模型的解要求方括号的项都为零
 <ul>
-<li>$\frac{1}{\lambda_t k_t^{\theta} h_t^{1-\theta} + (1-\delta)k_t - k_{t+1}} + \beta E_t [V_k(k_{t+1}, \lambda_{t+1}) | \lambda_t]$</li>
-<li>$(1-\theta) \frac{1}{\lambda_t k_t^{\theta} h_t^{1-\theta} + (1-\delta)k_t - k_{t+1}} \lambda_t k_t^{\theta} h_t^{-\theta} = A \frac{1}{1-h_t}$</li>
-</ul>
-</li>
-<li>Envelope Condition: $V_k (k_t, \lambda_t) = \frac{1}{\lambda_t k_t^{\theta} h_t^{1-\theta} + (1-\delta)k_t - k_{t+1}} [\theta \lambda_t k_t^{\theta-1} h_t^{1-\theta} + (1-\delta)]$</li>
-<li>整理：
-<ul>
-<li>$\frac{1}{\lambda_t k_t^{\theta} h_t^{1-\theta} + (1-\delta)k_t - k_{t+1}} = \beta E_t [ \frac{\theta \lambda_{t+1} k_{t+1}^{\theta-1} h_{t+1}^{1-\theta} + (1-\delta)}{\lambda_{t+1} k_{t+1}^{\theta} h_{t+1}^{1-\theta} + (1-\delta)k_{t+1} - k_{t+2}} | \lambda_t]$</li>
-<li>$(1-\theta) (1-h_t) (\lambda_t k_t^{\theta} h_t^{-\theta}) = A [\lambda_t k_t^{\theta} h_t^{1-\theta} + (1-\delta)k_t - k_{t+1}]$</li>
-</ul>
-</li>
-<li>要素市场是竞争的，所以要素报酬等于其要素边际产品：
-<ul>
-<li>$r_t = \theta \lambda_t k_t^{\theta-1} h_t^{1-\theta}$</li>
-<li>$w_t = (1-\theta) \lambda_t k_t^{\theta} h_t^{-\theta}$</li>
-</ul>
-</li>
-<li>简化：
-<ul>
-<li>$\frac{1}{c_t} = \beta E_t \left[ \frac{r_{t+1} + (1-\delta)}{c_{t+1}} | \lambda_t \right]$</li>
-<li>$(1-h_t) w_t = A c_t$</li>
-</ul>
-</li>
-<li>稳态：
-<ul>
-<li>$\bar{h} = \frac{1}{1+ \frac{A}{1-\theta} \left[ 1- \frac{\beta \delta \theta}{1-\beta (1-\delta)} \right]}$</li>
-<li>$\bar{k} = \bar{h} \left[ \frac{\theta \bar{\lambda}}{\frac{1}{\beta} - (1-\delta)} \right]^{\frac{1}{1-\theta}}$</li>
-</ul>
-</li>
-<li>当状态变量的维数增加并且模型更加复杂时，直接近似很困难</li>
-<li>线性近似：
-<ul>
-<li>（1）对一阶条件和预算约束进行对数线性近似</li>
-<li>（2）对目标函数进行二次近似，同时对预算约束进行线性化，从而得以运用线性二次动态规划</li>
-</ul>
-</li>
-<li>简化模型，将问题看作是社会计划者问题，并写成总量形式：
-<ul>
-<li>$1 = \beta E_t \left[ \frac{C_t}{C_{t+1}} (r_{t+1} + (1-\delta)) \right]$</li>
-<li>$(1-H_t) (1-\theta) \frac{Y_t}{H_t} = AC_t$</li>
-<li>$C_t = Y_t + (1-\delta) K_t - K_{t-1}$</li>
-<li>$Y_t = \lambda_t K_t^{\theta} H_t^{1-\theta}$</li>
-<li>$r_t = \theta \frac{Y_t}{K_t}$</li>
+<li>$0 = FP^2+GP+H$</li>
+<li>$V \text{vec}(Q) = - \text{vec}(LN + M)$</li>
+<li>$V = N^\prime \otimes F + I_k \otimes (FP + G)$</li>
 </ul>
 </li>
 </ul>
-<h2 id="2-对数线性化方法">2. 对数线性化方法</h2>
-<blockquote>
-<p>线性逼近的标准方法是对某一模型在其稳态附近做对数线性化</p>
-</blockquote>
-<p><strong>(1) Talor 方法</strong></p>
+<h2 id="5-运用跳跃变量的求解">5. 运用跳跃变量的求解</h2>
 <ul>
-<li>模型：$F(x_t) = \frac{G(x_t)}{H(x_t)}$</li>
-<li>对数：$\ln (F(x_t)) = \ln (G(x_t)) - \ln (H(x_t))$</li>
-<li>稳态：$\ln (F(\bar{x})) = \ln (G(\bar{x})) - \ln (H(\bar{x}))$</li>
-<li>稳态处一阶Talor展开：$\ln (F(\bar{x})) + \frac{F^{\prime} (\bar{x})}{F (\bar{x})} (x_t - \bar{x}) \approx \ln (G(\bar{x})) + \frac{G^{\prime} (\bar{x})}{G (\bar{x})} (x_t - \bar{x}) - \ln (H(\bar{x})) - \frac{H^{\prime} (\bar{x})}{H (\bar{x})} (x_t - \bar{x})$</li>
-<li>去稳态：$\frac{F^{\prime} (\bar{x})}{F (\bar{x})} (x_t - \bar{x}) \approx \frac{G^{\prime} (\bar{x})}{G (\bar{x})} (x_t - \bar{x}) - \frac{H^{\prime} (\bar{x})}{H (\bar{x})} (x_t - \bar{x})$</li>
-<li>这样做的假设是模型中与$x_t$对应的点非常接近其稳态点$\bar{x}$，以至于这个接近程度使得二阶或更高阶的Taylor展开式小到可以忽略的程度</li>
-</ul>
-<p><em>Cobb-Douglas 生产函数</em></p>
+<li>内生的状态变量放在一起组成一个向量$x_t$</li>
+<li>其他由这些状态变量决定的内生变量（跳跃变量）放在一起组成一个向量$y_t$</li>
+<li>$x_t = [\tilde{K}_{t+1}]$</li>
+<li>$y_t = [\tilde{Y}_t, \tilde{C}_t, \tilde{H}_t, \tilde{r}_t]^\prime$</li>
+<li>按是否含有期望项将模型方程分开：
 <ul>
-<li>$Y_t = \lambda_t K_t^{\theta} H_t^{1-\theta}$</li>
-<li>对数：$\ln Y_t = \ln \lambda_t + \theta \ln K_t + (1-\theta) \ln H_t$</li>
-<li>稳态：$\ln \bar{Y} = \ln \bar{\lambda} + \theta \ln \bar{K} + (1-\theta) \ln \bar{H}$</li>
-<li>稳态处一阶Talor展开：$\ln \bar{Y} + \frac{1}{\bar{Y}} (Y_t - \bar{Y}) \approx \ln \bar{\lambda} + \frac{1}{\bar{\lambda}} (\lambda_t - \bar{\lambda}) + \theta \ln \bar{K} + \frac{\theta}{\bar{K}} (K_t - \bar{K}) + (1-\theta) \ln \bar{H} + \frac{1-\theta}{\bar{H}} (H_t - \bar{H})$</li>
-<li>去稳态：$\frac{1}{\bar{Y}} (Y_t - \bar{Y}) \approx \frac{1}{\bar{\lambda}} (\lambda_t - \bar{\lambda}) + \frac{\theta}{\bar{K}} (K_t - \bar{K}) + \frac{1-\theta}{\bar{H}} (H_t - \bar{H})$</li>
-<li>整理：$\frac{Y_t}{\bar{Y}} + 1 \approx \frac{\lambda_t}{\bar{\lambda}} + \frac{\theta K_t}{\bar{K}} + \frac{(1-\theta) H_t}{\bar{H}}$</li>
-</ul>
-<p><strong>(2) Uhlig 方法</strong></p>
-<ul>
-<li>定义：
-<ul>
-<li>$\tilde{X}_t = \ln X_t - \ln \bar{X}$</li>
-<li>$X_t= \bar{X} e^{\tilde{X}_t}$</li>
-</ul>
-</li>
-<li>法则：
-<ul>
-<li>$e^{\tilde{X}_t + a \tilde{Y}_t} \approx 1 + \tilde{X}_t + a \tilde{Y}_t$</li>
-<li>$\tilde{X}_t \tilde{Y}_t \approx 0$</li>
-<li>$E_t [ a e^{\tilde{X}_{t+1}} ] \approx a + aE_t[\tilde{X}_{t+1}]$</li>
-<li>$E_t[X_{t+1}] = \bar{X} (1+E_t [\tilde{X}_{t+1}])$</li>
+<li>$0 = A x_t + B x_{t-1} + C y_t + D z_t$</li>
+<li>$0 = E_t [F x_{t+1} + G x_t + H x_{t-1} + J y_{t+1} + K y_t + L z_{t+1} + M z_t]$</li>
+<li>$z_{t+1} = N z_t + \varepsilon_{t+1}, E_t(\varepsilon_{t+1})=0$</li>
 </ul>
 </li>
 </ul>
-<p><em>Cobb-Douglas 生产函数</em></p>
+<p>$$A = [0 \quad -\bar{K} \quad 0 \quad 0]^\prime$$</p>
+<p>$$B = [0 \quad \bar{K}(1-\delta) \quad \theta \quad -1]^\prime$$</p>
+<p>$$
+C = \left[ \begin{matrix} 1 &amp; -1 &amp; -\frac{1}{1-H} &amp; 0 \\ \bar{Y} &amp; -\bar{C} &amp; 0 &amp; 0 \\ -1 &amp; 0 &amp; 1-\theta &amp; 0 \\ 1 &amp; 0 &amp; 0 &amp; -1 \end{matrix} \right]
+$$</p>
+<p>$$D = [0 \quad 0 \quad 0 \quad 1 \quad 0]^\prime$$</p>
+<p>$$F=[0], G=[0], H=[0]$$</p>
+<p>$$J = [0 \quad -1 \quad 0 \quad \beta\bar{r}]^\prime$$</p>
+<p>$$K = [0 \quad 1 \quad 0 \quad 0]^\prime$$</p>
+<p>$$L=[0], M=[0], N=[\gamma]$$</p>
 <ul>
-<li>$Y_t = \lambda_t K_t^{\theta} H_t^{1-\theta}$</li>
-<li>变量替换：$\bar{Y} e^{\tilde{Y}_t} = \bar{\lambda} e^{\tilde{\lambda}_t} [\bar{K} e^{\tilde{K}_t}]^{\theta} [\bar{H} e^{\tilde{H}_t}]^{1-\theta}$</li>
-<li>整理：$\bar{Y} e^{\tilde{Y}_t} = \bar{\lambda} \bar{K}^{\theta} \bar{H}^{1-\theta} e^{\tilde{\lambda}_t + \theta\tilde{K}_t + (1-\theta)\tilde{H}_t}$</li>
-<li>Uhlig法则：$\bar{Y} (1+\tilde{Y}_t) = \bar{\lambda} \bar{K}^{\theta} \bar{H} (1 + \tilde{\lambda}_t + \theta\tilde{K}_t + (1-\theta)\tilde{H}_t)$</li>
-<li>去稳态：$\tilde{Y}_t = \tilde{\lambda}_t + \theta\tilde{K}_t + (1-\theta)\tilde{H}_t$</li>
-<li>Uhlig方法对数线性化所得到的结果刻画的是相对稳态的对数偏离</li>
-</ul>
-<h2 id="3-hansen-模型的对数线性形式">3. Hansen 模型的对数线性形式</h2>
+<li>模型的解释一组矩阵${P, Q, R, S}$，描述了经济的均衡运动方程：
 <ul>
-<li>
-<p>Hansen 模型的五个方程：</p>
-<ul>
-<li>$1 = \beta E_t \left[ \frac{C_t}{C_{t+1}} (r_{t+1} + (1-\delta)) \right]$</li>
-<li>$(1-H_t) (1-\theta) \frac{Y_t}{H_t} = AC_t$</li>
-<li>$C_t = Y_t + (1-\delta) K_t - K_{t-1}$</li>
-<li>$Y_t = \lambda_t K_t^{\theta} H_t^{1-\theta}$</li>
-<li>$r_t = \theta \frac{Y_t}{K_t}$</li>
+<li>$x_t = P x_{t-1} + Q z_t$</li>
+<li>$y_t = R x_{t-1} + S z_t$</li>
 </ul>
 </li>
-<li>
-<p>Equation (1):</p>
+<li>如果解存在：
 <ul>
-<li>稳态下：$\frac{1}{\beta} = \bar{r} + (1-\delta)$</li>
-<li>$1 = \beta E_t \left[ \frac{\bar{C} e^{\tilde{C}_t}}{\bar{C} e^{\tilde{C}_{t+1}}} \bar{r} e^{\tilde{r}_{t+1}} + (1-\delta) \frac{\bar{C} e^{\tilde{C}_t}}{\bar{C} e^{\tilde{C}_{t+1}}} \right]$</li>
-<li>$1 = \beta E_t [ \bar{r} e^{\tilde{C}_t - \tilde{C}_{t+1} + \tilde{r}_{t+1}} + (1-\delta) e^{\tilde{C}_t - \tilde{C}_{t+1}} ]$</li>
-<li>$1 \approx \beta (\bar{r} E_t[1+\tilde{C}_t - \tilde{C}_{t+1} + \tilde{r}_{t+1}] + (1-\delta) E_t[1+ \tilde{C}_t - \tilde{C}_{t+1}] )$</li>
-<li>$\frac{1}{\beta} \approx E_t[\bar{r}(1+\tilde{C}_t - \tilde{C}_{t+1}) + \bar{r}\tilde{r}_{t+1} + (1-\delta)(1+\tilde{C}_t - \tilde{C}_{t+1})]$</li>
-<li>$1 \approx E_t[1+\tilde{C}_t - \tilde{C}_{t+1} + \beta\bar{r}\tilde{r}_{t+1}]$</li>
-<li>$0 \approx \tilde{C}_t - E_t \tilde{C}_{t+1} + \beta\bar{r} E_t \tilde{r}_{t+1}$</li>
-</ul>
-</li>
-<li>
-<p>Equation (2)-(5)</p>
-<ul>
-<li>$0 \approx \tilde{Y}_t - \frac{\tilde{H}_t}{1-\bar{H}} - \tilde{C}_t$</li>
-<li>$0 \approx \bar{Y} \tilde{Y}_t - \bar{C} \tilde{C}_t + \bar{K} [(1-\delta)\tilde{K}_t - \tilde{K}_{t+1}]$</li>
-<li>$0 \approx \tilde{\lambda}_t + \theta \tilde{k}_t + (1-\theta)\tilde{H}_t - \tilde{Y}_t$</li>
-<li>$0 \approx \tilde{Y}_t - \tilde{K}_t - \tilde{r}_t$</li>
-</ul>
-</li>
-<li>
-<p>随机过程：</p>
-<ul>
-<li>$\lambda_{t+1} = \gamma \lambda_t + \varepsilon_{t+1}$</li>
-<li>$\bar{\lambda} e^{\tilde{\lambda}_{t+1}} = \gamma \bar{\lambda} e^{\tilde{\lambda}_{t}} + \varepsilon_{t+1}$</li>
-<li>$\bar{\lambda} (1+\tilde{\lambda}_{t+1}) = \gamma \bar{\lambda} (1+\tilde{\lambda}_{t}) + \varepsilon_{t+1}$</li>
-<li>$\tilde{\lambda}_{t+1} = \gamma \tilde{\lambda}_{t} + \mu_{t+1}$</li>
-<li>$\bar{\lambda}=1, \mu_{t+1} = \varepsilon_{t+1} - (1-\gamma), E_t(\mu_{t+1})=0$</li>
+<li>$0=(F-JC^{-1}A)P^2 - (JC^{-1}B-G+KC^{-1}A)P - KC^{-1}B + H$</li>
+<li>$R = -C^{-1}(AP+B)$</li>
+<li>$(N^\prime \otimes (F-JC^{-1}A) + I_k \otimes (JR + FP + G - KC^{-1}A)) \text{vec}(Q) = \text{vec}((JC^{-1}D-L)N + KC^{-1}D - M)$</li>
+<li>$S = -C^{-1}(AQ+D)$</li>
 </ul>
 </li>
 </ul>
+<h2 id="6-模型的校准">6. 模型的校准</h2>
+<ul>
+<li>$\beta = 0.99, \delta = 0.025, \theta = 0.36$</li>
+<li>$\bar{H} = \frac{1}{1+ \frac{A}{1-\theta} \left[ 1- \frac{\beta \delta \theta}{1-\beta (1-\delta)} \right]}$</li>
+<li>$\bar{K} = \bar{H} \left[ \frac{\theta \bar{\lambda}}{\frac{1}{\beta} - (1-\delta)} \right]^{\frac{1}{1-\theta}}$</li>
+<li>$\bar{\lambda} = 1$</li>
+<li>根据$A$和$\bar{H}$的关系，当$A=1.72$时，人们会用$\frac{1}{3}$的时间用于工作</li>
+<li>使用美国实际数据对生产函数的对数形式进行估计：$\ln \lambda_t = \ln Y_t - \theta \ln K_t - (1-\theta) H_t$</li>
+<li>${\lambda_t}$的一阶滞后自相关系数约为$0.95$，即$\gamma=0.95$</li>
+<li>带入到利用跳跃变量求解的步骤中即可解出模型稳态附近的运动方程
+<ul>
+<li>$\tilde{K}_{t+1} = 0.9537\tilde{K}_t + 0.1132\tilde{\lambda}_t$</li>
+<li>$\tilde{Y}_t = 0.2045\tilde{K}_t + 1.4523\tilde{\lambda}_t$</li>
+<li>$\tilde{C}_t = 0.5691\tilde{K}_t + 0.3920\tilde{\lambda}_t$</li>
+<li>$\tilde{H}_t = -0.2430\tilde{K}_t + 0.7067\tilde{\lambda}_t$</li>
+<li>$\tilde{r}_t = -0.7955\tilde{K}_t + 1.4523\tilde{\lambda}_t$</li>
+</ul>
+</li>
+</ul>
+<h2 id="7-模型中变量的方差">7. 模型中变量的方差</h2>
+<ul>
+<li>Hansen使用的数据集是美国1955年第三季度-1984年第一季度数据</li>
+<li>对数产出的标准差为1.76%</li>
+<li>$\tilde{Y}_t = \ln Y_t - \ln \bar{Y}$</li>
+<li>所以$\tilde{Y}_t$的标准差为0.0176</li>
+<li>根据运动方程和随机过程：
+<ul>
+<li>$\tilde{K}_{t+1} = a \tilde{K}_t + b \tilde{\lambda}_t$</li>
+<li>$\tilde{Y}_t = c \tilde{K}_t + d \tilde{\lambda}_t$</li>
+<li>$\tilde{\lambda}_t = \gamma \tilde{\lambda}_{t-1} + \varepsilon_t$</li>
+</ul>
+</li>
+<li>得到：
+<ul>
+<li>$\tilde{K}_{t+1} = a \tilde{K}_t + b \gamma \tilde{\lambda}_{t-1} + b \varepsilon_t$</li>
+<li>$\tilde{K}_{t+1} = b \sum_{i=0}^{\infty} \sum_{j=0}^{i} a^j \gamma^{i-j} \varepsilon_{t-i}$</li>
+<li>$\tilde{\lambda}_t = \sum_{i=0}^{\infty} \gamma^i \varepsilon_{t-i}$</li>
+<li>$\tilde{Y}_t = d \varepsilon_t + \sum_{i=0}^{\infty} [cb \sum_{j=0}^{i} a^j \gamma^{i-j} + d \gamma^{i+1}] \varepsilon_{t-1-i}$</li>
+</ul>
+</li>
+<li>由于技术冲击相互独立，所以产出的方差：
+<ul>
+<li>$\text{var} \tilde{Y}_t = (d^2 + \sum_{i=0}^{\infty} [cb \sum_{j=0}^{i} a^j \gamma^{i-j} + d \gamma^{i+1}])^2 \text{var} \varepsilon_t$</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">$\tilde{Y}_t$</th>
+<th align="center">$\tilde{C}_t$</th>
+<th align="center">$\tilde{H}_t$</th>
+<th align="center">$\tilde{r}_t$</th>
+<th align="center">$\tilde{I}_t$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">模型标准差</td>
+<td align="center">$5.484\sigma_\varepsilon$</td>
+<td align="center">$4.065\sigma_\varepsilon$</td>
+<td align="center">$1.640\sigma_\varepsilon$</td>
+<td align="center">$3.492\sigma_\varepsilon$</td>
+<td align="center">$11.742\sigma_\varepsilon$</td>
+</tr>
+<tr>
+<td align="center">占产出百分比</td>
+<td align="center">$100\%$</td>
+<td align="center">$74.12\%$</td>
+<td align="center">$29.90\%$</td>
+<td align="center">$63.67\%$</td>
+<td align="center">$214.1\%$</td>
+</tr>
+<tr>
+<td align="center">实际百分比</td>
+<td align="center">$100\%$</td>
+<td align="center">$73.30\%$</td>
+<td align="center">$94.32\%$</td>
+<td align="center"></td>
+<td align="center">$488.64\%$</td>
+</tr>
+</tbody>
+</table>
 
     </div>
 
@@ -858,7 +847,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/2020-08-07-note_abc_005/&amp;text=Note:%20ABC,%20%285%29%20Hansen%e7%9a%84RBC%e6%a8%a1%e5%9e%8b-1" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/2020-08-10-note_abc_006/&amp;text=Note:%20ABC,%20%286%29%20Hansen%e7%9a%84RBC%e6%a8%a1%e5%9e%8b-2" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -871,7 +860,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/2020-08-07-note_abc_005/&amp;t=Note:%20ABC,%20%285%29%20Hansen%e7%9a%84RBC%e6%a8%a1%e5%9e%8b-1" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/2020-08-10-note_abc_006/&amp;t=Note:%20ABC,%20%286%29%20Hansen%e7%9a%84RBC%e6%a8%a1%e5%9e%8b-2" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -884,7 +873,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Note:%20ABC,%20%285%29%20Hansen%e7%9a%84RBC%e6%a8%a1%e5%9e%8b-1&amp;body=/post/2020-08-07-note_abc_005/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Note:%20ABC,%20%286%29%20Hansen%e7%9a%84RBC%e6%a8%a1%e5%9e%8b-2&amp;body=/post/2020-08-10-note_abc_006/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -897,7 +886,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/2020-08-07-note_abc_005/&amp;title=Note:%20ABC,%20%285%29%20Hansen%e7%9a%84RBC%e6%a8%a1%e5%9e%8b-1" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/2020-08-10-note_abc_006/&amp;title=Note:%20ABC,%20%286%29%20Hansen%e7%9a%84RBC%e6%a8%a1%e5%9e%8b-2" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -910,7 +899,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=Note:%20ABC,%20%285%29%20Hansen%e7%9a%84RBC%e6%a8%a1%e5%9e%8b-1%20/post/2020-08-07-note_abc_005/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=Note:%20ABC,%20%286%29%20Hansen%e7%9a%84RBC%e6%a8%a1%e5%9e%8b-2%20/post/2020-08-10-note_abc_006/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -923,7 +912,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/2020-08-07-note_abc_005/&amp;title=Note:%20ABC,%20%285%29%20Hansen%e7%9a%84RBC%e6%a8%a1%e5%9e%8b-1" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/post/2020-08-10-note_abc_006/&amp;title=Note:%20ABC,%20%286%29%20Hansen%e7%9a%84RBC%e6%a8%a1%e5%9e%8b-2" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1071,6 +1060,8 @@
     <h3>Related</h3>
     <ul>
       
+      <li><a href="/post/2020-08-07-note_abc_005/">Note: ABC, (5) Hansen的RBC模型-1</a></li>
+      
       <li><a href="/post/2020-07-27-note_abc_004/">Note: ABC, (4) 随机性递归模型</a></li>
       
       <li><a href="/post/2020-07-21-note_abc_003/">Note: ABC, (3) 确定性递归模型</a></li>
@@ -1078,8 +1069,6 @@
       <li><a href="/post/2020-07-19-note_abc_002/">Note: ABC, (2) 无限期生存的行为人</a></li>
       
       <li><a href="/post/2020-07-13-note_abc_001/">Note: ABC, (1) Solow模型</a></li>
-      
-      <li><a href="/post/2020-05-29-note_mmt_001/">Note: MMT, (1) 宏观经济会计基础</a></li>
       
     </ul>
   </div>

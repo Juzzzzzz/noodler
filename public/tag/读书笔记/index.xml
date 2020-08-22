@@ -5,7 +5,7 @@
     <link>/tag/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
       <atom:link href="/tag/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <description>读书笔记</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Fri, 07 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/share_logo.png</url>
       <title>读书笔记</title>
@@ -13,7 +13,169 @@
     </image>
     
     <item>
-      <title>Note: ABC, (5) Hansen的RBC模型1</title>
+      <title>Note: ABC, (6) Hansen的RBC模型-2</title>
+      <link>/post/2020-08-10-note_abc_006/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-08-10-note_abc_006/</guid>
+      <description>&lt;h2 id=&#34;4-对数线性化的hansen模型求解&#34;&gt;4. 对数线性化的Hansen模型求解&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;将内生变量定义成一个向量形式：$[\tilde{K}_{t+1}, \tilde{Y}_t, \tilde{C}_t, \tilde{H}_t, \tilde{r}_t]^\prime$&lt;/li&gt;
+&lt;li&gt;外生随机变量：$z_t = \tilde{\lambda}_t$&lt;/li&gt;
+&lt;li&gt;模型的矩阵形式：$0 = E_t [F x_{t+1} + G x_t + H x_{t-1} + L z_{t+1} + M z_t]$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+F = \left[ \begin{matrix} 0 &amp;amp; 0 &amp;amp; -1 &amp;amp; 0 &amp;amp; \beta\bar{r} \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \end{matrix} \right]
+$$&lt;/p&gt;
+&lt;p&gt;$$
+G = \left[ \begin{matrix} 0 &amp;amp; 0 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 1 &amp;amp; -1 &amp;amp; -\frac{1}{1-H} &amp;amp; 0 \\ -\bar{K} &amp;amp; \bar{Y} &amp;amp; -\bar{C} &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; -1 &amp;amp; 0 &amp;amp; 1-\theta &amp;amp; 0 \\ 0 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0 &amp;amp; -1 \end{matrix} \right]
+$$&lt;/p&gt;
+&lt;p&gt;$$
+H = \left[ \begin{matrix} 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\ \bar{K}(1-\delta) &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\ \theta &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\ -1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \end{matrix} \right]
+$$&lt;/p&gt;
+&lt;p&gt;$$L = [0 \quad 0 \quad 0 \quad 0 \quad 0]^\prime$$&lt;/p&gt;
+&lt;p&gt;$$M = [0 \quad 0 \quad 0 \quad 1 \quad 0]^\prime$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;随机过程：$z_{t+1} = N z_t + \mu_{t+1}, N = [\gamma]$&lt;/li&gt;
+&lt;li&gt;期望形式：$E_t z_{t+1} = N z_t$&lt;/li&gt;
+&lt;li&gt;模型的解是找到矩阵$P$和$Q$以得到：$x_t = P x_{t-1} + Q z_t$&lt;/li&gt;
+&lt;li&gt;带入模型：$0 = [FP^2+GP+H]x_{t-1} + [FPQ+FQN+GQ+LN+M]z_t$&lt;/li&gt;
+&lt;li&gt;模型的解要求方括号的项都为零
+&lt;ul&gt;
+&lt;li&gt;$0 = FP^2+GP+H$&lt;/li&gt;
+&lt;li&gt;$V \text{vec}(Q) = - \text{vec}(LN + M)$&lt;/li&gt;
+&lt;li&gt;$V = N^\prime \otimes F + I_k \otimes (FP + G)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-运用跳跃变量的求解&#34;&gt;5. 运用跳跃变量的求解&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;内生的状态变量放在一起组成一个向量$x_t$&lt;/li&gt;
+&lt;li&gt;其他由这些状态变量决定的内生变量（跳跃变量）放在一起组成一个向量$y_t$&lt;/li&gt;
+&lt;li&gt;$x_t = [\tilde{K}_{t+1}]$&lt;/li&gt;
+&lt;li&gt;$y_t = [\tilde{Y}_t, \tilde{C}_t, \tilde{H}_t, \tilde{r}_t]^\prime$&lt;/li&gt;
+&lt;li&gt;按是否含有期望项将模型方程分开：
+&lt;ul&gt;
+&lt;li&gt;$0 = A x_t + B x_{t-1} + C y_t + D z_t$&lt;/li&gt;
+&lt;li&gt;$0 = E_t [F x_{t+1} + G x_t + H x_{t-1} + J y_{t+1} + K y_t + L z_{t+1} + M z_t]$&lt;/li&gt;
+&lt;li&gt;$z_{t+1} = N z_t + \varepsilon_{t+1}, E_t(\varepsilon_{t+1})=0$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$A = [0 \quad -\bar{K} \quad 0 \quad 0]^\prime$$&lt;/p&gt;
+&lt;p&gt;$$B = [0 \quad \bar{K}(1-\delta) \quad \theta \quad -1]^\prime$$&lt;/p&gt;
+&lt;p&gt;$$
+C = \left[ \begin{matrix} 1 &amp;amp; -1 &amp;amp; -\frac{1}{1-H} &amp;amp; 0 \\ \bar{Y} &amp;amp; -\bar{C} &amp;amp; 0 &amp;amp; 0 \\ -1 &amp;amp; 0 &amp;amp; 1-\theta &amp;amp; 0 \\ 1 &amp;amp; 0 &amp;amp; 0 &amp;amp; -1 \end{matrix} \right]
+$$&lt;/p&gt;
+&lt;p&gt;$$D = [0 \quad 0 \quad 0 \quad 1 \quad 0]^\prime$$&lt;/p&gt;
+&lt;p&gt;$$F=[0], G=[0], H=[0]$$&lt;/p&gt;
+&lt;p&gt;$$J = [0 \quad -1 \quad 0 \quad \beta\bar{r}]^\prime$$&lt;/p&gt;
+&lt;p&gt;$$K = [0 \quad 1 \quad 0 \quad 0]^\prime$$&lt;/p&gt;
+&lt;p&gt;$$L=[0], M=[0], N=[\gamma]$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;模型的解释一组矩阵${P, Q, R, S}$，描述了经济的均衡运动方程：
+&lt;ul&gt;
+&lt;li&gt;$x_t = P x_{t-1} + Q z_t$&lt;/li&gt;
+&lt;li&gt;$y_t = R x_{t-1} + S z_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如果解存在：
+&lt;ul&gt;
+&lt;li&gt;$0=(F-JC^{-1}A)P^2 - (JC^{-1}B-G+KC^{-1}A)P - KC^{-1}B + H$&lt;/li&gt;
+&lt;li&gt;$R = -C^{-1}(AP+B)$&lt;/li&gt;
+&lt;li&gt;$(N^\prime \otimes (F-JC^{-1}A) + I_k \otimes (JR + FP + G - KC^{-1}A)) \text{vec}(Q) = \text{vec}((JC^{-1}D-L)N + KC^{-1}D - M)$&lt;/li&gt;
+&lt;li&gt;$S = -C^{-1}(AQ+D)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-模型的校准&#34;&gt;6. 模型的校准&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$\beta = 0.99, \delta = 0.025, \theta = 0.36$&lt;/li&gt;
+&lt;li&gt;$\bar{H} = \frac{1}{1+ \frac{A}{1-\theta} \left[ 1- \frac{\beta \delta \theta}{1-\beta (1-\delta)} \right]}$&lt;/li&gt;
+&lt;li&gt;$\bar{K} = \bar{H} \left[ \frac{\theta \bar{\lambda}}{\frac{1}{\beta} - (1-\delta)} \right]^{\frac{1}{1-\theta}}$&lt;/li&gt;
+&lt;li&gt;$\bar{\lambda} = 1$&lt;/li&gt;
+&lt;li&gt;根据$A$和$\bar{H}$的关系，当$A=1.72$时，人们会用$\frac{1}{3}$的时间用于工作&lt;/li&gt;
+&lt;li&gt;使用美国实际数据对生产函数的对数形式进行估计：$\ln \lambda_t = \ln Y_t - \theta \ln K_t - (1-\theta) H_t$&lt;/li&gt;
+&lt;li&gt;${\lambda_t}$的一阶滞后自相关系数约为$0.95$，即$\gamma=0.95$&lt;/li&gt;
+&lt;li&gt;带入到利用跳跃变量求解的步骤中即可解出模型稳态附近的运动方程
+&lt;ul&gt;
+&lt;li&gt;$\tilde{K}_{t+1} = 0.9537\tilde{K}_t + 0.1132\tilde{\lambda}_t$&lt;/li&gt;
+&lt;li&gt;$\tilde{Y}_t = 0.2045\tilde{K}_t + 1.4523\tilde{\lambda}_t$&lt;/li&gt;
+&lt;li&gt;$\tilde{C}_t = 0.5691\tilde{K}_t + 0.3920\tilde{\lambda}_t$&lt;/li&gt;
+&lt;li&gt;$\tilde{H}_t = -0.2430\tilde{K}_t + 0.7067\tilde{\lambda}_t$&lt;/li&gt;
+&lt;li&gt;$\tilde{r}_t = -0.7955\tilde{K}_t + 1.4523\tilde{\lambda}_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-模型中变量的方差&#34;&gt;7. 模型中变量的方差&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hansen使用的数据集是美国1955年第三季度-1984年第一季度数据&lt;/li&gt;
+&lt;li&gt;对数产出的标准差为1.76%&lt;/li&gt;
+&lt;li&gt;$\tilde{Y}_t = \ln Y_t - \ln \bar{Y}$&lt;/li&gt;
+&lt;li&gt;所以$\tilde{Y}_t$的标准差为0.0176&lt;/li&gt;
+&lt;li&gt;根据运动方程和随机过程：
+&lt;ul&gt;
+&lt;li&gt;$\tilde{K}_{t+1} = a \tilde{K}_t + b \tilde{\lambda}_t$&lt;/li&gt;
+&lt;li&gt;$\tilde{Y}_t = c \tilde{K}_t + d \tilde{\lambda}_t$&lt;/li&gt;
+&lt;li&gt;$\tilde{\lambda}_t = \gamma \tilde{\lambda}_{t-1} + \varepsilon_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;得到：
+&lt;ul&gt;
+&lt;li&gt;$\tilde{K}_{t+1} = a \tilde{K}_t + b \gamma \tilde{\lambda}_{t-1} + b \varepsilon_t$&lt;/li&gt;
+&lt;li&gt;$\tilde{K}_{t+1} = b \sum_{i=0}^{\infty} \sum_{j=0}^{i} a^j \gamma^{i-j} \varepsilon_{t-i}$&lt;/li&gt;
+&lt;li&gt;$\tilde{\lambda}_t = \sum_{i=0}^{\infty} \gamma^i \varepsilon_{t-i}$&lt;/li&gt;
+&lt;li&gt;$\tilde{Y}_t = d \varepsilon_t + \sum_{i=0}^{\infty} [cb \sum_{j=0}^{i} a^j \gamma^{i-j} + d \gamma^{i+1}] \varepsilon_{t-1-i}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;由于技术冲击相互独立，所以产出的方差：
+&lt;ul&gt;
+&lt;li&gt;$\text{var} \tilde{Y}_t = (d^2 + \sum_{i=0}^{\infty} [cb \sum_{j=0}^{i} a^j \gamma^{i-j} + d \gamma^{i+1}])^2 \text{var} \varepsilon_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;$\tilde{Y}_t$&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;$\tilde{C}_t$&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;$\tilde{H}_t$&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;$\tilde{r}_t$&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;$\tilde{I}_t$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;模型标准差&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$5.484\sigma_\varepsilon$&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$4.065\sigma_\varepsilon$&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$1.640\sigma_\varepsilon$&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$3.492\sigma_\varepsilon$&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$11.742\sigma_\varepsilon$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;占产出百分比&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$100\%$&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$74.12\%$&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$29.90\%$&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$63.67\%$&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$214.1\%$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;实际百分比&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$100\%$&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$73.30\%$&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$94.32\%$&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$488.64\%$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Note: ABC, (5) Hansen的RBC模型-1</title>
       <link>/post/2020-08-07-note_abc_005/</link>
       <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
       <guid>/post/2020-08-07-note_abc_005/</guid>
