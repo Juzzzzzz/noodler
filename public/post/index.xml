@@ -5,12 +5,92 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Sat, 22 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/share_logo.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Note: ABC, (7) Hansen的RBC模型-3</title>
+      <link>/post/2020-08-22-note_abc_007/</link>
+      <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-08-22-note_abc_007/</guid>
+      <description>&lt;h2 id=&#34;8-含有不可分劳动的hansen模型&#34;&gt;8. 含有不可分劳动的Hansen模型&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在时期$t$，居民户以$\alpha_t$的概率向厂商提供$h_0$单位的劳动&lt;/li&gt;
+&lt;li&gt;居民在时期$t$是否工作是由随机过程决定的&lt;/li&gt;
+&lt;li&gt;每一期，$\alpha_t$比率的人工作$h_0$小时&lt;/li&gt;
+&lt;li&gt;另外$1-\alpha_t$比率的人根本不工作&lt;/li&gt;
+&lt;li&gt;所有的居民无论其工作与否都能得到相同的工资&lt;/li&gt;
+&lt;li&gt;该合同就像一份完全的失业保险&lt;/li&gt;
+&lt;li&gt;厂商的劳动力需求$h_t = \alpha_t h_0$&lt;/li&gt;
+&lt;li&gt;厂商支付工资$w_t$&lt;/li&gt;
+&lt;li&gt;家庭预算约束：$c_t + i_t = w_t h_t + r_t k_t$&lt;/li&gt;
+&lt;li&gt;时期$t$的期望效用：
+&lt;ul&gt;
+&lt;li&gt;$u(c_t, \alpha_t) = \ln c_t + h_t \frac{A \ln (1-h_0)}{h_0} + A (1-\frac{h_t}{h_0}) \ln (1)$&lt;/li&gt;
+&lt;li&gt;$\frac{h_t}{h_0} = \alpha_t, B = \frac{A \ln (1-h_0)}{h_0}$&lt;/li&gt;
+&lt;li&gt;化简：$u(c_t, \alpha_t) = \ln c_t + B h_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;最大化效用：$\max \sum_{t=0}^\infty \beta^t [\ln c_t + B h_t]$&lt;/li&gt;
+&lt;li&gt;约束：
+&lt;ul&gt;
+&lt;li&gt;$c_t + i_t = w_t h_t + r_t k_t$&lt;/li&gt;
+&lt;li&gt;$k_{t+1} = (1-\delta) k_t + i_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;生产函数和技术变动的随机过程和之前一样&lt;/li&gt;
+&lt;li&gt;社会计划者问题：
+&lt;ul&gt;
+&lt;li&gt;最大化：$\max \sum_{t=0}^\infty \beta^t [\ln c_t + B h_t]$&lt;/li&gt;
+&lt;li&gt;约束：$\lambda_t k_t^\theta h_t^{1-\theta} = c_t + k_{t+1} - (1-\delta) k_t$&lt;/li&gt;
+&lt;li&gt;技术：$\ln \lambda_{t+1} = \gamma \ln \lambda_t + \varepsilon_{t+1}$&lt;/li&gt;
+&lt;li&gt;完全竞争：$\lambda_t k_t^\theta h_t^{1-\theta} = w_t h_t + r_t k_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bellman Equation:
+&lt;ul&gt;
+&lt;li&gt;$V(k_t, \lambda_t) = \max_{c_t, h_t} [\ln c_t + Bh_t + \beta E_t V(k_{t+1}, \lambda_{t+1})]$&lt;/li&gt;
+&lt;li&gt;$V(k_t, \lambda_t) = \max_{k_{t+1}, h_t} {\ln [\lambda_t k_t^\theta h_t^{1-\theta} - k_{t+1} + (1-\delta)k_t] + Bh_t + \beta E_t V(k_{t+1}, \lambda_{t+1})]$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;一阶条件：
+&lt;ul&gt;
+&lt;li&gt;$0 = \frac{1}{c_t} [(1-\theta) \lambda_t k_t^\theta h_t^{-\theta}] + B$&lt;/li&gt;
+&lt;li&gt;$0 = -\frac{1}{c_t} + E_t \left[ \frac{1}{c_{t+1}} \lambda_t k_t^{\theta-1} h_t^{1-\theta} + (1-\delta) \right]$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;总量：
+&lt;ul&gt;
+&lt;li&gt;$1 = \beta E_t \left[ \frac{C_t}{C_{t+1}} (r_{t+1} + (1-\delta)) \right]$&lt;/li&gt;
+&lt;li&gt;$C_t = - \frac{(1-\theta)Y_t}{BH_t}$&lt;/li&gt;
+&lt;li&gt;$C_t + K_{t+1} = Y_t + (1-\delta) K_t$&lt;/li&gt;
+&lt;li&gt;$r_t = \theta \lambda_t K_t^{\theta-1} H_t^{1-\theta}$&lt;/li&gt;
+&lt;li&gt;$Y_t = \lambda_t K_t^{\theta} H_t^{1-\theta}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;该模型与前一个模型的唯一区别就是第二个一阶条件&lt;/li&gt;
+&lt;li&gt;后续步骤也一样
+&lt;ul&gt;
+&lt;li&gt;计算稳态&lt;/li&gt;
+&lt;li&gt;对数线性化&lt;/li&gt;
+&lt;li&gt;计算方差&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;9-脉冲响应函数&#34;&gt;9. 脉冲响应函数&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$\tilde{\lambda}_t = \gamma \tilde{\lambda}_{t-1} + \varepsilon_t$&lt;/li&gt;
+&lt;li&gt;另第一期的$\varepsilon_t = 0.01$&lt;/li&gt;
+&lt;li&gt;可以得到$\tilde{\lambda}_t$的一系列变化时间路径&lt;/li&gt;
+&lt;li&gt;根据运动方程可以计算出其他变量的变化路径&lt;/li&gt;
+&lt;li&gt;就可以画出脉冲响应函数图&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Note: ABC, (6) Hansen的RBC模型-2</title>
