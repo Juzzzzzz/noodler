@@ -96,7 +96,7 @@
 &lt;li&gt;Bellman Equation:
 &lt;ul&gt;
 &lt;li&gt;$V(k_t, \lambda_t) = \max_{c_t, h_t} [\ln c_t + Bh_t + \beta E_t V(k_{t+1}, \lambda_{t+1})]$&lt;/li&gt;
-&lt;li&gt;$V(k_t, \lambda_t) = \max_{k_{t+1}, h_t} {\ln [\lambda_t k_t^\theta h_t^{1-\theta} - k_{t+1} + (1-\delta)k_t] + Bh_t + \beta E_t V(k_{t+1}, \lambda_{t+1})]$&lt;/li&gt;
+&lt;li&gt;$V(k_t, \lambda_t) = \max_{k_{t+1}, h_t} {\ln [\lambda_t k_t^\theta  h_t^{1-\theta} - k_{t+1} + (1-\delta) k_t] + B h_t + \beta E_t V(k_{t+1}, \lambda_{t+1})] }$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;一阶条件：
