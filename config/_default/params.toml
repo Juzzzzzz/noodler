@@ -208,7 +208,7 @@ plugins_js  = []
   #   0: Disabled
   #   1: Disqus (https://disqus.com)
   #   2: Commento (https://commento.io)
-  engine = 2
+  engine = 3
 
   # Which page types are commentable?
   commentable = {page = true, post = true, docs = true, project = true, publication = true, talk = true}
@@ -222,6 +222,20 @@ plugins_js  = []
   [comments.commento]
     # If self-hosting Commento, enter its URL here (e.g. "https://commento.?.com"), otherwise leave empty.
     url = ""
+    
+  [comments.gitalk] 
+    clientID = "fccfbec27f375bc38b5c" # Your client ID
+    clientSecret = "04b37cc31c770d0f848bce7a27f4b356ec2822d6" # Your client secret
+    repo = "blog.noodler.xyz" # The repo to store comments
+    owner = "Juzzzzzz" # Your GitHub ID
+    admin= "Juzzzzzz" # Required. Github repository owner and collaborators. (Users who having write access to this repository)
+    id= "location.pathname" # The unique id of the page.
+    labels= "gitalk" # Github issue labels. If you used to use Gitment, you can change it
+    perPage= 15 # Pagination size, with maximum 100.
+    pagerDirection= "last" # Comment sorting direction, available values are 'last' and 'first'.
+    createIssueManually= false # If it is 'false', it is auto to make a Github issue when the administrators login.
+    distractionFreeMode= false # Enable hot key (cmd|ctrl + enter) submit comment.
+
 
 ############################
 ## Search
@@ -231,7 +245,7 @@ plugins_js  = []
   #   0: No search engine
   #   1: Academic (built-in)
   #   2: Algolia (https://www.algolia.com)
-  engine = 1
+  engine = 0
 
   # Configuration of Algolia search engine.
   # Paste the values from your Algolia dashboard.
