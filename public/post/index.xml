@@ -5,12 +5,154 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Fri, 25 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/share_logo.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Monetary Policy and the Redistribution Channel</title>
+      <link>/post/2020-09-25-by_paper_002/</link>
+      <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-09-25-by_paper_002/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Tobin（1982）的直觉：
+&lt;ul&gt;
+&lt;li&gt;如果债权人和债务人利用财富的边际消费倾向是相同的，那么总体将不会受到影响&lt;/li&gt;
+&lt;li&gt;但是现实中债务人和债权人并不是随机分布的&lt;/li&gt;
+&lt;li&gt;债务人有充分的理由进行借款，他们有更高的利用财富和收入的边际消费倾向&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;宽松的货币政策下，拥有更高的边际消费倾向的人会比低MPC的人更加受益&lt;/li&gt;
+&lt;li&gt;扩张的货币政策：
+&lt;ul&gt;
+&lt;li&gt;增加实际收入&lt;/li&gt;
+&lt;li&gt;增加通货膨胀率&lt;/li&gt;
+&lt;li&gt;降低实际利率&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;并不是所有的人受到这些变化的影响是一样的，所以就产生了再分配效应&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;货币政策分配效应的三个传导渠道&#34;&gt;货币政策分配效应的三个传导渠道&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;收入异质性渠道（Earnings Heterogeneity Channel）
+&lt;ul&gt;
+&lt;li&gt;扩张的货币政策会增加劳动和利润收入&lt;/li&gt;
+&lt;li&gt;一些人会获得不成比例的益处，但也会有人可能会遭受损失&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;费雪渠道（Fisher Channel）
+&lt;ul&gt;
+&lt;li&gt;意外的通货膨胀会重构名义资产负债表&lt;/li&gt;
+&lt;li&gt;名义债权人损失，名义债务人获利&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;利率敞口渠道（Interest Rate Exposure Channel）
+&lt;ul&gt;
+&lt;li&gt;实际利率下降会推高金融资产价格&lt;/li&gt;
+&lt;li&gt;但是并不能直接认为资产持有者就会受益&lt;/li&gt;
+&lt;li&gt;必须要考虑资产和负债的持续期哪个更长&lt;/li&gt;
+&lt;li&gt;负债包括消费计划，资产包括人力资本&lt;/li&gt;
+&lt;li&gt;未对冲的利率敞口(UREs)，即在某个时间点上所有到期资产和负债之间的差额，用于衡量家庭资产负债表对实际利率变化的敞口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;本文将货币政策短期变化的消费效应分解为各个渠道的贡献，还包括总收入渠道（Aggregate Income Channel）和替代渠道（Substitution Channel）&lt;/li&gt;
+&lt;li&gt;再分配放大了这些效应，前提是扩张货币政策的赢家的MPC更高&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;文献综述&#34;&gt;文献综述&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Doepke and Schneider（2006），他们测量了美国不同部门和家庭群体在不同通胀情景下的资产负债表敞口。净名义头寸(NNPs)可以量化价格水平意外上升的风险敞口。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>货币政策对收入分配影响效应的国外研究进展</title>
+      <link>/post/2020-09-20-by_paper_001/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-09-20-by_paper_001/</guid>
+      <description>&lt;h1 id=&#34;关于货币政策对收入分配影响的理论学派之争&#34;&gt;关于货币政策对收入分配影响的理论学派之争&lt;/h1&gt;
+&lt;h2 id=&#34;1-后凯恩斯主义学派&#34;&gt;1. 后凯恩斯主义学派&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;后凯恩斯主义学派主要探讨基于功能性收入分配的研究&lt;/li&gt;
+&lt;li&gt;内生货币供给理论是后凯恩斯主义经济学的基石&lt;/li&gt;
+&lt;li&gt;货币供给源于市场的内生需求，是信贷需求决定的内生变量&lt;/li&gt;
+&lt;li&gt;货币供给由货币需求内生驱动，利率由中央银行外生给定&lt;/li&gt;
+&lt;li&gt;后凯恩斯主义学派强调货币政策通过利率调整这一外生变量对收入分配的影响&lt;/li&gt;
+&lt;li&gt;货币政策维持高利率以实现通货膨胀目标制带来的后果是劳动收入份额下降、资本收入份额上升&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-新古典经济学派&#34;&gt;2. 新古典经济学派&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;新古典经济学派认为劳动和资本两个生产要素之间是可以相互替换的&lt;/li&gt;
+&lt;li&gt;新古典经济学派强调理性预期，一度被称为“理性预期学派”&lt;/li&gt;
+&lt;li&gt;主张：
+&lt;ul&gt;
+&lt;li&gt;政府应当明确规定一个固定的货币供应量年增长率&lt;/li&gt;
+&lt;li&gt;以抑制通货膨胀、解除市场参与者的预期防范，那么物价自会稳定&lt;/li&gt;
+&lt;li&gt;劳动收入份额也不会下降，产出也不会减少&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;只要货币政策规则保持长期不变，且始终公开透明，那么就为人们提供了公平的规则和平等的机会&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-新凯恩斯经济学派&#34;&gt;3. 新凯恩斯经济学派&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;后凯恩斯主义学派认为，利率上升可以有效抑制通货膨胀&lt;/li&gt;
+&lt;li&gt;Sims（1992）研究发现，利率上升并不一定导致物价下降，而价格水平的上升则会导致产出出现大幅下降（“价格之谜”）&lt;/li&gt;
+&lt;li&gt;新凯恩斯主义：
+&lt;ul&gt;
+&lt;li&gt;垄断竞争&lt;/li&gt;
+&lt;li&gt;价格粘性&lt;/li&gt;
+&lt;li&gt;理性预期&lt;/li&gt;
+&lt;li&gt;菲利普斯曲线&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;新凯恩斯主义学派以新凯恩斯菲利普斯曲线作为研究主线&lt;/li&gt;
+&lt;li&gt;将货币政策和要素收入分配联系起来进行研究&lt;/li&gt;
+&lt;li&gt;探讨劳动收入份额是否能有效反映通货膨胀动态变化&lt;/li&gt;
+&lt;li&gt;货币政策是否应将劳动收入份额纳入目标考虑范围&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;关于货币政策对收入分配影响的传导路径研究&#34;&gt;关于货币政策对收入分配影响的传导路径研究&lt;/h1&gt;
+&lt;h2 id=&#34;1-收入构成渠道&#34;&gt;1. 收入构成渠道&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;货币政策下，因个体间职业选择和初始财富差异性造成收入构成不同而产生的收入分配效应&lt;/li&gt;
+&lt;li&gt;对收入水平相对较低的个体，其劳动供给的工资收入弹性相对较高，货币政策的扩张有助于提升就业率从而可以有效改善收入分配不均&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-金融分割渠道&#34;&gt;2. 金融分割渠道&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;货币供应量的增长将对那些与金融市场联系紧密的经济主体的财富产生再分配作用&lt;/li&gt;
+&lt;li&gt;金融市场的不完全性是贫困存在的一个重要原因，贫困家庭由于信贷约束难以从金融市场获取相应的资本用于扩大再生产&lt;/li&gt;
+&lt;li&gt;贫困群里难以享受到货币扩张带来的福利&lt;/li&gt;
+&lt;li&gt;货币政策通过金融分割渠道对收入分配的影响主要取决于两方面因素&lt;/li&gt;
+&lt;li&gt;一是金融市场的异质性
+&lt;ul&gt;
+&lt;li&gt;货币政策对参与金融市场活动的个体收入的影响取决于他们在金融市场上面临的再融资和在投资条件&lt;/li&gt;
+&lt;li&gt;贷款人和借款人可能面临不同的再融资和或市场再投资条件，因此可能受到利率变化的不同影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;二是对金融市场的参与度
+&lt;ul&gt;
+&lt;li&gt;货币政策通过金融市场上价格变化影响总需求&lt;/li&gt;
+&lt;li&gt;家庭调整他们的消费和投资，以适应这些价格变化，然后转化为对经济的总体影响&lt;/li&gt;
+&lt;li&gt;然而大部分家庭只有有限的机会进入金融市场&lt;/li&gt;
+&lt;li&gt;由于这部分群体无法对资产价格变化做出全面反应&lt;/li&gt;
+&lt;li&gt;因此只受到货币政策的间接影响，这阻碍或减缓了货币政策向经济的传导&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-资产配置渠道&#34;&gt;3. 资产配置渠道&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;货币政策变动引起资产价格波动，进而影响资产配置、引起财富重新分配&lt;/li&gt;
+&lt;li&gt;货币扩张会增加产出，并引发资产价格上涨&lt;/li&gt;
+&lt;li&gt;持有不同资产配置的人群因资产价格的上涨导致名义收入增加，从而导致收入分配不平等现象加剧&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-储蓄再分配渠道&#34;&gt;4. 储蓄再分配渠道&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;货币政策通过调整利率、货币供应量等影响投资率及储蓄倾向，进而影响资本形成、产出与就业，最终对收入分配产生影响&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>American Economic Review, 2020, 100(9)</title>

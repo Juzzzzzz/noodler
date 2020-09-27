@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>论文笔记 | Ju丶Blog</title>
-    <link>/tag/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/</link>
-      <atom:link href="/tag/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
-    <description>论文笔记</description>
+    <title>分配效应 | Ju丶Blog</title>
+    <link>/tag/%E5%88%86%E9%85%8D%E6%95%88%E5%BA%94/</link>
+      <atom:link href="/tag/%E5%88%86%E9%85%8D%E6%95%88%E5%BA%94/index.xml" rel="self" type="application/rss+xml" />
+    <description>分配效应</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Fri, 25 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/share_logo.png</url>
-      <title>论文笔记</title>
-      <link>/tag/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/</link>
+      <title>分配效应</title>
+      <link>/tag/%E5%88%86%E9%85%8D%E6%95%88%E5%BA%94/</link>
     </image>
     
     <item>
@@ -150,98 +150,6 @@
 &lt;h2 id=&#34;4-储蓄再分配渠道&#34;&gt;4. 储蓄再分配渠道&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;货币政策通过调整利率、货币供应量等影响投资率及储蓄倾向，进而影响资本形成、产出与就业，最终对收入分配产生影响&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Note of &#34;Tips on Writing a Referee&#39;s Report&#34;</title>
-      <link>/post/2020-05-18-referee-report/</link>
-      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020-05-18-referee-report/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2020/05/19/rl473ipohxf6T9Z.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;a-typical-referee-report&#34;&gt;A Typical Referee Report&lt;/h1&gt;
-&lt;h2 id=&#34;cover-letter&#34;&gt;Cover Letter&lt;/h2&gt;
-&lt;h3 id=&#34;tell-the-editor-your-frank-opinion-of-what-you-think-that-he-or-she-should-do-about-the-paper&#34;&gt;Tell the editor your frank opinion of what you think that he or she should do about the paper.&lt;/h3&gt;
-&lt;h3 id=&#34;the-bottom-line-is-whether-the-paper-should-be&#34;&gt;The bottom line is whether the paper should be:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Rejected, using language that does not encourage a resubmission&lt;/li&gt;
-&lt;li&gt;Rejected, but a resubmission should be allowed which addresses the concerns in your report&lt;/li&gt;
-&lt;li&gt;Rejected, but a resubmission which responds to the suggestions and comments in your report should be encouraged.&lt;/li&gt;
-&lt;li&gt;Accepted for publication.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;it-is-appropriate-to-alert-the-editor-to-any-aspects-of-the-paper-where-you-do-not-feel-competent-to-render-useful-judgments-never-attempt-to-bluff-when-you-dont-understand-something-it-is-better-to-admit-that-you-are-confused-about-or-dont-follow-some-argument-then-the-onus-is-on-the-author-to-explain-things-more-clearly&#34;&gt;It is appropriate to alert the editor to any aspects of the paper where you do not feel competent to render useful judgments. Never attempt to bluff when you don’t understand something. It is better to admit that you are confused about or don’t follow some argument. Then, the onus is on the author to explain things more clearly.&lt;/h3&gt;
-&lt;h3 id=&#34;to-the-editor&#34;&gt;To the editor&lt;/h3&gt;
-&lt;h2 id=&#34;main-body&#34;&gt;Main Body&lt;/h2&gt;
-&lt;h3 id=&#34;a-brief-summary-of-the-paper&#34;&gt;A brief summary of the paper&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The paper’s place in the literature&lt;/li&gt;
-&lt;li&gt;To see the connections to the literature&lt;/li&gt;
-&lt;li&gt;One or two sentences, or at most a short paragraph&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;criticisms-and-constructive-comments&#34;&gt;Criticisms and constructive comments&lt;/h3&gt;
-&lt;h3 id=&#34;the-first-paragraph&#34;&gt;The first paragraph&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;A short summary of the paper, focusing on the main important features of the paper&lt;/li&gt;
-&lt;li&gt;How the paper is motivated in relation to the literature&lt;/li&gt;
-&lt;li&gt;What the contributions of the paper are to the literature&lt;/li&gt;
-&lt;li&gt;Don’t second guess the authors’ interpretation of what the paper contributes; rather, take the authors’ representation as given.&lt;/li&gt;
-&lt;li&gt;If you disagree with the authors’ interpretation, explain the reasons for your disagreement later in the report.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;the-second-paragraph&#34;&gt;The second paragraph&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Summarize your overall opinion of the strengths and weaknesses of the paper.&lt;/li&gt;
-&lt;li&gt;And your view of its potential contribution to the literature.&lt;/li&gt;
-&lt;li&gt;If you are negative on a paper due to a lack of important enough, then make this clear to both the author and the editor.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;structural-paragraph&#34;&gt;Structural paragraph&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;List the main issues that the report will address in more detail.&lt;/li&gt;
-&lt;li&gt;Describe how the rest of the report is organized around those issues.&lt;/li&gt;
-&lt;li&gt;Do not put your recommendation to reject or allow a revision in the report. That goes in the letter to the editor.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;subsequent-paragraphs&#34;&gt;Subsequent paragraphs&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Provide and explain your criticisms and suggestions for improving the paper&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Unacceptable aspect: try to offer the authors a concrete, constructive suggestion on how to address your concern.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A major, fatal flaw: discuss this early in the report.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;For example, Theorem 1 is wrong and the whole paper relies on it. Present your counterexample to the theorem right away!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Organize and group your comments into categories.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;For example, comments on the theory, the empirical methods, the authors’ interpretation of the evidence, etc. may be grouped together. Comments directed at improving the exposition of the paper are&lt;br&gt;
-also an appropriate category.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Even the roughest papers may contain the kernel of an interesting idea that you can highlight and help the authors pursue.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Number your main points or otherwise set them out in some organized way for easy reference in the future.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;evaluating-a-paper&#34;&gt;Evaluating a Paper&lt;/h2&gt;
-&lt;h3 id=&#34;the-importance-of-the-question-or-findings-in-the-context-of-the-literature&#34;&gt;The importance of the question or findings in the context of the literature&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Two or three main papers that are related to the submission&lt;/li&gt;
-&lt;li&gt;The state of knowledge about the question&lt;/li&gt;
-&lt;li&gt;How does this paper potentially advance this state of knowledge?&lt;/li&gt;
-&lt;li&gt;Important for a top journal&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;the-execution&#34;&gt;The execution&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;The quality of the writing and exposition&lt;/li&gt;
-&lt;li&gt;The structure and elegance of the model&lt;/li&gt;
-&lt;li&gt;The appropriateness of the empirical methods, data, and so on&lt;/li&gt;
-&lt;li&gt;When you ientify a problem with execution you should try to suggest a solution&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

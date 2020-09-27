@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>文献综述 | Ju丶Blog</title>
+    <link>/tag/%E6%96%87%E7%8C%AE%E7%BB%BC%E8%BF%B0/</link>
+      <atom:link href="/tag/%E6%96%87%E7%8C%AE%E7%BB%BC%E8%BF%B0/index.xml" rel="self" type="application/rss+xml" />
+    <description>文献综述</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Sun, 20 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/share_logo.png</url>
+      <title>文献综述</title>
+      <link>/tag/%E6%96%87%E7%8C%AE%E7%BB%BC%E8%BF%B0/</link>
+    </image>
+    
+    <item>
+      <title>货币政策对收入分配影响效应的国外研究进展</title>
+      <link>/post/2020-09-20-by_paper_001/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-09-20-by_paper_001/</guid>
+      <description>&lt;h1 id=&#34;关于货币政策对收入分配影响的理论学派之争&#34;&gt;关于货币政策对收入分配影响的理论学派之争&lt;/h1&gt;
+&lt;h2 id=&#34;1-后凯恩斯主义学派&#34;&gt;1. 后凯恩斯主义学派&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;后凯恩斯主义学派主要探讨基于功能性收入分配的研究&lt;/li&gt;
+&lt;li&gt;内生货币供给理论是后凯恩斯主义经济学的基石&lt;/li&gt;
+&lt;li&gt;货币供给源于市场的内生需求，是信贷需求决定的内生变量&lt;/li&gt;
+&lt;li&gt;货币供给由货币需求内生驱动，利率由中央银行外生给定&lt;/li&gt;
+&lt;li&gt;后凯恩斯主义学派强调货币政策通过利率调整这一外生变量对收入分配的影响&lt;/li&gt;
+&lt;li&gt;货币政策维持高利率以实现通货膨胀目标制带来的后果是劳动收入份额下降、资本收入份额上升&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-新古典经济学派&#34;&gt;2. 新古典经济学派&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;新古典经济学派认为劳动和资本两个生产要素之间是可以相互替换的&lt;/li&gt;
+&lt;li&gt;新古典经济学派强调理性预期，一度被称为“理性预期学派”&lt;/li&gt;
+&lt;li&gt;主张：
+&lt;ul&gt;
+&lt;li&gt;政府应当明确规定一个固定的货币供应量年增长率&lt;/li&gt;
+&lt;li&gt;以抑制通货膨胀、解除市场参与者的预期防范，那么物价自会稳定&lt;/li&gt;
+&lt;li&gt;劳动收入份额也不会下降，产出也不会减少&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;只要货币政策规则保持长期不变，且始终公开透明，那么就为人们提供了公平的规则和平等的机会&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-新凯恩斯经济学派&#34;&gt;3. 新凯恩斯经济学派&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;后凯恩斯主义学派认为，利率上升可以有效抑制通货膨胀&lt;/li&gt;
+&lt;li&gt;Sims（1992）研究发现，利率上升并不一定导致物价下降，而价格水平的上升则会导致产出出现大幅下降（“价格之谜”）&lt;/li&gt;
+&lt;li&gt;新凯恩斯主义：
+&lt;ul&gt;
+&lt;li&gt;垄断竞争&lt;/li&gt;
+&lt;li&gt;价格粘性&lt;/li&gt;
+&lt;li&gt;理性预期&lt;/li&gt;
+&lt;li&gt;菲利普斯曲线&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;新凯恩斯主义学派以新凯恩斯菲利普斯曲线作为研究主线&lt;/li&gt;
+&lt;li&gt;将货币政策和要素收入分配联系起来进行研究&lt;/li&gt;
+&lt;li&gt;探讨劳动收入份额是否能有效反映通货膨胀动态变化&lt;/li&gt;
+&lt;li&gt;货币政策是否应将劳动收入份额纳入目标考虑范围&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;关于货币政策对收入分配影响的传导路径研究&#34;&gt;关于货币政策对收入分配影响的传导路径研究&lt;/h1&gt;
+&lt;h2 id=&#34;1-收入构成渠道&#34;&gt;1. 收入构成渠道&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;货币政策下，因个体间职业选择和初始财富差异性造成收入构成不同而产生的收入分配效应&lt;/li&gt;
+&lt;li&gt;对收入水平相对较低的个体，其劳动供给的工资收入弹性相对较高，货币政策的扩张有助于提升就业率从而可以有效改善收入分配不均&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-金融分割渠道&#34;&gt;2. 金融分割渠道&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;货币供应量的增长将对那些与金融市场联系紧密的经济主体的财富产生再分配作用&lt;/li&gt;
+&lt;li&gt;金融市场的不完全性是贫困存在的一个重要原因，贫困家庭由于信贷约束难以从金融市场获取相应的资本用于扩大再生产&lt;/li&gt;
+&lt;li&gt;贫困群里难以享受到货币扩张带来的福利&lt;/li&gt;
+&lt;li&gt;货币政策通过金融分割渠道对收入分配的影响主要取决于两方面因素&lt;/li&gt;
+&lt;li&gt;一是金融市场的异质性
+&lt;ul&gt;
+&lt;li&gt;货币政策对参与金融市场活动的个体收入的影响取决于他们在金融市场上面临的再融资和在投资条件&lt;/li&gt;
+&lt;li&gt;贷款人和借款人可能面临不同的再融资和或市场再投资条件，因此可能受到利率变化的不同影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;二是对金融市场的参与度
+&lt;ul&gt;
+&lt;li&gt;货币政策通过金融市场上价格变化影响总需求&lt;/li&gt;
+&lt;li&gt;家庭调整他们的消费和投资，以适应这些价格变化，然后转化为对经济的总体影响&lt;/li&gt;
+&lt;li&gt;然而大部分家庭只有有限的机会进入金融市场&lt;/li&gt;
+&lt;li&gt;由于这部分群体无法对资产价格变化做出全面反应&lt;/li&gt;
+&lt;li&gt;因此只受到货币政策的间接影响，这阻碍或减缓了货币政策向经济的传导&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-资产配置渠道&#34;&gt;3. 资产配置渠道&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;货币政策变动引起资产价格波动，进而影响资产配置、引起财富重新分配&lt;/li&gt;
+&lt;li&gt;货币扩张会增加产出，并引发资产价格上涨&lt;/li&gt;
+&lt;li&gt;持有不同资产配置的人群因资产价格的上涨导致名义收入增加，从而导致收入分配不平等现象加剧&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-储蓄再分配渠道&#34;&gt;4. 储蓄再分配渠道&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;货币政策通过调整利率、货币供应量等影响投资率及储蓄倾向，进而影响资本形成、产出与就业，最终对收入分配产生影响&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
