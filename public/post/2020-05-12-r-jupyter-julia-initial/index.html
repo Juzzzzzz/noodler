@@ -661,12 +661,17 @@
 <pre><code class="language-r"># 新建一个存放R包的文件夹
 dir.create(&quot;~/.R_PKG&quot;)
 # 将环境变量写入文件
-cat('R_LIBS_USER=\&quot;~/.R_PKG\&quot;', file = &quot;~/.Renviron&quot;)
+file.create(&quot;~/.Renviron&quot;)
+write('R_LIBS_USER=\&quot;~/.R_PKG\&quot;', file = &quot;~/.Renviron&quot;, append = TRUE)
+</code></pre>
+<h2 id="rtools-环境"><code>Rtools</code> 环境</h2>
+<pre><code class="language-r">write('PATH=&quot;${RTOOLS40_HOME}\\usr\\bin;${PATH}&quot;', file = &quot;~/.Renviron&quot;, append = TRUE)
 </code></pre>
 <h2 id="rprofile-文件"><code>.Rprofile</code> 文件</h2>
-<p>R的启动选项，暂时把镜像设置上：</p>
+<p>R的启动选项，暂时把镜像和 <code>HUGO</code> 设置上：</p>
 <pre><code class="language-r">options(
-    repos = c(CRAN = &quot;https://mirrors.tongji.edu.cn/CRAN&quot;)
+    repos = c(CRAN = &quot;https://mirrors.tuna.tsinghua.edu.cn/CRAN&quot;),
+    blogdown.hugo.dir = 'C:/Env/HUGO/0.70.0/'
 )
 </code></pre>
 <h1 id="python"><code>Python</code></h1>

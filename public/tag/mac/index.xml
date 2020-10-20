@@ -84,12 +84,17 @@ sqlite3 db &amp;quot;delete from apps where title=&#39;Hacknet&#39;;&amp;quot;&a
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# 新建一个存放R包的文件夹
 dir.create(&amp;quot;~/.R_PKG&amp;quot;)
 # 将环境变量写入文件
-cat(&#39;R_LIBS_USER=\&amp;quot;~/.R_PKG\&amp;quot;&#39;, file = &amp;quot;~/.Renviron&amp;quot;)
+file.create(&amp;quot;~/.Renviron&amp;quot;)
+write(&#39;R_LIBS_USER=\&amp;quot;~/.R_PKG\&amp;quot;&#39;, file = &amp;quot;~/.Renviron&amp;quot;, append = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;rtools-环境&#34;&gt;&lt;code&gt;Rtools&lt;/code&gt; 环境&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;write(&#39;PATH=&amp;quot;${RTOOLS40_HOME}\\usr\\bin;${PATH}&amp;quot;&#39;, file = &amp;quot;~/.Renviron&amp;quot;, append = TRUE)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;rprofile-文件&#34;&gt;&lt;code&gt;.Rprofile&lt;/code&gt; 文件&lt;/h2&gt;
-&lt;p&gt;R的启动选项，暂时把镜像设置上：&lt;/p&gt;
+&lt;p&gt;R的启动选项，暂时把镜像和 &lt;code&gt;HUGO&lt;/code&gt; 设置上：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;options(
-    repos = c(CRAN = &amp;quot;https://mirrors.tongji.edu.cn/CRAN&amp;quot;)
+    repos = c(CRAN = &amp;quot;https://mirrors.tuna.tsinghua.edu.cn/CRAN&amp;quot;),
+    blogdown.hugo.dir = &#39;C:/Env/HUGO/0.70.0/&#39;
 )
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id=&#34;python&#34;&gt;&lt;code&gt;Python&lt;/code&gt;&lt;/h1&gt;

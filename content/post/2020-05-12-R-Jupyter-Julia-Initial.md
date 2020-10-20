@@ -23,17 +23,24 @@ tags:
 # 新建一个存放R包的文件夹
 dir.create("~/.R_PKG")
 # 将环境变量写入文件
-cat('R_LIBS_USER=\"~/.R_PKG\"', file = "~/.Renviron")
+file.create("~/.Renviron")
+write('R_LIBS_USER=\"~/.R_PKG\"', file = "~/.Renviron", append = TRUE)
 ```
 
+## `Rtools` 环境
+
+``` r
+write('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', file = "~/.Renviron", append = TRUE)
+```
 
 ## `.Rprofile` 文件
 
-R的启动选项，暂时把镜像设置上：
+R的启动选项，暂时把镜像和 `HUGO` 设置上：
 
 ``` r
 options(
-    repos = c(CRAN = "https://mirrors.tongji.edu.cn/CRAN")
+    repos = c(CRAN = "https://mirrors.tuna.tsinghua.edu.cn/CRAN"),
+    blogdown.hugo.dir = 'C:/Env/HUGO/0.70.0/'
 )
 ```
 

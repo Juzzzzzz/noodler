@@ -5,12 +5,93 @@
     <link>/tag/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/</link>
       <atom:link href="/tag/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <description>论文笔记</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Mon, 12 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/share_logo.png</url>
       <title>论文笔记</title>
       <link>/tag/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/</link>
     </image>
+    
+    <item>
+      <title>The Inequality Channel of Monetary Transmission</title>
+      <link>/post/2020-10-12-by_paper_004/</link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-10-12-by_paper_004/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;本文作者将异质性代理人纳入到新凯恩斯框架内
+&lt;ul&gt;
+&lt;li&gt;高技能代理人（Skilled）：提供高技能劳动、工资高、参与金融市场&lt;/li&gt;
+&lt;li&gt;低技能代理人（Unskilled）：提供低技能劳动、工资低、不参与金融市场&lt;/li&gt;
+&lt;li&gt;厂商的生产要素为两种劳动：$Y_t(z) = A_t [H_t^e(z)]^q [H_t^i(z)]^{1-q}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;构建基于消费的Gini系数衡量分配不平等性&lt;/li&gt;
+&lt;li&gt;将分配不平等纳入央行最优货币政策目标&lt;/li&gt;
+&lt;li&gt;货币政策对产出缺口和分配不平等都有影响，进而影响通胀
+&lt;ul&gt;
+&lt;li&gt;因为冲击会对劳动市场产生影响&lt;/li&gt;
+&lt;li&gt;工资和工作时间产生变化，然而影响对两类家庭是不同的&lt;/li&gt;
+&lt;li&gt;厂商在制定产品价格时会考虑这种影响&lt;/li&gt;
+&lt;li&gt;本文找到了一个利率影响通胀的一个新渠道&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;随着金融收入家庭的减少
+&lt;ul&gt;
+&lt;li&gt;货币政策的影响会更加温和&lt;/li&gt;
+&lt;li&gt;更多的家庭不会对利率变动做出反应&lt;/li&gt;
+&lt;li&gt;但是财政政策会成为影响不平等和产出缺口更相关的工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;存在不平等渠道条件下，生产率冲击也会对货币政策产生影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;文献综述&#34;&gt;文献综述&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Romer and Romer (1999) 发现通胀和不平等性之间存在很强的正相关性&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Easterly and Fischer (2001) 发现改善穷人福利的直接措施与通胀存在负的相关性&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Doepke and Schneider (2006) 通过名义资产价值的变化来评估通胀的影响，发现通货膨胀的主要输家是富有的家庭和主要债券持有人&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Coibion et al. (2012) 证明在美国货币政策对增加收入和消费不平等，具有实质和持久的再分配效应&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;也有一些学者研究分配不平等对通货膨胀的影响&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Al-Marhubi (1997) 研究发现，在控制了开放程度、政治不稳定性和央行独立性的条件下，收不不平等程度越高的国家，平均通胀率也越高&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dolmas et at. (2000) 证明在民主国家，收入不平等和通胀是正相关的&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Galí et al. (2004) 将拇指规则消费者引入到新凯恩斯主义框架内，显示他们的存在将显著改变已被广泛使用的利率规则的性质&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Motta and Tirelli (2014) 发现货币紧缩具有有利于资产持有者的再分配效应，这证实了 Coibion et al. (2012) 的发现&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;收获&#34;&gt;收获&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;拇指规则（Rule of Thumb）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;经济决策者对信息的处理方式不是按照理性预期的方式，把所有获得的信息都引入到决策模型中&lt;/li&gt;
+&lt;li&gt;他们往往遵循的是，只考虑重要信息，而忽略掉其他信息，否则信息成本无限高&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Areosa and Areosa (2016) 构建了一个异质性代理人的新凯恩斯主义模型，使用基于消费的Gini系数来衡量分配不平等性，研究发现货币政策对通货膨胀的影响存在一条分配不平等渠道，由于劳动力市场存在异质性，货币政策冲击会对两类工人的工资和工作时间产生不同的影响，厂商在产品定价时会考虑这种影响，从而对通胀产生影响。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Areosa and Areosa (2016) 构建了一个异质性代理人的新凯恩斯主义模型，随着有金融收入家庭的减少，货币政策对收入分配的影响会越来越小，此时，财政政策会成为影响不平等和产出缺口更相关的工具。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>国家级贫困县政策的收入分配效应</title>
