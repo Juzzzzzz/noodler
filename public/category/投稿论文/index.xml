@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>投稿论文 | Ju丶Blog</title>
+    <link>/category/%E6%8A%95%E7%A8%BF%E8%AE%BA%E6%96%87/</link>
+      <atom:link href="/category/%E6%8A%95%E7%A8%BF%E8%AE%BA%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+    <description>投稿论文</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/share_logo.png</url>
+      <title>投稿论文</title>
+      <link>/category/%E6%8A%95%E7%A8%BF%E8%AE%BA%E6%96%87/</link>
+    </image>
+    
+    <item>
+      <title>Religion and Stock Price Crash Risk</title>
+      <link>/post/2020-10-26-by_paper_006/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-10-26-by_paper_006/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;总部位于宗教虔诚程度较高地区的公司，未来股价崩盘的风险较低&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;宗教作为一种社会规范，有助于控制管理者隐藏坏消息的行为&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;宗教虔诚度与未来崩溃风险之间的负相关关系，对于风险较大的公司和治理机制较弱的公司更强&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;本文作者推测：反对操纵的宗教风气形成了一种强大的社会规范，反对向投资者隐瞒坏消息&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;宗教的社会规范观点通过三种方式减少对坏消息的隐瞒：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;宗教管理者更有可能内化与反操纵相关的社会规范，因此不太可能操纵公司信息流&lt;/li&gt;
+&lt;li&gt;即使他们的宗教信仰只是表面上的，如果管理者被发现通过操纵公司信息流而违反社会规范，特别是如果他们被雇佣在一个更虔诚的环境中，他们可能会付出社会污名的高昂代价&lt;/li&gt;
+&lt;li&gt;宗教环境培育了潜在的告密者，这些告密者内化了宗教社会规范，并认为宗教有义务揭露操纵者&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;文献综述&#34;&gt;文献综述&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Barro and McCleary (2003) 认为宗教主要通过培养宗教信仰来影响经济结果，宗教信仰会影响个人的诚实和职业道德等性格特征&lt;/li&gt;
+&lt;li&gt;管理者对投资者隐瞒坏消息是出于职业生涯和短期薪酬方面的考虑，而当长期的坏消息累积到一个关键的阈值时，管理者往往会放弃隐瞒，此时，所有针对公司的负面冲击都立即公开，导致崩盘，在回报分布中出现一个巨大的负面异常值。(Jin and Myers , 2006, Hutton et al. , 2009, Kim, Li, and Zhang , 2011a, 2011b))&lt;/li&gt;
+&lt;li&gt;Chen et al. (2001) 认为，波动越大的股票在未来更有可能崩盘&lt;/li&gt;
+&lt;li&gt;Bushee(1998)、(2001) 提供的证据表明，专业的机构投资者在有效遏制管理层短视的短期投资行为方面发挥着监督作用&lt;/li&gt;
+&lt;li&gt;Chen、Harford and Li(2007) 发现，独立的长期机构具有集中的持股，促进了对收购的监控&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;收获&#34;&gt;收获&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;假设1：总部设在宗教虔诚程度较高的县的公司，未来股价崩盘的风险较低
+&lt;ul&gt;
+&lt;li&gt;REL: 宗教虔诚度，宗教信徒的数量占县总人口的比例&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;假设2：当公司的治理监督机制较弱时，虔诚度与未来股价崩盘风险之间的关系更强（负相关）
+&lt;ul&gt;
+&lt;li&gt;The number of state-level antitakeover statutes&lt;/li&gt;
+&lt;li&gt;The governance index of Gompers, Ishii, and Metrick (2003)&lt;/li&gt;
+&lt;li&gt;The percentage of shares outstanding held by dedicated institutions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;假设3：当公司风险更大时，虔诚度和未来股价崩盘风险之间的关系更强（负相关）
+&lt;ul&gt;
+&lt;li&gt;Leverage&lt;/li&gt;
+&lt;li&gt;Earnings Volatility&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
