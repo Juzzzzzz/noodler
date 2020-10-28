@@ -1,8 +1,7 @@
 ---
 authors:
 - noodler
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: My research interests include Macro Finance, Monetary Theory and Corporate Finance.
 education:
   courses:
   - course: Doctoral Candidate in Finance
