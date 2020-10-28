@@ -19,17 +19,52 @@
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/stock-crash/</loc>
+    <lastmod>2020-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/terrorist-attacks/</loc>
+    <lastmod>2020-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2020-10-28-by_paper_007/</loc>
+    <lastmod>2020-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/zhuo-ju/</loc>
+    <lastmod>2020-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/</loc>
+    <lastmod>2020-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2020-10-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -44,31 +79,6 @@
   
   <url>
     <loc>/post/2020-10-26-by_paper_006/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/stock-crash/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/zhuo-ju/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/category/%E6%8A%95%E7%A8%BF%E8%AE%BA%E6%96%87/</loc>
-    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2020-10-26T00:00:00+00:00</lastmod>
   </url>
   

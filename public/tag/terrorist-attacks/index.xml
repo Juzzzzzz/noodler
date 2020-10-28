@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>投稿论文 | Ju丶Blog</title>
-    <link>/category/%E6%8A%95%E7%A8%BF%E8%AE%BA%E6%96%87/</link>
-      <atom:link href="/category/%E6%8A%95%E7%A8%BF%E8%AE%BA%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
-    <description>投稿论文</description>
+    <title>Terrorist Attacks | Ju丶Blog</title>
+    <link>/tag/terrorist-attacks/</link>
+      <atom:link href="/tag/terrorist-attacks/index.xml" rel="self" type="application/rss+xml" />
+    <description>Terrorist Attacks</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Wed, 28 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/share_logo.png</url>
-      <title>投稿论文</title>
-      <link>/category/%E6%8A%95%E7%A8%BF%E8%AE%BA%E6%96%87/</link>
+      <title>Terrorist Attacks</title>
+      <link>/tag/terrorist-attacks/</link>
     </image>
     
     <item>
