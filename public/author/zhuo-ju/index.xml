@@ -5,12 +5,123 @@
     <link>/author/zhuo-ju/</link>
       <atom:link href="/author/zhuo-ju/index.xml" rel="self" type="application/rss+xml" />
     <description>Zhuo Ju</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Wed, 28 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Thu, 29 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/author/zhuo-ju/avatar-ju_huf69a69481739f07becc959d5043f1e1c_18303_270x270_fill_q90_lanczos_center.jpg</url>
       <title>Zhuo Ju</title>
       <link>/author/zhuo-ju/</link>
     </image>
+    
+    <item>
+      <title>Stock Liquidity and Stock Price Crash Risk</title>
+      <link>/post/2020-10-29-by_paper_008/</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-10-29-by_paper_008/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;股票流动性会增加股票价格崩溃的风险&lt;/li&gt;
+&lt;li&gt;股票流动性越高则股票崩盘风险越低
+&lt;ul&gt;
+&lt;li&gt;治理理论表明，较高的股票流动性可能会导致较低的崩溃风险，因为它有助于监控大股东的公司管理（Maug, 1998; Edmans, 2009）&lt;/li&gt;
+&lt;li&gt;对大股东的有效监管降低了公司由于投资决策效率低下而产生坏消息的可能性&lt;/li&gt;
+&lt;li&gt;较高的流动性提高了信息生产和知情交易，股票价格反映基本面&lt;/li&gt;
+&lt;li&gt;从而，管理层隐藏坏消息的能力减弱，崩盘风险降低&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;股票流动性越高则股票崩盘风险越高
+&lt;ul&gt;
+&lt;li&gt;短期主义理论认为，由于交易成本较低，较高的流动性可以吸引更多短期的机构投资者&lt;/li&gt;
+&lt;li&gt;这些投资者过度关注公司短期业绩，为了避免他们对股价造成的下行压力，经理人选择隐瞒坏消息夸大短期收益&lt;/li&gt;
+&lt;li&gt;坏消息累计，最终大量坏消息同时发布，引发临时投资者抛售，股价崩盘&lt;/li&gt;
+&lt;li&gt;当坏消息公开时，较高的股票流动性可以促进大股东退出&lt;/li&gt;
+&lt;li&gt;来自大股东的巨大抛售压力会放大市场对公司负面信息的反应，并导致股价暴跌&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;本文实证支持第二种观点&lt;/li&gt;
+&lt;li&gt;股票流动性使用股票交易的相对价差来衡量&lt;/li&gt;
+&lt;li&gt;美国股票市场采用十进制交易后，股票流动性大幅增加，崩溃风险也显著增加&lt;/li&gt;
+&lt;li&gt;低价股票的崩溃风险增加更加显著&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;文献综述&#34;&gt;文献综述&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Stock Liquidity: 股票流动性通常被定义为能够在短时间内以低成本交易大量公司股票的能力（Holden, Jacobsen and Subrah-manyam, 2014）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;治理理论&lt;/strong&gt;表明，较高的股票流动性可能会导致较低的崩溃风险，因为它有助于监控大股东的公司管理（Maug, 1998; Edmans, 2009）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;短期理论&lt;/strong&gt;认为，由于交易成本较低，较高的流动性可以吸引更多短期的机构投资者，过度关注公司的短期业绩(Porter(1992)， Fang, Tian, and Tice(2014))&lt;/li&gt;
+&lt;li&gt;与外部投资者相比，公司经理通常拥有关于公司运营、资产价值和未来前景的更高级别的私人信息。由于管理人员决定披露或隐藏其私人信息受到多种激励措施的约束，因此他们的披露偏好与外部投资者的偏好并不完全一致（Healy and Palepu, 2001; Kothari et al., 2009）&lt;/li&gt;
+&lt;li&gt;Graham, Harvey and Rajgopal（2005）的调查证据也表明首席财务官官员（CFO）延迟了坏消息的披露，希望公司的状况在规定的发布日期之前得到改善，从而避免向市场披露不利信息的必要&lt;/li&gt;
+&lt;li&gt;由于管理人员愿意或能够保留的坏消息数量有限，公司累积的坏消息会引发崩溃风险（Jin and Myers, 2006）&lt;/li&gt;
+&lt;li&gt;Jin and Myers（2006）认为，当一家公司不完全透明时，其管理者可以以外部投资者无法察觉的方式获取一部分现金流
+&lt;ul&gt;
+&lt;li&gt;为了保护他们的工作，管理人员可以通过隐藏公司特定的坏消息直到崩溃发生，来吸收因公司临时业绩而造成的下行风险和损失&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bleck and Liu（2007）认为，管理者可能更愿意保留不良项目以获得私人利益
+&lt;ul&gt;
+&lt;li&gt;为了防止投资者和董事及时采取弃权行动，他们可能会使用历史成本会计来隐藏负面信息&lt;/li&gt;
+&lt;li&gt;但是不良项目的不良表现会随着时间的流逝而累积，并最终变为现实，从而导致崩溃&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Benmelech et al. (2010) 等人使用隐藏动作模型，表明，
+&lt;ul&gt;
+&lt;li&gt;基于股票的薪酬会诱使管理人员隐瞒有关未来增长选择的坏消息，从而导致股票价格飞涨和随后的崩盘&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;这些理论研究表明，不良消息累积和崩溃风险是由管理者与外部投资者之间的利益冲突所驱动的，这导致管理者坚持不良项目或隐瞒不良绩效以损害股东利益而使自身受益&lt;/li&gt;
+&lt;li&gt;Kahn and Winton (1998) and Maug (1998) 指出，股票流动性通过促进股票的积累和增加干预的利润来鼓励大股东的干预&lt;/li&gt;
+&lt;li&gt;由于管理人员的薪酬通常与股票价格挂钩，经理人知道大股东出售股票会导致事后的股票价格降低。因此，事前，大股东退出的威胁促使经理人为股东的最大利益而行动，从而阻止经理人进行破坏价值的行为（Admatiand Pfleiderer, 2009）&lt;/li&gt;
+&lt;li&gt;Holmstrom and Tirole（1993）指出，信息获取的边际价值随股票流动性而上升
+&lt;ul&gt;
+&lt;li&gt;因为知情的投资者可以通过与流动性交易者交易来从私人信息中获利&lt;/li&gt;
+&lt;li&gt;因此，较高的股票流动性增加了投资者的信息生产能力，增强了知情交易，并提高了股票价格的信息含量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Edmans（2009）认为
+&lt;ul&gt;
+&lt;li&gt;较高的股票流动性激励了代价高昂的信息获取和区块持有者更积极地进行私人信息交易&lt;/li&gt;
+&lt;li&gt;通过让股价更能反映企业的经济基本面，信息发现的增强和信息交易的知情性可以削弱经理人在相当长一段时间内积累坏消息的能力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Porter （1992）美国的机构投资者中有很大一部分是临时性机构，他们因短期价格升值而购买股票并因报告的收益较低而退出&lt;/li&gt;
+&lt;li&gt;高流动性股票吸引了临时的投资者，因为低交易成本促进了他们的进入和退出（Fang et al., 2014）&lt;/li&gt;
+&lt;li&gt;Bushee（1998），（2001）指出
+&lt;ul&gt;
+&lt;li&gt;临时性机构倾向于青睐预期短期收益更高的公司，从而使经理人过分关注短期利益&lt;/li&gt;
+&lt;li&gt;作为回应，短期经理人可能会堆积坏消息，以避免对报告的收益造成打击，并避免短暂投资者的抛售压力对当前股价的负面影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Matsumoto（2002）证明，具有较高暂住机构所有权的公司更有可能对盈余进行超前管理，以达到盈利目标或超过分析师预测&lt;/li&gt;
+&lt;li&gt;较高的股票流动性降低了不满意股东的退出成本(Bhide, 1993)，从而放大了市场对不利信息的反应&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;收获&#34;&gt;收获&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;股票流动性影响股价崩盘风险的渠道：
+&lt;ul&gt;
+&lt;li&gt;坏消息形成的可能性（管理不力或负面冲击产生坏消息的可能性）&lt;/li&gt;
+&lt;li&gt;管理坏消息的累计程度（一旦出现坏消息，它会被经理发布或隐藏累积）&lt;/li&gt;
+&lt;li&gt;发现坏消息时市场反应的强度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;两个关于崩溃风险的理论：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;治理理论&lt;/strong&gt;：较高的股票流动性会鼓励投资者进行信息生产和明智的交易，并增强大股东（即大股东）的激励和监测公司的能力&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;短期理论&lt;/strong&gt;：较高的股票流动性会吸引临时投资者，并促使经理人从事短期行为&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;关于股票流动性对崩溃风险的影响存在相互竞争的预测
+&lt;ul&gt;
+&lt;li&gt;一方面，较高的股票流动性可以通过干预或退出威胁来增强大股东的治理，从而降低坏消息形成的可能性&lt;/li&gt;
+&lt;li&gt;它还可以通过鼓励信息生产和提高股价信息性来限制经理积累坏消息的能力&lt;/li&gt;
+&lt;li&gt;此外，较高的股票流动性可以减轻知情投资者对坏消息发布的交易反应&lt;/li&gt;
+&lt;li&gt;这些论点表明，较高的股票流动性导致较低的崩溃风险&lt;/li&gt;
+&lt;li&gt;另一方面，较高的股票流动性也可以吸引更多的临时机构投资者&lt;/li&gt;
+&lt;li&gt;这些机构投资者的短期关注点迫使经理们积累坏消息，并在累积的坏消息最终一次被释放时，促进临时投资者的抛售&lt;/li&gt;
+&lt;li&gt;此外，它还可以通过促进大股东在坏消息后退出而扩大市场对坏消息的反应&lt;/li&gt;
+&lt;li&gt;这些论据预测，较高的股票流动性会导致较高的崩溃风险&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;因此，尚不清楚先验哪种效应将占上风，并且需要经验证据来为理论提供信息&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Terrorist attacks and investor risk preference: Evidence from mutual fund flows</title>
