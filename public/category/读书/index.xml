@@ -5,12 +5,107 @@
     <link>/category/%E8%AF%BB%E4%B9%A6/</link>
       <atom:link href="/category/%E8%AF%BB%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
     <description>读书</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Sat, 22 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/share_logo.png</url>
       <title>读书</title>
       <link>/category/%E8%AF%BB%E4%B9%A6/</link>
     </image>
+    
+    <item>
+      <title>Note: DSGE, (1) 基本 RBC 模型的 Dynare 实现</title>
+      <link>/post/2020-11-14-note_dsge_001/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-11-14-note_dsge_001/</guid>
+      <description>&lt;h2 id=&#34;households&#34;&gt;Households&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Problem: $\max_{C_t, B_{t+1}, N_t} E_0 \sum_{t=0}^{\infty} \beta^t [U(C_t) - V(N_t)]$&lt;/li&gt;
+&lt;li&gt;Budget Constraint: $C_t + B_{t+1} \le (1+r_{t-1}) B_t + w_t N_t + \Pi_t$&lt;/li&gt;
+&lt;li&gt;FOC:
+&lt;ul&gt;
+&lt;li&gt;Euler Equation (Bonds): $U^{\prime} (C_t) = \beta E_t [U^{\prime} (C_{t+1}) (1+r_t)]$&lt;/li&gt;
+&lt;li&gt;Labor Supply: $V^{\prime} (N_t) = U^{\prime} (C_t) w_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Transversality Condition: $\lim_{T \rightarrow \infty} \beta^T U^{\prime} (C_T) B_{T+1} = 0$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;firms&#34;&gt;Firms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Production Function: $Y_t = F(A_t, K_t, N_t)$&lt;/li&gt;
+&lt;li&gt;Stochastic Discount Factor: $SDF_t = \beta^t \frac{E_0 U^{\prime} (C_t)}{U^{\prime} (C_0)}$&lt;/li&gt;
+&lt;li&gt;Problem: $\max_{C_t, D_{t+1}, N_t} E_0 \sum_{t=0}^{\infty} SDF_t [F(A_t, K_t, N_t) - w_t N_t - I_t + D_{t+1} - (1+r_{t-1}) D_t]$&lt;/li&gt;
+&lt;li&gt;Resource Constraint: $Y_t = C_t + I_t$&lt;/li&gt;
+&lt;li&gt;Capital Accumulation: $K_{t+1} = I_t + (1-\delta) K_t$&lt;/li&gt;
+&lt;li&gt;FOC:
+&lt;ul&gt;
+&lt;li&gt;Labor Demand: $w_t = F_3 (A_t, K_t, N_t)$&lt;/li&gt;
+&lt;li&gt;Euler Equation (Capital): $U^{\prime} (C_t) = \beta E_t U^{\prime} (C_{t+1}) [F_2 (A_{t+1}, K_{t+1}, N_{t+1}) + (1-\delta)]$&lt;/li&gt;
+&lt;li&gt;Euler Equation (Debt): $U^{\prime} (C_t) = \beta E_t [U^{\prime} (C_{t+1}) (1+r_t)]$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Capital Demand: $R_t^k = F_2 (A_t, K_t, N_t)$&lt;/li&gt;
+&lt;li&gt;Productivity: $\log A_t = \rho \log A_{t-1} + \epsilon_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Euler Equation (Bonds/Debt): $U^{\prime} (C_t) = \beta E_t [U^{\prime} (C_{t+1}) (1+r_t)]$&lt;/li&gt;
+&lt;li&gt;Euler Equation (Capital): $U^{\prime} (C_t) = \beta E_t U^{\prime} (C_{t+1}) [F_2 (A_{t+1}, K_{t+1}, N_{t+1}) + (1-\delta)]$&lt;/li&gt;
+&lt;li&gt;Labor Supply: $V^{\prime} (N_t) = U^{\prime} (C_t) w_t$&lt;/li&gt;
+&lt;li&gt;Labor Demand: $w_t = F_3 (A_t, K_t, N_t)$&lt;/li&gt;
+&lt;li&gt;Resource Constraint: $Y_t = C_t + I_t$&lt;/li&gt;
+&lt;li&gt;Capital Accumulation: $K_{t+1} = I_t + (1-\delta) K_t$&lt;/li&gt;
+&lt;li&gt;Production Function: $Y_t = F(A_t, K_t, N_t)$&lt;/li&gt;
+&lt;li&gt;Capital Demand: $R_t^k = F_2 (A_t, K_t, N_t)$&lt;/li&gt;
+&lt;li&gt;Productivity: $\log A_t = \rho \log A_{t-1} + \epsilon_t$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Utility Function: $U(C_t) - V(N_t) = \frac{C_t^{1-\sigma} - 1}{1-\sigma} + \theta \log (1-N_t)$&lt;/li&gt;
+&lt;li&gt;Production Function: $Y_t = F(A_t, K_t, N_t) = A_t K_t^{\alpha} N_t^{1-\alpha}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Euler Equation (Bonds/Debt): $C_t^{-\sigma} = \beta E_t [C_{t+1}^{-\sigma} (1+r_t)]$&lt;/li&gt;
+&lt;li&gt;Euler Equation (Capital): $C_t^{-\sigma} = \beta E_t C_{t+1}^{-\sigma} [\alpha A_{t+1} K_{t+1}^{\alpha-1} N_{t+1}^{1-\alpha} + (1-\delta)] = \beta E_t C_{t+1}^{-\sigma} [R_{t+1}^k + (1-\delta)]$&lt;/li&gt;
+&lt;li&gt;Labor Supply: $\frac{\theta}{1-N_t} = C_t^{-\sigma} w_t$&lt;/li&gt;
+&lt;li&gt;Labor Demand: $w_t = (1-\alpha) A_t K_t^{\alpha} N_t^{-\alpha}$&lt;/li&gt;
+&lt;li&gt;Resource Constraint: $Y_t = C_t + I_t$&lt;/li&gt;
+&lt;li&gt;Capital Accumulation: $K_{t+1} = I_t + (1-\delta) K_t$&lt;/li&gt;
+&lt;li&gt;Production Function: $Y_t = A_t K_t^{\alpha} N_t^{1-\alpha}$&lt;/li&gt;
+&lt;li&gt;Capital Demand: $R_t^k = \alpha A_t K_t^{\alpha-1} N_t^{1-\alpha}$&lt;/li&gt;
+&lt;li&gt;Productivity: $\log A_t = \rho \log A_{t-1} + \epsilon_t$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Variables: $C_t, N_t, Y_t, A_t, K_t, I_t, w_t, R_t^k, r_t$&lt;/li&gt;
+&lt;li&gt;Parameters: $\sigma, \theta, \alpha, \beta, \delta, \rho$&lt;/li&gt;
+&lt;li&gt;State Variables: $K_t, A_t$&lt;/li&gt;
+&lt;li&gt;Control Variable: $C_t$ or $K_{t+1}$&lt;/li&gt;
+&lt;li&gt;Exogenous Shock: $\epsilon_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;steady-state&#34;&gt;Steady State&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;$N = \frac{1}{3}$&lt;/li&gt;
+&lt;li&gt;$1+r = \frac{1}{\beta}$&lt;/li&gt;
+&lt;li&gt;$R = \frac{1}{\beta} - (1-\delta)$&lt;/li&gt;
+&lt;li&gt;$A = 1$&lt;/li&gt;
+&lt;li&gt;$\frac{K}{N} = (\frac{R}{\alpha A})^{\frac{1}{\alpha - 1}}$&lt;/li&gt;
+&lt;li&gt;$K = N \frac{K}{N}$&lt;/li&gt;
+&lt;li&gt;$w = (1-\alpha) A (\frac{K}{N})^{\alpha}$&lt;/li&gt;
+&lt;li&gt;$I = \delta K$&lt;/li&gt;
+&lt;li&gt;$Y = AK^{\alpha} N^{1-\alpha}$&lt;/li&gt;
+&lt;li&gt;$C = Y - I$&lt;/li&gt;
+&lt;li&gt;$\theta = (1-N) C^{-\sigma} w$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;calibration&#34;&gt;Calibration&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;$N = \frac{1}{3}$&lt;/li&gt;
+&lt;li&gt;$\alpha = 0.33$&lt;/li&gt;
+&lt;li&gt;$\beta = 0.99$&lt;/li&gt;
+&lt;li&gt;$\delta = 0.025$&lt;/li&gt;
+&lt;li&gt;$\sigma = 1$&lt;/li&gt;
+&lt;li&gt;$\rho = 0.974$&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Note: ABC, (7) Hansen的RBC模型-3</title>
