@@ -5,12 +5,118 @@
     <link>/tag/rbc/</link>
       <atom:link href="/tag/rbc/index.xml" rel="self" type="application/rss+xml" />
     <description>RBC</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>2020</copyright><lastBuildDate>Tue, 17 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/share_logo.png</url>
       <title>RBC</title>
       <link>/tag/rbc/</link>
     </image>
+    
+    <item>
+      <title>Note: DSGE, (2) Money in Utility</title>
+      <link>/post/2020-11-17-note_dsge_002/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-11-17-note_dsge_002/</guid>
+      <description>&lt;h2 id=&#34;households&#34;&gt;Households&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Problem: $\max_{C_t, B_{t+1}, N_t, M_t, K_{t+1}} E_0 \sum_{t=0}^{\infty} \beta^t U(C_t, N_t, M_t)$&lt;/li&gt;
+&lt;li&gt;Budget Constraint: $P_t C_t + P_t (K_{t+1} - (1-\delta)K_t) + B_{t+1} + M_t \le W_t N_t + P_t R_t^k K_t + (1+i_{t-1}) B_t + M_{t-1}$
+&lt;ul&gt;
+&lt;li&gt;$C_t + (K_{t+1} - (1-\delta)K_t) + \frac{B_{t+1}}{P_t} + \frac{M_t}{P_t} \le w_t N_t + R_t^k K_t + (1+i_{t-1}) \frac{B_t}{P_t} + \frac{M_{t-1}}{P_t}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Utility Function: $U(C_t, N_t, M_t) = \frac{C_t^{1-\sigma} - 1}{1-\sigma} - \theta \frac{N_t^{1+\eta}}{1+\eta} + \psi \frac{(\frac{M_t}{P_t})^{1-\nu} - 1}{1-\nu}$&lt;/li&gt;
+&lt;li&gt;Lagrange Function: $\mathcal{L} = E_0 \sum_{t=0}^{\infty} \beta^t \left\{ \frac{C_t^{1-\sigma} - 1}{1-\sigma} - \theta \frac{N_t^{1+\eta}}{1+\eta} + \psi \frac{(\frac{M_t}{P_t})^{1-\nu} - 1}{1-\nu} + \lambda_t \left( w_t N_t + R_t^k K_t + (1+i_{t-1}) \frac{B_t}{P_t} + \frac{M_{t-1}}{P_t} - C_t - (K_{t+1} - (1-\delta)K_t) - \frac{B_{t+1}}{P_t} - \frac{M_t}{P_t} \right) \right\}$&lt;/li&gt;
+&lt;li&gt;FOC:
+&lt;ul&gt;
+&lt;li&gt;Consumption: $\lambda_t = C_t^{-\sigma}$&lt;/li&gt;
+&lt;li&gt;Labor: $\theta N_t^{\eta} = C_t^{-\sigma} w_t$&lt;/li&gt;
+&lt;li&gt;Capital: $\lambda_t = \beta E_t (\lambda_{t+1} (R_{t+1}^k + 1 - \delta))$&lt;/li&gt;
+&lt;li&gt;Bond: $\lambda_t = \beta E_t \left( \lambda_{t+1} \frac{1+i_t}{\pi_{t+1}} \right), \pi_{t+1} = \frac{P_{t+1}}{P_t}$
+&lt;ul&gt;
+&lt;li&gt;Real Interest Rate: $1+r_t \equiv \frac{1+i_t}{\pi_{t+1}}$&lt;/li&gt;
+&lt;li&gt;Then $\lambda_t = \beta E_t (\lambda_{t+1} (1+r_t) )$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Money Demand: $\psi \left( \frac{M_t}{P_t} \right)^{-\nu} = \lambda_t - \beta E_t(\lambda_{t+1} \frac{P_t}{P_{t+1}})$
+&lt;ul&gt;
+&lt;li&gt;$\frac{M_t}{P_t} = \psi^{\frac{1}{\nu}} C_t^{\frac{\sigma}{\nu}} \left( \frac{i_t}{1+i_t} \right)^{-\frac{1}{\nu}}$&lt;/li&gt;
+&lt;li&gt;$\frac{\partial M_t}{\partial C_t} &amp;gt; 0, \frac{\partial M_t}{\partial i_t} &amp;lt; 0$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;firms&#34;&gt;Firms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Problem: $\max_{N_t, K_t} A_t F(K_t, N_t) - w_t N_t - R_t^k K_t$&lt;/li&gt;
+&lt;li&gt;FOC:
+&lt;ul&gt;
+&lt;li&gt;Capital: $R_t^k = A_t F_K(K_t, N_t)$&lt;/li&gt;
+&lt;li&gt;Labor: $w_t \equiv \frac{W_t}{P_t} = A_t F_N(K_t, N_t)$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Money Supply: $\log M_t - \log M_{t-1} = (1-\rho_m) \log \pi + \rho_m (\log M_{t-1} - \log M_{t-2}) + \epsilon_t^m$
+&lt;ul&gt;
+&lt;li&gt;$m_t \equiv \frac{M_t}{P_t}, \pi_t \equiv \frac{P_t}{P_{t-1}}, g_t^m \equiv \log m_t - \log m_{t-1}$&lt;/li&gt;
+&lt;li&gt;$g_t^m = (1-\rho_m) \log \pi - \log \pi_t + \rho_m g_{t-1}^m + \rho_m \log \pi_{t-1} + \epsilon_t^m$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Production Function: $Y_t = F(A_t, K_t, N_t) = A_t K_t^{\alpha} N_t^{1-\alpha}$&lt;/li&gt;
+&lt;li&gt;Productivity: $\log A_t = \rho \log A_{t-1} + \epsilon_t$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Labor Supply: $\theta N_t^{\eta} = C_t^{-\sigma} w_t$&lt;/li&gt;
+&lt;li&gt;Capital Supply: $C_t^{-\sigma} = \beta E_t (C_{t+1}^{-\sigma} (R_{t+1}^k + 1 - \delta))$&lt;/li&gt;
+&lt;li&gt;Euler Equation (Bond):  $C_t^{-\sigma} = \beta E_t \left( C_{t+1}^{-\sigma} \frac{1+i_t}{\pi_{t+1}} \right)$&lt;/li&gt;
+&lt;li&gt;Real Interest Rate: $1+r_t \equiv \frac{1+i_t}{\pi_{t+1}}$&lt;/li&gt;
+&lt;li&gt;Money Demand: $\psi (m_t)^{-\nu} = C_t^{-\sigma} \frac{i_t}{1+i_t}$&lt;/li&gt;
+&lt;li&gt;Capital Demand: $R_t^k = \alpha A_t K_t^{\alpha-1} N_t^{1-\alpha}$&lt;/li&gt;
+&lt;li&gt;Labor Demand: $w_t = (1-\alpha) A_t K_t^{\alpha} N_t^{-\alpha}$&lt;/li&gt;
+&lt;li&gt;Money Supply: $g_t^m = (1-\rho_m) \log \pi - \log \pi_t + \rho_m g_{t-1}^m + \rho_m \log \pi_{t-1} + \epsilon_t^m$&lt;/li&gt;
+&lt;li&gt;Money Growth: $g_t^m \equiv \log m_t - \log m_{t-1}$&lt;/li&gt;
+&lt;li&gt;Production Function: $Y_t = F(A_t, K_t, N_t) = A_t K_t^{\alpha} N_t^{1-\alpha}$&lt;/li&gt;
+&lt;li&gt;Productivity: $\log A_t = \rho \log A_{t-1} + \epsilon_t$&lt;/li&gt;
+&lt;li&gt;Capital Accumulation: $K_{t+1} = I_t + (1-\delta) K_t$&lt;/li&gt;
+&lt;li&gt;Resource Constraint: $Y_t = C_t + I_t$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Variables: $C_t, N_t, Y_t, A_t, K_t, I_t, w_t, R_t^k, i_t, r_t, \pi_t, g_t^m, m_t$&lt;/li&gt;
+&lt;li&gt;Parameters: $\sigma, \theta, \alpha, \beta, \delta, \rho, \rho_m, \pi, \psi, \nu$&lt;/li&gt;
+&lt;li&gt;Exogenous Shock: $\epsilon_t, \epsilon_t^m$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;steady-state&#34;&gt;Steady State&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;$N = \frac{1}{3}$&lt;/li&gt;
+&lt;li&gt;$1+i = \frac{\pi}{\beta}$&lt;/li&gt;
+&lt;li&gt;$1+r = \frac{1}{\beta}$&lt;/li&gt;
+&lt;li&gt;$R^k = \frac{1}{\beta} - (1-\delta)$&lt;/li&gt;
+&lt;li&gt;$A = 1$&lt;/li&gt;
+&lt;li&gt;$\frac{K}{N} = (\frac{R^k}{\alpha A})^{\frac{1}{\alpha - 1}}$&lt;/li&gt;
+&lt;li&gt;$K = N \frac{K}{N}$&lt;/li&gt;
+&lt;li&gt;$w = (1-\alpha) A (\frac{K}{N})^{\alpha}$&lt;/li&gt;
+&lt;li&gt;$I = \delta K$&lt;/li&gt;
+&lt;li&gt;$Y = AK^{\alpha} N^{1-\alpha}$&lt;/li&gt;
+&lt;li&gt;$C = Y - I$&lt;/li&gt;
+&lt;li&gt;$\theta = N^{-\eta} C^{-\sigma} w$&lt;/li&gt;
+&lt;li&gt;$m = \psi^{\frac{1}{\nu}} C^{\frac{\sigma}{\nu}} \left( \frac{i}{1+i} \right)^{-\frac{1}{\nu}}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;calibration&#34;&gt;Calibration&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;$N = \frac{1}{3}$&lt;/li&gt;
+&lt;li&gt;$\alpha = \frac{1}{3}$&lt;/li&gt;
+&lt;li&gt;$\beta = 0.99$&lt;/li&gt;
+&lt;li&gt;$\delta = 0.025$&lt;/li&gt;
+&lt;li&gt;$\sigma = 1$&lt;/li&gt;
+&lt;li&gt;$\rho = 0.2$&lt;/li&gt;
+&lt;li&gt;$\rho_m = 0.5$&lt;/li&gt;
+&lt;li&gt;$\eta = 0.5$&lt;/li&gt;
+&lt;li&gt;$\pi = 1.02$&lt;/li&gt;
+&lt;li&gt;$\psi = 1$&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Note: DSGE, (1) 基本 RBC 模型的 Dynare 实现</title>
