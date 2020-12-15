@@ -83,7 +83,7 @@
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;Variables: $C_t, N_t, Y_t, A_t, K_t, I_t, w_t, R_t^k, i_t, r_t, \pi_t, g_t^m, m_t$&lt;/li&gt;
-&lt;li&gt;Parameters: $\sigma, \theta, \alpha, \beta, \delta, \rho, \rho_m, \pi, \psi, \nu$&lt;/li&gt;
+&lt;li&gt;Parameters: $\sigma, \theta, \alpha, \beta, \delta, \rho, \rho_m, \pi, \psi, \nu, \eta$&lt;/li&gt;
 &lt;li&gt;Exogenous Shock: $\epsilon_t, \epsilon_t^m$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;steady-state&#34;&gt;Steady State&lt;/h3&gt;
@@ -114,6 +114,7 @@
 &lt;li&gt;$\eta = 0.5$&lt;/li&gt;
 &lt;li&gt;$\pi = 1.02$&lt;/li&gt;
 &lt;li&gt;$\psi = 1$&lt;/li&gt;
+&lt;li&gt;$\nu = 1$&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
